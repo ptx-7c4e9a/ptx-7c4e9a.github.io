@@ -57,6 +57,7 @@ jobs:
           import {readFileSync} from 'node:fs';
           const expected = JSON.parse(readFileSync('../.github/release-candidate.json', 'utf8'));
           const actual = JSON.parse(readFileSync('.local/release-candidate/manifest.json', 'utf8'));
+          console.log(JSON.stringify({actualManifest: actual}));
           if (actual.target !== expected.target ||
               actual.contentSha256 !== expected.contentSha256 ||
               actual.contentSha256 !== process.env.EXPECTED_CONTENT_SHA256 ||
