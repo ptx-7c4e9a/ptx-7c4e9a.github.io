@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "99f19677c7361b7172d5f8e476c5769f92ca45ccd85ab0f96bbc2b9ee8b1ab74",
+  "contentSha256": "7ae1c21f92d63be67d5726e50abcea010f94f32558b0907705a7e44e7b1c08a7",
   "files": 572,
-  "totalBytes": 44821438,
+  "totalBytes": 44822367,
   "routes": 27,
-  "review": "C260 header controls scoped pass approved for republish 2026-10-19; full acceptance deferred"
+  "review": "C263-C265 navigation brand, drawer width, logout placement, and header gap scoped pass approved for release 2026-10-19; full acceptance deferred"
 }

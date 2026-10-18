@@ -22,6 +22,7 @@
 .app-header>.profile-header,.app-header>.ektp-avatar{margin-left:auto}
 .app-header:has(>.theme-switch)>.notification-button{margin-left:0}
 .app-header>.theme-switch>span{display:inline}
+.app-header>.theme-switch{margin-left:8px}
 .profile-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}.profile-actions>.button{width:100%;white-space:normal}
 .user-menu{position:fixed;z-index:210;width:280px;max-width:calc(100vw - 32px);display:flex;flex-direction:column;gap:12px;padding:16px;border-radius:16px;background:var(--surface);color:var(--text);box-shadow:0 4px 32px #00000019,0 2px 12px #00000012}
 [data-theme=dark] .user-menu{background:var(--surface-neutral-default);box-shadow:0 4px 32px #00000066,0 2px 12px #00000044}
@@ -69,6 +70,14 @@ input[type=checkbox]:checked:after{content:'';width:20px;height:20px;background:
 .theme-changing .vehicle-marker>img{transition-property:opacity}.report-empty{display:flex;flex:1;min-height:0;align-items:center;justify-content:center;flex-direction:column}.report-empty>.empty{flex:0}.report-empty-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.select-option.selected>.icon-slot{color:var(--interaction-brand-secondary-default)}
 .select-option.selected,[data-theme=dark].select-popover .select-option.selected{color:var(--interaction-accent-primary-default)}
 .sidebar-brand>.sidebar-logo{display:block;grid-column:1}.sidebar-brand>div{grid-column:2}.sidebar-brand>.icon-button{grid-column:3}.collapsed .sidebar-brand>.icon-button{grid-column:1}
+.drawer-nav .sidebar-brand{display:grid;grid-template-columns:80px minmax(0,1fr);align-items:center;gap:24px;min-height:96px}
+.drawer-nav .sidebar-brand>.sidebar-logo{display:block;width:80px;height:80px;grid-column:1;grid-row:1}
+.drawer-nav .sidebar-brand>.sidebar-brand-copy{grid-column:2;grid-row:1;display:flex;flex-direction:column;gap:8px;min-width:0}
+.drawer-nav .sidebar-brand-copy>b{font-family:var(--font-heading);font-size:28px;line-height:36px;font-weight:600}
+.drawer-nav .sidebar-brand-copy>small{font-size:14px;line-height:20px;white-space:normal;overflow:visible;text-overflow:clip}
+.dialog.drawer:has(.drawer-nav){width:360px}
+.drawer-nav .sidebar-bottom{width:100%}
+.drawer-nav .sidebar-bottom>button{justify-content:flex-start;width:100%}
 .user-menu .theme-switch{font-size:14px;line-height:20px;gap:4px}
 .attention-row>.themed-image{flex:0 0 40px}.map-inspector .attention-row>.themed-image{flex-basis:48px}.vehicle-cell>.themed-image{flex:0 0 36px}
 .notification-button:hover>.icon-slot,.password-field>button:hover>.icon-slot,.select-chevron:hover{color:var(--interaction-brand-primary-hover)}
