@@ -4,6 +4,7 @@ import RationaleDiagram from './RationaleDiagram';
 export default function RationaleContent({section}:any){
  const copy=(t:any,key:number)=>{const value=t.href?<a className="reader-source-link" href={t.href} target="_blank" rel="noreferrer">{t.text}</a>:t.text;return t.size>=40?<h1 key={key}>{value}</h1>:t.size>=28?<h2 key={key}>{value}</h2>:t.size>=24?<p className="reader-lead" key={key}>{value}</p>:<p key={key}>{value}</p>;};
  return <>{section.text.map((t:any,index:number)=>{
+  if(t.text.trimStart().startsWith('Проверяемые источники:'))return null;
   const illustration=section.illustrations?.find((item:any)=>item.before===index);
   const visual=illustration&&<figure className="rationale-illustration" style={{maxWidth:illustration.width}}><a href={illustration.src} target="_blank" rel="noreferrer" aria-label={'Открыть иллюстрацию: '+illustration.alt}><img src={illustration.src} width={illustration.width} height={illustration.height} alt={illustration.alt} loading="lazy"/></a><figcaption>Иллюстрация из макета Figma. <a href={illustration.src} target="_blank" rel="noreferrer">Открыть в полном размере</a></figcaption></figure>;
   const diagram=section.diagrams?.find((item:any)=>item.start===index);

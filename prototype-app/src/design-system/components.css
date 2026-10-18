@@ -77,7 +77,7 @@ input[type=checkbox]:checked:after{content:'';width:20px;height:20px;background:
 .drawer-nav .sidebar-brand-copy>small{font-size:14px;line-height:20px;white-space:normal;overflow:visible;text-overflow:clip}
 .dialog.drawer:has(.drawer-nav){width:360px}
 .drawer-nav .sidebar-bottom{width:100%}
-.drawer-nav .sidebar-bottom>button{justify-content:flex-start;width:100%}
+.drawer-nav .sidebar-bottom>button{justify-content:center;width:100%}
 .user-menu .theme-switch{font-size:14px;line-height:20px;gap:4px}
 .attention-row>.themed-image{flex:0 0 40px}.map-inspector .attention-row>.themed-image{flex-basis:48px}.vehicle-cell>.themed-image{flex:0 0 36px}
 .notification-button:hover>.icon-slot,.password-field>button:hover>.icon-slot,.select-chevron:hover{color:var(--interaction-brand-primary-hover)}

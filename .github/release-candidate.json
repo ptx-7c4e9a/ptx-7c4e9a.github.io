@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "7ae1c21f92d63be67d5726e50abcea010f94f32558b0907705a7e44e7b1c08a7",
+  "contentSha256": "5f36da5803afc3aab5a8d0a886db27e320a154fe54e01188cdb14701e5d351b9",
   "files": 572,
-  "totalBytes": 44822367,
+  "totalBytes": 44822454,
   "routes": 27,
-  "review": "C263-C265 navigation brand, drawer width, logout placement, and header gap scoped pass approved for release 2026-10-19; full acceptance deferred"
+  "review": "C267 centered drawer logout and C268 reader source-note removal scoped pass approved for final release 2026-10-19; full acceptance deferred"
 }
