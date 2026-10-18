@@ -1,0 +1,2 @@
+# Preserve the exact reviewed source/asset bytes across Windows and Linux.
+prototype-app/** -text
