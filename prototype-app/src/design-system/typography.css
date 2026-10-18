@@ -1,0 +1,26 @@
+/* Native AtomicSystem text styles, read from Figma 2026-10-16. */
+@font-face{font-family:'Open Sans';src:url('/assets/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');font-weight:300 800;font-style:normal;font-display:swap}
+@font-face{font-family:'Exo 2';src:url('/assets/fonts/Exo2-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Exo 2';src:url('/assets/fonts/Exo2-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Exo 2';src:url('/assets/fonts/Exo2-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+:root{--font-body:'Open Sans',sans-serif;--font-heading:'Exo 2',sans-serif;--body-l:16px;--body-l-line:24px;--body-m:14px;--body-m-line:20px;--body-s:12px;--body-s-line:16px;--heading-l:28px;--heading-l-line:36px;--heading-m:24px;--heading-m-line:32px;--heading-s:20px;--heading-s-line:28px;--heading-xs:18px;--heading-xs-line:24px;--weight-regular:400;--weight-semibold:600;--weight-bold:700}
+.app-shell{font-family:var(--font-body);font-size:var(--body-m);line-height:var(--body-m-line);font-synthesis:none}
+.app-shell h1{font-family:var(--font-heading);font-size:var(--heading-l);line-height:var(--heading-l-line);font-weight:600}
+.app-shell h2{font-family:var(--font-heading);font-size:var(--heading-m);line-height:var(--heading-m-line);font-weight:600}
+.app-shell h3{font-family:var(--font-heading);font-size:var(--heading-xs);line-height:var(--heading-xs-line);font-weight:600}
+.app-shell .page-title>p,.app-shell .breadcrumbs,.app-shell .detail-row dt,.app-shell small{font-size:var(--body-s);line-height:var(--body-s-line)}
+.app-shell .detail-row dd{font-size:var(--body-m);line-height:var(--body-m-line)}
+.app-shell .sidebar nav>button{font-size:14px;line-height:20px;font-weight:600}
+.app-shell .sidebar-brand b{font-family:var(--font-heading);font-size:18px;line-height:24px;font-weight:600}
+.app-shell .header-scope b{font-family:var(--font-body);font-size:14px;line-height:20px;font-weight:600}
+.app-shell .catalog-tree .tree-group>button{font-family:var(--font-heading);font-size:18px;line-height:24px;font-weight:600}
+.app-shell .catalog-tree .tree-group>div>button{font-family:var(--font-body);font-size:16px;line-height:24px;font-weight:400}
+.app-shell .catalog-layout .record-panel h2{font-size:20px;line-height:28px}
+.app-shell .catalog-navigation .segmented button{font-size:16px;line-height:24px;padding:8px 12px}
+.app-shell .button.m{font-size:14px;line-height:20px;min-height:40px;padding:8px 16px}
+.app-shell .button.l{font-size:16px;line-height:24px;min-height:48px;padding:12px 20px}
+.app-shell .button.s{font-size:12px;line-height:16px;min-height:36px;padding:8px 12px}
+.app-shell .button.xl{font-size:18px;line-height:28px;min-height:56px;padding:14px 24px}
+.app-shell .registry-toolbar input,.app-shell .header-search input{font-size:16px;line-height:24px}
+.app-shell td{font-size:14px;line-height:20px}.app-shell th,.app-shell th button{font-size:12px;line-height:16px;font-weight:600}
+.app-shell .dialog h2{font-size:24px;line-height:32px}.app-shell .dialog p{font-size:14px;line-height:20px}

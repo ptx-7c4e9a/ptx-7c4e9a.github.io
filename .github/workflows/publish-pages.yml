@@ -1,0 +1,92 @@
+name: Publish approved Proto release
+
+# Run only after the user's command. Pushes and pull requests do not deploy.
+on:
+  workflow_dispatch:
+    inputs:
+      content_sha256:
+        description: Reviewed dist content SHA-256
+        required: true
+        type: string
+        default: 4e24dc14681ed7882cb44e122ce58e808379c7aaad277cf5273bb843a7d6b8c2
+
+permissions:
+  contents: read
+
+concurrency:
+  group: proto-approved-pages-release
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'ptx-7c4e9a/ptx-7c4e9a.github.io' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    defaults:
+      run:
+        working-directory: prototype-app
+    steps:
+      - name: Checkout reviewed source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Install pnpm
+        uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa # v4
+        with:
+          version: 11.25.0
+          package_json_file: prototype-app/package.json
+      - name: Use the reviewed Node version
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24.19.0
+          cache: pnpm
+          cache-dependency-path: prototype-app/pnpm-lock.yaml
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build static candidate
+        env:
+          VITE_YANDEX_MAPS_KEY: ${{ secrets.VITE_YANDEX_MAPS_KEY }}
+        run: |
+          node -e "if (!process.env.VITE_YANDEX_MAPS_KEY) throw new Error('Configure VITE_YANDEX_MAPS_KEY in repository Actions secrets')"
+          pnpm build:candidate
+      - name: Require the exact reviewed candidate
+        env:
+          EXPECTED_CONTENT_SHA256: ${{ inputs.content_sha256 }}
+        run: |
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const expected = JSON.parse(readFileSync('../.github/release-candidate.json', 'utf8'));
+          const actual = JSON.parse(readFileSync('.local/release-candidate/manifest.json', 'utf8'));
+          if (actual.target !== expected.target ||
+              actual.contentSha256 !== expected.contentSha256 ||
+              actual.contentSha256 !== process.env.EXPECTED_CONTENT_SHA256 ||
+              actual.files.length !== expected.files ||
+              actual.totalBytes !== expected.totalBytes ||
+              actual.routes.length !== expected.routes) {
+            throw new Error('Build differs from the reviewed candidate; deployment stopped');
+          }
+          console.log(JSON.stringify({target: actual.target, files: actual.files.length,
+            bytes: actual.totalBytes, contentSha256: actual.contentSha256}));
+          NODE
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Upload the build artifact, never commit dist
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: prototype-app/dist
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the verified artifact
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

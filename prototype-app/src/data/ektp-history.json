@@ -1,0 +1,367 @@
+{
+  "source": "EKTP/sources/kimi-2026-10-08/vehicles-demo.csv",
+  "synthetic": true,
+  "snapshot": "2026-10-13T12:00:00+03:00",
+  "fleet": [
+    {
+      "id": "v-44",
+      "plate": "Р394ОК 85",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Москва",
+      "owner": "Север",
+      "kind": "Собственное",
+      "speed": 60,
+      "signal": "11:44",
+      "fuel": 32,
+      "tracker": "GT-3318",
+      "year": "2023",
+      "sensors": {
+        "rpm": 1500,
+        "coolant": 81,
+        "battery": 13.5,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.8
+      },
+      "target": "12290:5",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-20",
+      "plate": "Р167КА 98",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Москва",
+      "owner": "ГрузАвто",
+      "kind": "Наёмное",
+      "speed": 0,
+      "signal": "12.10 · 15:47",
+      "fuel": 52,
+      "tracker": "GT-3114",
+      "year": "2022",
+      "sensors": {
+        "rpm": 0,
+        "coolant": 20,
+        "battery": 14.1,
+        "can": true,
+        "gps": true,
+        "ignition": false,
+        "pressure": 7.1
+      },
+      "target": "12290:6",
+      "connectionState": "stale"
+    },
+    {
+      "id": "v-13",
+      "plate": "У554КЕ 55",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 100,
+      "signal": "11:53",
+      "fuel": 75,
+      "tracker": "GT-3397",
+      "year": "2021",
+      "sensors": {
+        "rpm": 1900,
+        "coolant": 86,
+        "battery": 13.1,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.4
+      },
+      "target": "12300:45532",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-23",
+      "plate": "С537СВ 27",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "owner": "ЭкоТранс",
+      "kind": "Наёмное",
+      "speed": 67,
+      "signal": "11:48",
+      "fuel": 12,
+      "tracker": "GT-3776",
+      "year": "2023",
+      "sensors": {
+        "rpm": 1570,
+        "coolant": 82,
+        "battery": 14.1,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.2
+      },
+      "target": "12300:45533",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-21",
+      "plate": "Р294ОВ 34",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "owner": "ЭкоТранс",
+      "kind": "Наёмное",
+      "speed": 107,
+      "signal": "11:55",
+      "fuel": 46,
+      "tracker": "GT-3092",
+      "year": "2022",
+      "sensors": {
+        "rpm": 1970,
+        "coolant": 90,
+        "battery": 13.3,
+        "can": false,
+        "gps": true,
+        "ignition": true,
+        "pressure": 8.3
+      },
+      "target": "12300:45534",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-50",
+      "plate": "К853КС 38",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "owner": "ТрансЛог",
+      "kind": "Наёмное",
+      "speed": 74,
+      "signal": "11:45",
+      "fuel": 87,
+      "tracker": "GT-3013",
+      "year": "2019",
+      "sensors": {
+        "rpm": 1640,
+        "coolant": 81,
+        "battery": 13,
+        "can": true,
+        "gps": false,
+        "ignition": true,
+        "pressure": 7.9
+      },
+      "target": "12338:1556",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-2",
+      "plate": "Х134ХТ 87",
+      "model": "КамАЗ-65224 (КМУ)",
+      "type": "Спецтехника",
+      "city": "Москва",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 0,
+      "signal": "08.10 · 09:40",
+      "fuel": 80,
+      "tracker": "GT-3434",
+      "year": "2024",
+      "sensors": {
+        "rpm": 0,
+        "coolant": 20,
+        "battery": 13.4,
+        "can": true,
+        "gps": true,
+        "ignition": false,
+        "pressure": 7.9
+      },
+      "lastSignalMin": 7340,
+      "target": "12402:2276",
+      "connectionState": "offline"
+    },
+    {
+      "id": "v-5",
+      "plate": "Р244КЕ 98",
+      "model": "Scania R500",
+      "type": "Тягач",
+      "city": "Москва",
+      "owner": "Север",
+      "kind": "Собственное",
+      "speed": 0,
+      "signal": "10.10 · 22:31",
+      "fuel": 56,
+      "tracker": "GT-3063",
+      "year": "2018",
+      "sensors": {
+        "rpm": 0,
+        "coolant": 20,
+        "battery": 12.8,
+        "can": true,
+        "gps": true,
+        "ignition": false,
+        "pressure": 8.3
+      },
+      "lastSignalMin": 3689,
+      "target": "12402:2643",
+      "connectionState": "offline"
+    },
+    {
+      "id": "v-11",
+      "plate": "Н995ОК 53",
+      "model": "МАЗ-5440М9",
+      "type": "Тягач",
+      "city": "Москва",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 114,
+      "signal": "11:51",
+      "fuel": 35,
+      "tracker": "GT-3168",
+      "year": "2019",
+      "sensors": {
+        "rpm": 2040,
+        "coolant": 88,
+        "battery": 12.9,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.4
+      },
+      "lastSignalMin": 9,
+      "target": "12402:3010",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-26",
+      "plate": "Р924ЕТ 19",
+      "model": "Mercedes Sprinter",
+      "type": "Фургон",
+      "city": "Москва",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 81,
+      "signal": "11:45",
+      "fuel": 63,
+      "tracker": "GT-3867",
+      "year": "2024",
+      "sensors": {
+        "rpm": 1710,
+        "coolant": 89,
+        "battery": 13.7,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 8
+      },
+      "lastSignalMin": 15,
+      "target": "12402:3377",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-27",
+      "plate": "К679ВХ 11",
+      "model": "MAN TGS 33.440",
+      "type": "Спецтехника",
+      "city": "Москва",
+      "owner": "ГрузАвто",
+      "kind": "Наёмное",
+      "speed": 121,
+      "signal": "11:51",
+      "fuel": 32,
+      "tracker": "GT-3850",
+      "year": "2024",
+      "sensors": {
+        "rpm": 2110,
+        "coolant": 80,
+        "battery": 12.4,
+        "can": false,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7
+      },
+      "lastSignalMin": 9,
+      "target": "12402:3744",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-34",
+      "plate": "В305УК 48",
+      "model": "ЛиАЗ-5292",
+      "type": "Автобус",
+      "city": "Москва",
+      "owner": "ЭкоТранс",
+      "kind": "Наёмное",
+      "speed": 88,
+      "signal": "11:48",
+      "fuel": 26,
+      "tracker": "GT-3554",
+      "year": "2020",
+      "sensors": {
+        "rpm": 1780,
+        "coolant": 90,
+        "battery": 12.7,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.4
+      },
+      "lastSignalMin": 12,
+      "target": "12402:4101",
+      "connectionState": "online"
+    }
+  ],
+  "total": 12,
+  "counts": {
+    "Москва": 8,
+    "Казань": 2,
+    "Челябинск": 1,
+    "Якутск": 1
+  },
+  "sum": "8 + 2 + 1 + 1 = 12",
+  "overrides": "Own/hired, organization short labels, geographic group names, illustrative road points and historical analytics are scenario fixtures; not verified production data.",
+  "historicalExample": {
+    "distanceKm": 96,
+    "movingHours": 2,
+    "averageSpeedKmh": 48,
+    "maximumSpeedKmh": 68
+  },
+  "fuelTrace": [
+    [
+      "08:00",
+      45
+    ],
+    [
+      "08:30",
+      44
+    ],
+    [
+      "09:00",
+      43
+    ],
+    [
+      "09:30",
+      41
+    ],
+    [
+      "10:00",
+      39
+    ],
+    [
+      "10:20",
+      37
+    ],
+    [
+      "11:00",
+      35
+    ],
+    [
+      "11:44",
+      32
+    ]
+  ],
+  "currentStateIsSeparateFromHistory": true,
+  "revised": "2026-10-14",
+  "unconfirmedProductionFields": [
+    "fuel units and payload",
+    "mileage method and payload",
+    "VIN",
+    "ecological class",
+    "current driver relation",
+    "configured sensor payloads"
+  ],
+  "overrideScope": "Synthetic Kimi fixtures. Ownership, groups, map positions and historical analytics are demo choices; no production GPS/API payload was received. Numeric fuel/sensors are not evidence of integration."
+}

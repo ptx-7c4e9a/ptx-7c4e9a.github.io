@@ -1,0 +1,1984 @@
+{
+  "authoredAt": "2026-10-16",
+  "synthetic": true,
+  "basis": "User allowed fictional corporate names, selected organization-view context; Anna established viewer-relative owned/hired passport. Existing 12-vehicle fixture retained.",
+  "source": "organization-context-fixture-2026-10-14.json",
+  "status": "Authored synthetic design fixture; not production rights, contracts or entity register",
+  "organizations": [
+    {
+      "id": "org-north",
+      "name": "ООО «СеверТранс»",
+      "owned": [
+        "v-44",
+        "v-13",
+        "v-2",
+        "v-5",
+        "v-11",
+        "v-26",
+        "demo-kzn-01",
+        "demo-kzn-03",
+        "demo-kzn-05",
+        "demo-kzn-07",
+        "demo-kzn-09",
+        "demo-chl-01",
+        "demo-chl-03",
+        "demo-chl-05",
+        "demo-chl-07",
+        "demo-chl-09",
+        "demo-chl-11",
+        "demo-ykt-01",
+        "demo-ykt-03",
+        "demo-ykt-05",
+        "demo-ykt-07",
+        "demo-ykt-09",
+        "demo-ykt-11"
+      ],
+      "hired": [
+        "v-20",
+        "v-23",
+        "v-21",
+        "v-50",
+        "v-27",
+        "v-34",
+        "demo-kzn-02",
+        "demo-kzn-04",
+        "demo-kzn-06",
+        "demo-kzn-08",
+        "demo-kzn-10",
+        "demo-chl-02",
+        "demo-chl-04",
+        "demo-chl-06",
+        "demo-chl-08",
+        "demo-chl-10",
+        "demo-ykt-02",
+        "demo-ykt-04",
+        "demo-ykt-06",
+        "demo-ykt-08",
+        "demo-ykt-10"
+      ]
+    },
+    {
+      "id": "org-logistics",
+      "name": "АО «ПромЛогистика»",
+      "owned": [],
+      "hired": [
+        "v-44",
+        "v-20",
+        "v-13"
+      ]
+    },
+    {
+      "id": "org-service",
+      "name": "ООО «РегионСервис»",
+      "owned": [
+        "v-20",
+        "v-27"
+      ],
+      "hired": [
+        "v-44"
+      ]
+    },
+    {
+      "id": "org-energy",
+      "name": "АО «ЭнергоТранспорт»",
+      "owned": [
+        "v-23",
+        "v-21",
+        "v-34",
+        "demo-kzn-02",
+        "demo-kzn-04",
+        "demo-kzn-06",
+        "demo-kzn-08",
+        "demo-kzn-10",
+        "demo-chl-02",
+        "demo-chl-04",
+        "demo-chl-06",
+        "demo-chl-08",
+        "demo-chl-10",
+        "demo-ykt-02",
+        "demo-ykt-04",
+        "demo-ykt-06",
+        "demo-ykt-08",
+        "demo-ykt-10"
+      ],
+      "hired": [
+        "v-13"
+      ]
+    },
+    {
+      "id": "org-resources",
+      "name": "ООО «РесурсГрупп»",
+      "owned": [
+        "v-50"
+      ],
+      "hired": [
+        "v-44",
+        "v-26"
+      ]
+    }
+  ],
+  "vehicleOwnerOrg": {
+    "v-44": "org-north",
+    "v-20": "org-service",
+    "v-13": "org-north",
+    "v-23": "org-energy",
+    "v-21": "org-energy",
+    "v-50": "org-resources",
+    "v-2": "org-north",
+    "v-5": "org-north",
+    "v-11": "org-north",
+    "v-26": "org-north",
+    "v-27": "org-service",
+    "v-34": "org-energy",
+    "demo-kzn-01": "org-north",
+    "demo-kzn-02": "org-energy",
+    "demo-kzn-03": "org-north",
+    "demo-kzn-04": "org-energy",
+    "demo-kzn-05": "org-north",
+    "demo-kzn-06": "org-energy",
+    "demo-kzn-07": "org-north",
+    "demo-kzn-08": "org-energy",
+    "demo-kzn-09": "org-north",
+    "demo-kzn-10": "org-energy",
+    "demo-chl-01": "org-north",
+    "demo-chl-02": "org-energy",
+    "demo-chl-03": "org-north",
+    "demo-chl-04": "org-energy",
+    "demo-chl-05": "org-north",
+    "demo-chl-06": "org-energy",
+    "demo-chl-07": "org-north",
+    "demo-chl-08": "org-energy",
+    "demo-chl-09": "org-north",
+    "demo-chl-10": "org-energy",
+    "demo-chl-11": "org-north",
+    "demo-ykt-01": "org-north",
+    "demo-ykt-02": "org-energy",
+    "demo-ykt-03": "org-north",
+    "demo-ykt-04": "org-energy",
+    "demo-ykt-05": "org-north",
+    "demo-ykt-06": "org-energy",
+    "demo-ykt-07": "org-north",
+    "demo-ykt-08": "org-energy",
+    "demo-ykt-09": "org-north",
+    "demo-ykt-10": "org-energy",
+    "demo-ykt-11": "org-north"
+  },
+  "fleet": [
+    {
+      "id": "v-44",
+      "plate": "Р394ОК 85",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Москва",
+      "owner": "Север",
+      "kind": "Собственное",
+      "speed": 60,
+      "signal": "11:44",
+      "fuel": 32,
+      "tracker": "GT-3318",
+      "year": "2023",
+      "sensors": {
+        "rpm": 1500,
+        "coolant": 81,
+        "battery": 13.5,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.8
+      },
+      "target": "12290:5",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-20",
+      "plate": "Р167КА 98",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Москва",
+      "owner": "ГрузАвто",
+      "kind": "Наёмное",
+      "speed": 0,
+      "signal": "12.10 · 15:47",
+      "fuel": 52,
+      "tracker": "GT-3114",
+      "year": "2022",
+      "sensors": {
+        "rpm": 0,
+        "coolant": 20,
+        "battery": 14.1,
+        "can": true,
+        "gps": true,
+        "ignition": false,
+        "pressure": 7.1
+      },
+      "target": "12290:6",
+      "connectionState": "stale"
+    },
+    {
+      "id": "v-13",
+      "plate": "У554КЕ 55",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 100,
+      "signal": "11:53",
+      "fuel": 75,
+      "tracker": "GT-3397",
+      "year": "2021",
+      "sensors": {
+        "rpm": 1900,
+        "coolant": 86,
+        "battery": 13.1,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.4
+      },
+      "target": "12300:45532",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-23",
+      "plate": "С537СВ 27",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "owner": "ЭкоТранс",
+      "kind": "Наёмное",
+      "speed": 67,
+      "signal": "11:48",
+      "fuel": 12,
+      "tracker": "GT-3776",
+      "year": "2023",
+      "sensors": {
+        "rpm": 1570,
+        "coolant": 82,
+        "battery": 14.1,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.2
+      },
+      "target": "12300:45533",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-21",
+      "plate": "Р294ОВ 34",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "owner": "ЭкоТранс",
+      "kind": "Наёмное",
+      "speed": 107,
+      "signal": "11:55",
+      "fuel": 46,
+      "tracker": "GT-3092",
+      "year": "2022",
+      "sensors": {
+        "rpm": 1970,
+        "coolant": 90,
+        "battery": 13.3,
+        "can": false,
+        "gps": true,
+        "ignition": true,
+        "pressure": 8.3
+      },
+      "target": "12300:45534",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-50",
+      "plate": "К853КС 38",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "owner": "ТрансЛог",
+      "kind": "Наёмное",
+      "speed": 74,
+      "signal": "11:45",
+      "fuel": 87,
+      "tracker": "GT-3013",
+      "year": "2019",
+      "sensors": {
+        "rpm": 1640,
+        "coolant": 81,
+        "battery": 13,
+        "can": true,
+        "gps": false,
+        "ignition": true,
+        "pressure": 7.9
+      },
+      "target": "12338:1556",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-2",
+      "plate": "Х134ХТ 87",
+      "model": "КамАЗ-65224 (КМУ)",
+      "type": "Спецтехника",
+      "city": "Москва",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 0,
+      "signal": "08.10 · 09:40",
+      "fuel": 80,
+      "tracker": "GT-3434",
+      "year": "2024",
+      "sensors": {
+        "rpm": 0,
+        "coolant": 20,
+        "battery": 13.4,
+        "can": true,
+        "gps": true,
+        "ignition": false,
+        "pressure": 7.9
+      },
+      "lastSignalMin": 7340,
+      "target": "12402:2276",
+      "connectionState": "offline"
+    },
+    {
+      "id": "v-5",
+      "plate": "Р244КЕ 98",
+      "model": "Scania R500",
+      "type": "Тягач",
+      "city": "Москва",
+      "owner": "Север",
+      "kind": "Собственное",
+      "speed": 0,
+      "signal": "10.10 · 22:31",
+      "fuel": 56,
+      "tracker": "GT-3063",
+      "year": "2018",
+      "sensors": {
+        "rpm": 0,
+        "coolant": 20,
+        "battery": 12.8,
+        "can": true,
+        "gps": true,
+        "ignition": false,
+        "pressure": 8.3
+      },
+      "lastSignalMin": 3689,
+      "target": "12402:2643",
+      "connectionState": "offline"
+    },
+    {
+      "id": "v-11",
+      "plate": "Н995ОК 53",
+      "model": "МАЗ-5440М9",
+      "type": "Тягач",
+      "city": "Москва",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 114,
+      "signal": "11:51",
+      "fuel": 35,
+      "tracker": "GT-3168",
+      "year": "2019",
+      "sensors": {
+        "rpm": 2040,
+        "coolant": 88,
+        "battery": 12.9,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.4
+      },
+      "lastSignalMin": 9,
+      "target": "12402:3010",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-26",
+      "plate": "Р924ЕТ 19",
+      "model": "Mercedes Sprinter",
+      "type": "Фургон",
+      "city": "Москва",
+      "owner": "Агро",
+      "kind": "Собственное",
+      "speed": 81,
+      "signal": "11:45",
+      "fuel": 63,
+      "tracker": "GT-3867",
+      "year": "2024",
+      "sensors": {
+        "rpm": 1710,
+        "coolant": 89,
+        "battery": 13.7,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 8
+      },
+      "lastSignalMin": 15,
+      "target": "12402:3377",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-27",
+      "plate": "К679ВХ 11",
+      "model": "MAN TGS 33.440",
+      "type": "Спецтехника",
+      "city": "Москва",
+      "owner": "ГрузАвто",
+      "kind": "Наёмное",
+      "speed": 121,
+      "signal": "11:51",
+      "fuel": 32,
+      "tracker": "GT-3850",
+      "year": "2024",
+      "sensors": {
+        "rpm": 2110,
+        "coolant": 80,
+        "battery": 12.4,
+        "can": false,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7
+      },
+      "lastSignalMin": 9,
+      "target": "12402:3744",
+      "connectionState": "online"
+    },
+    {
+      "id": "v-34",
+      "plate": "В305УК 48",
+      "model": "ЛиАЗ-5292",
+      "type": "Автобус",
+      "city": "Москва",
+      "owner": "ЭкоТранс",
+      "kind": "Наёмное",
+      "speed": 88,
+      "signal": "11:48",
+      "fuel": 26,
+      "tracker": "GT-3554",
+      "year": "2020",
+      "sensors": {
+        "rpm": 1780,
+        "coolant": 90,
+        "battery": 12.7,
+        "can": true,
+        "gps": true,
+        "ignition": true,
+        "pressure": 7.4
+      },
+      "lastSignalMin": 12,
+      "target": "12402:4101",
+      "connectionState": "online"
+    },
+    {
+      "id": "demo-kzn-01",
+      "plate": "А101КТ 16",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Казань",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 0,
+      "signal": "11:45",
+      "lastSignalMin": 15,
+      "tracker": "GT-5101",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            296,
+            80
+          ],
+          [
+            294,
+            110
+          ],
+          [
+            297,
+            128
+          ]
+        ],
+        "motion": "stationary",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 650
+      }
+    },
+    {
+      "id": "demo-kzn-02",
+      "plate": "М102КТ 16",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 128,
+      "signal": "11:46",
+      "lastSignalMin": 14,
+      "tracker": "GT-5102",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            260,
+            117
+          ],
+          [
+            283,
+            123
+          ],
+          [
+            309,
+            127
+          ]
+        ],
+        "motion": "stationary",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 2180
+      }
+    },
+    {
+      "id": "demo-kzn-03",
+      "plate": "А103КТ 16",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 95,
+      "signal": "11:47",
+      "lastSignalMin": 13,
+      "tracker": "GT-5103",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            392,
+            150
+          ],
+          [
+            430,
+            159
+          ],
+          [
+            465,
+            164
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1850
+      }
+    },
+    {
+      "id": "demo-kzn-04",
+      "plate": "М104КТ 16",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Казань",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 0,
+      "signal": "11:48",
+      "lastSignalMin": 12,
+      "tracker": "GT-5104",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            496,
+            176
+          ],
+          [
+            533,
+            190
+          ],
+          [
+            563,
+            201
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 650
+      }
+    },
+    {
+      "id": "demo-kzn-05",
+      "plate": "А105КТ 16",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 62,
+      "signal": "11:49",
+      "lastSignalMin": 11,
+      "tracker": "GT-5105",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            673,
+            195
+          ],
+          [
+            677,
+            230
+          ],
+          [
+            698,
+            259
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1520
+      }
+    },
+    {
+      "id": "demo-kzn-06",
+      "plate": "М106КТ 16",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 102,
+      "signal": "11:50",
+      "lastSignalMin": 10,
+      "tracker": "GT-5106",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            691,
+            290
+          ],
+          [
+            727,
+            298
+          ],
+          [
+            760,
+            307
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1920
+      }
+    },
+    {
+      "id": "demo-kzn-07",
+      "plate": "А107КТ 16",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Казань",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 0,
+      "signal": "11:51",
+      "lastSignalMin": 9,
+      "tracker": "GT-5107",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            743,
+            347
+          ],
+          [
+            759,
+            376
+          ],
+          [
+            771,
+            402
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": false,
+        "rpm": 0
+      }
+    },
+    {
+      "id": "demo-kzn-08",
+      "plate": "М108КТ 16",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 69,
+      "signal": "11:52",
+      "lastSignalMin": 8,
+      "tracker": "GT-5108",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            252,
+            447
+          ],
+          [
+            225,
+            468
+          ],
+          [
+            199,
+            493
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1590
+      }
+    },
+    {
+      "id": "demo-kzn-09",
+      "plate": "А109КТ 16",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Казань",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 109,
+      "signal": "11:53",
+      "lastSignalMin": 7,
+      "tracker": "GT-5109",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            97,
+            534
+          ],
+          [
+            144,
+            525
+          ],
+          [
+            180,
+            518
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1990
+      }
+    },
+    {
+      "id": "demo-kzn-10",
+      "plate": "М110КТ 16",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Казань",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 76,
+      "signal": "11:54",
+      "lastSignalMin": 6,
+      "tracker": "GT-5110",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            281,
+            514
+          ],
+          [
+            321,
+            530
+          ],
+          [
+            362,
+            548
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1660
+      }
+    },
+    {
+      "id": "demo-chl-01",
+      "plate": "А101КТ 74",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Челябинск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 116,
+      "signal": "11:45",
+      "lastSignalMin": 15,
+      "tracker": "GT-5201",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            245,
+            66
+          ],
+          [
+            244,
+            92
+          ],
+          [
+            242,
+            122
+          ]
+        ],
+        "motion": "stationary",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 2060
+      }
+    },
+    {
+      "id": "demo-chl-02",
+      "plate": "М102КТ 74",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 0,
+      "signal": "11:46",
+      "lastSignalMin": 14,
+      "tracker": "GT-5202",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            283,
+            204
+          ],
+          [
+            321,
+            213
+          ],
+          [
+            363,
+            222
+          ]
+        ],
+        "motion": "stationary",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 650
+      }
+    },
+    {
+      "id": "demo-chl-03",
+      "plate": "А103КТ 74",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 83,
+      "signal": "11:47",
+      "lastSignalMin": 13,
+      "tracker": "GT-5203",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            391,
+            227
+          ],
+          [
+            432,
+            227
+          ],
+          [
+            474,
+            237
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1730
+      }
+    },
+    {
+      "id": "demo-chl-04",
+      "plate": "М104КТ 74",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Челябинск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 123,
+      "signal": "11:48",
+      "lastSignalMin": 12,
+      "tracker": "GT-5204",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            513,
+            247
+          ],
+          [
+            544,
+            232
+          ],
+          [
+            569,
+            220
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 2130
+      }
+    },
+    {
+      "id": "demo-chl-05",
+      "plate": "А105КТ 74",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 0,
+      "signal": "11:49",
+      "lastSignalMin": 11,
+      "tracker": "GT-5205",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            654,
+            117
+          ],
+          [
+            664,
+            160
+          ],
+          [
+            676,
+            196
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 650
+      }
+    },
+    {
+      "id": "demo-chl-06",
+      "plate": "М106КТ 74",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 90,
+      "signal": "11:50",
+      "lastSignalMin": 10,
+      "tracker": "GT-5206",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            736,
+            231
+          ],
+          [
+            771,
+            222
+          ],
+          [
+            803,
+            206
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1800
+      }
+    },
+    {
+      "id": "demo-chl-07",
+      "plate": "А107КТ 74",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Челябинск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 130,
+      "signal": "11:51",
+      "lastSignalMin": 9,
+      "tracker": "GT-5207",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            748,
+            355
+          ],
+          [
+            732,
+            386
+          ],
+          [
+            713,
+            417
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 2200
+      }
+    },
+    {
+      "id": "demo-chl-08",
+      "plate": "М108КТ 74",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 0,
+      "signal": "11:52",
+      "lastSignalMin": 8,
+      "tracker": "GT-5208",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            752,
+            459
+          ],
+          [
+            770,
+            482
+          ],
+          [
+            791,
+            507
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": false,
+        "rpm": 0
+      }
+    },
+    {
+      "id": "demo-chl-09",
+      "plate": "А109КТ 74",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 97,
+      "signal": "11:53",
+      "lastSignalMin": 7,
+      "tracker": "GT-5209",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            619,
+            509
+          ],
+          [
+            609,
+            548
+          ],
+          [
+            597,
+            582
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1870
+      }
+    },
+    {
+      "id": "demo-chl-10",
+      "plate": "М110КТ 74",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Челябинск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 65,
+      "signal": "11:54",
+      "lastSignalMin": 6,
+      "tracker": "GT-5210",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            507,
+            562
+          ],
+          [
+            543,
+            551
+          ],
+          [
+            581,
+            547
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1550
+      }
+    },
+    {
+      "id": "demo-chl-11",
+      "plate": "А111КТ 74",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Челябинск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 104,
+      "signal": "11:55",
+      "lastSignalMin": 5,
+      "tracker": "GT-5211",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            207,
+            374
+          ],
+          [
+            186,
+            397
+          ],
+          [
+            166,
+            416
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1940
+      }
+    },
+    {
+      "id": "demo-ykt-01",
+      "plate": "А101КТ 14",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Якутск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 72,
+      "signal": "11:45",
+      "lastSignalMin": 15,
+      "tracker": "GT-5301",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            718,
+            106
+          ],
+          [
+            717,
+            135
+          ],
+          [
+            716,
+            166
+          ]
+        ],
+        "motion": "stationary",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1620
+      }
+    },
+    {
+      "id": "demo-ykt-02",
+      "plate": "М102КТ 14",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 0,
+      "signal": "11:46",
+      "lastSignalMin": 14,
+      "tracker": "GT-5302",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            712,
+            218
+          ],
+          [
+            710,
+            250
+          ],
+          [
+            708,
+            280
+          ]
+        ],
+        "motion": "stationary",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 650
+      }
+    },
+    {
+      "id": "demo-ykt-03",
+      "plate": "А103КТ 14",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 111,
+      "signal": "11:47",
+      "lastSignalMin": 13,
+      "tracker": "GT-5303",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            700,
+            310
+          ],
+          [
+            688,
+            337
+          ],
+          [
+            677,
+            361
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 2010
+      }
+    },
+    {
+      "id": "demo-ykt-04",
+      "plate": "М104КТ 14",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Якутск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 79,
+      "signal": "11:48",
+      "lastSignalMin": 12,
+      "tracker": "GT-5304",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            677,
+            387
+          ],
+          [
+            686,
+            419
+          ],
+          [
+            692,
+            444
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1690
+      }
+    },
+    {
+      "id": "demo-ykt-05",
+      "plate": "А105КТ 14",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 0,
+      "signal": "11:49",
+      "lastSignalMin": 11,
+      "tracker": "GT-5305",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            691,
+            478
+          ],
+          [
+            681,
+            504
+          ],
+          [
+            672,
+            533
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": false,
+        "rpm": 0
+      }
+    },
+    {
+      "id": "demo-ykt-06",
+      "plate": "М106КТ 14",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 118,
+      "signal": "11:50",
+      "lastSignalMin": 10,
+      "tracker": "GT-5306",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            666,
+            552
+          ],
+          [
+            646,
+            571
+          ],
+          [
+            625,
+            594
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 2080
+      }
+    },
+    {
+      "id": "demo-ykt-07",
+      "plate": "А107КТ 14",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Якутск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 86,
+      "signal": "11:51",
+      "lastSignalMin": 9,
+      "tracker": "GT-5307",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            323,
+            136
+          ],
+          [
+            365,
+            149
+          ],
+          [
+            405,
+            165
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1760
+      }
+    },
+    {
+      "id": "demo-ykt-08",
+      "plate": "М108КТ 14",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 0,
+      "signal": "11:52",
+      "lastSignalMin": 8,
+      "tracker": "GT-5308",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            445,
+            183
+          ],
+          [
+            481,
+            198
+          ],
+          [
+            515,
+            213
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": false,
+        "rpm": 0
+      }
+    },
+    {
+      "id": "demo-ykt-09",
+      "plate": "А109КТ 14",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 125,
+      "signal": "11:53",
+      "lastSignalMin": 7,
+      "tracker": "GT-5309",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            552,
+            229
+          ],
+          [
+            578,
+            243
+          ],
+          [
+            599,
+            261
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 2150
+      }
+    },
+    {
+      "id": "demo-ykt-10",
+      "plate": "М110КТ 14",
+      "model": "Урал-4320 (АЦ-10)",
+      "city": "Якутск",
+      "kind": "Наёмное",
+      "owner": "ЭнергоТранспорт",
+      "speed": 93,
+      "signal": "11:54",
+      "lastSignalMin": 6,
+      "tracker": "GT-5310",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            613,
+            281
+          ],
+          [
+            629,
+            301
+          ],
+          [
+            648,
+            321
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": true,
+        "rpm": 1830
+      }
+    },
+    {
+      "id": "demo-ykt-11",
+      "plate": "А111КТ 14",
+      "model": "КамАЗ-43118 (АТЗ-12)",
+      "city": "Якутск",
+      "kind": "Собственное",
+      "owner": "Север",
+      "speed": 0,
+      "signal": "11:55",
+      "lastSignalMin": 5,
+      "tracker": "GT-5311",
+      "synthetic": true,
+      "availability": {
+        "information": true,
+        "statistics": false,
+        "sensors": false,
+        "history": false
+      },
+      "demoRoute": {
+        "space": "map-local-px",
+        "viewport": [
+          1312,
+          652
+        ],
+        "points": [
+          [
+            652,
+            347
+          ],
+          [
+            631,
+            371
+          ],
+          [
+            612,
+            394
+          ]
+        ],
+        "motion": "ping-pong",
+        "turnDurationMs": 1600
+      },
+      "connectionState": "online",
+      "sensors": {
+        "ignition": false,
+        "rpm": 0
+      }
+    }
+  ],
+  "roadSpeedContract": {
+    "comment": "C253-C254",
+    "date": "2026-10-18",
+    "synthetic": true,
+    "minimumKmh": 60,
+    "maximumKmh": 130,
+    "supersedes": "C202 current speed range only; no change to history/trip geography or slowdown5",
+    "movingCount": 31,
+    "otherCount": 13,
+    "otherSharePercent": 29.545454545454547,
+    "note": "Prepared demonstration current states, not production telemetry or legal road speed limits. Stopped/unavailable records have speed0. Actual historical traces and route geography remain separate."
+  }
+}

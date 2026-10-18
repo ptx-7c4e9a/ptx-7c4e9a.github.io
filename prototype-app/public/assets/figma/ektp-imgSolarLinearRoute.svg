@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Solar Linear / Route" clip-path="url(#clip0_0_929)">
+<path id="Vector" d="M5.11845 5.11845C7.41963 2.81726 8.57025 1.66667 10 1.66667C11.4297 1.66667 12.5803 2.81726 14.8816 5.11845C17.1828 7.41963 18.3333 8.57025 18.3333 10C18.3333 11.4297 17.1828 12.5803 14.8816 14.8816C12.5803 17.1828 11.4297 18.3333 10 18.3333C8.57025 18.3333 7.41963 17.1828 5.11845 14.8816C2.81726 12.5803 1.66667 11.4297 1.66667 10C1.66667 8.57025 2.81726 7.41963 5.11845 5.11845Z" stroke-width="1.5" stroke="#0C0A09"/>
+<path id="Vector_2" d="M11.1111 7.5L13.3333 9.58333L11.1111 11.6667M13.3333 9.58333H8.88892C8.14815 9.58333 6.66667 10 6.66667 11.6667" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#0C0A09"/>
+</g>
+<defs>
+<clipPath id="clip0_0_929">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

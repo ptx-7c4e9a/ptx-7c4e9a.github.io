@@ -1,0 +1,1 @@
+import {createRoot} from 'react-dom/client';import App from './App';import './style.css';import './design-system/typography.css';import './design-system/components.css';import './tablet.css';createRoot(document.getElementById('root')!).render(<App/>);

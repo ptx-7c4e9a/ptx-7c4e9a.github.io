@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-15",
+  "method": "Optical baseline from alpha silhouette area; visual inspection required. Source aspect ratio preserved. Light factor shared with Dark to avoid size jump.",
+  "targets": {
+    "map": 252080,
+    "card": 403845
+  },
+  "assets": [
+    {
+      "type": "fuel-tanker-truck",
+      "view": "map",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 252080,
+      "bbox": [
+        335,
+        45,
+        689,
+        960
+      ],
+      "center": [
+        0.5,
+        0.49072265625
+      ],
+      "targetBodyArea": 252080,
+      "scale": 1.0,
+      "lightHash": "fa57e6072874ee730c4de17f2f506628f4ddf224",
+      "darkHash": "332b5aed5dcdab1d747f41a57eeb53cfea378806",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-fuel-tanker-truck-map-light.png"
+    },
+    {
+      "type": "fuel-tanker-truck",
+      "view": "card",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 495175,
+      "bbox": [
+        22,
+        212,
+        1007,
+        837
+      ],
+      "center": [
+        0.50244140625,
+        0.51220703125
+      ],
+      "targetBodyArea": 403845,
+      "scale": 0.903084,
+      "lightHash": "cbd344f2a022edb0934c24948469ae8ad59c728d",
+      "darkHash": "7b45f151852597cbf361773f4166ebeb00031835",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-fuel-tanker-truck-card-light.png"
+    },
+    {
+      "type": "fuel-tanker-semi-trailer",
+      "view": "map",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 155053,
+      "bbox": [
+        405,
+        18,
+        617,
+        982
+      ],
+      "center": [
+        0.4990234375,
+        0.48828125
+      ],
+      "targetBodyArea": 252080,
+      "scale": 1.275056,
+      "lightHash": "655841b73e2630227185d292c4a65e24b5fa3a0f",
+      "darkHash": "42693e75d1df77bb0811cc22126d852a8b7fa245",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-fuel-tanker-semi-trailer-map-light.png"
+    },
+    {
+      "type": "fuel-tanker-semi-trailer",
+      "view": "card",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 403845,
+      "bbox": [
+        27,
+        220,
+        1013,
+        775
+      ],
+      "center": [
+        0.5078125,
+        0.48583984375
+      ],
+      "targetBodyArea": 403845,
+      "scale": 1.0,
+      "lightHash": "1597314cd726b261adcbb3ead6f96a58213ddd98",
+      "darkHash": "b5c8e085ac4968937063c1b19075bccb58290745",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-fuel-tanker-semi-trailer-card-light.png"
+    },
+    {
+      "type": "flatbed-truck",
+      "view": "map",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 293220,
+      "bbox": [
+        312,
+        34,
+        711,
+        989
+      ],
+      "center": [
+        0.49951171875,
+        0.49951171875
+      ],
+      "targetBodyArea": 252080,
+      "scale": 0.927198,
+      "lightHash": "5dab0d4aba7e7cf29baf543cc6b5cee16a813912",
+      "darkHash": "826b9b447a61c2c194141ed44e30a85a96f6652d",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-flatbed-truck-map-light.png"
+    },
+    {
+      "type": "flatbed-truck",
+      "view": "card",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 357603,
+      "bbox": [
+        51,
+        255,
+        1002,
+        806
+      ],
+      "center": [
+        0.51416015625,
+        0.51806640625
+      ],
+      "targetBodyArea": 403845,
+      "scale": 1.06269,
+      "lightHash": "fe80ef637e5fcd0428902579bfd64f5a39ab8235",
+      "darkHash": "54bc8b4367a69e7a01f6db6fd73ee46edd7fce7a",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-flatbed-truck-card-light.png"
+    },
+    {
+      "type": "service-van",
+      "view": "map",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 343174,
+      "bbox": [
+        277,
+        38,
+        747,
+        965
+      ],
+      "center": [
+        0.5,
+        0.48974609375
+      ],
+      "targetBodyArea": 252080,
+      "scale": 0.857062,
+      "lightHash": "1cd7b13a362713d48a5b092756b9c2f35305b2d0",
+      "darkHash": "80b2e37ccec17d14e14955bbf26a682b469a8092",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-service-van-map-light.png"
+    },
+    {
+      "type": "service-van",
+      "view": "card",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 519158,
+      "bbox": [
+        20,
+        154,
+        1013,
+        872
+      ],
+      "center": [
+        0.50439453125,
+        0.5009765625
+      ],
+      "targetBodyArea": 403845,
+      "scale": 0.881978,
+      "lightHash": "f6c21455ccf2d87145b169d00f2f54506fc8bbb0",
+      "darkHash": "57ac395a855a4ab0b83bcb677b2286501ff75475",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-service-van-card-light.png"
+    },
+    {
+      "type": "crew-bus",
+      "view": "map",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 295106,
+      "bbox": [
+        316,
+        18,
+        707,
+        997
+      ],
+      "center": [
+        0.49951171875,
+        0.49560546875
+      ],
+      "targetBodyArea": 252080,
+      "scale": 0.92423,
+      "lightHash": "48938502310ae5733278f9cd22d2cd1f2c78851a",
+      "darkHash": "b0b84636de658908847ad8ea379591d0d149324f",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-crew-bus-map-light.png"
+    },
+    {
+      "type": "crew-bus",
+      "view": "card",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaThreshold": 128,
+      "bodyArea": 450385,
+      "bbox": [
+        32,
+        223,
+        998,
+        840
+      ],
+      "center": [
+        0.5029296875,
+        0.51904296875
+      ],
+      "targetBodyArea": 403845,
+      "scale": 0.946925,
+      "lightHash": "1cec4e39202f5ed1db4b2041ce6cdec7a06a7d1c",
+      "darkHash": "8626bd5b5129fb155587d2c000769567d0f259bc",
+      "source": "C:\\Users\\user\\Desktop\\AtomicSystem\\assets\\3d-icons\\figma\\transport-crew-bus-card-light.png"
+    }
+  ]
+}

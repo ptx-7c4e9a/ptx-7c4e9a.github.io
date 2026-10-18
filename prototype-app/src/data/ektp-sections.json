@@ -1,0 +1,572 @@
+{
+  "version": 1,
+  "authoredAt": "2026-10-17",
+  "synthetic": true,
+  "permissions": {
+    "mode": "read-only",
+    "basis": "Design assumption A01, not a production role matrix"
+  },
+  "sourceFleet": "../fleet-expansion-2026-10-16/fixture.json",
+  "organizations": [
+    {
+      "id": "org-north",
+      "name": "ООО «СеверТранс»"
+    },
+    {
+      "id": "org-logistics",
+      "name": "АО «ПромЛогистика»"
+    },
+    {
+      "id": "org-service",
+      "name": "ООО «РегионСервис»"
+    },
+    {
+      "id": "org-energy",
+      "name": "АО «ЭнергоТранспорт»"
+    },
+    {
+      "id": "org-resources",
+      "name": "ООО «РесурсГрупп»"
+    }
+  ],
+  "contractors": [
+    {
+      "id": "org-north",
+      "name": "ООО «СеверТранс»",
+      "inn": null,
+      "city": "Москва",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "email": null
+    },
+    {
+      "id": "org-logistics",
+      "name": "АО «ПромЛогистика»",
+      "inn": null,
+      "city": "Казань",
+      "contact": "Марина Волкова",
+      "phone": "(000) 000-00-00",
+      "email": null
+    },
+    {
+      "id": "org-service",
+      "name": "ООО «РегионСервис»",
+      "inn": null,
+      "city": "Москва",
+      "contact": "Андрей Соколов",
+      "phone": "(000) 000-00-00",
+      "email": null
+    },
+    {
+      "id": "org-energy",
+      "name": "АО «ЭнергоТранспорт»",
+      "inn": null,
+      "city": "Челябинск",
+      "contact": "Ирина Кузнецова",
+      "phone": "(000) 000-00-00",
+      "email": null
+    },
+    {
+      "id": "org-resources",
+      "name": "ООО «РесурсГрупп»",
+      "inn": null,
+      "city": "Якутск",
+      "contact": "Павел Морозов",
+      "phone": "(000) 000-00-00",
+      "email": null
+    }
+  ],
+  "departments": [
+    {
+      "id": "dep-north",
+      "name": "Север",
+      "orgId": "org-north",
+      "city": "Москва",
+      "parent": null
+    },
+    {
+      "id": "dep-center",
+      "name": "Центр",
+      "orgId": "org-north",
+      "city": "Казань",
+      "parent": "dep-north"
+    },
+    {
+      "id": "dep-east",
+      "name": "Восток",
+      "orgId": "org-energy",
+      "city": "Челябинск",
+      "parent": null
+    },
+    {
+      "id": "dep-sakha",
+      "name": "Якутск",
+      "orgId": "org-resources",
+      "city": "Якутск",
+      "parent": null
+    }
+  ],
+  "requests": [
+    {
+      "id": "req-1",
+      "number": "ЗТ-2026-1042",
+      "created": "2026-10-13",
+      "period": "13.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-energy",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "В работе",
+      "description": "Доставка топлива на площадку",
+      "taskIds": [
+        "task-1-1",
+        "task-1-2"
+      ],
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "req-2",
+      "number": "ЗТ-2026-1041",
+      "created": "2026-10-13",
+      "period": "13.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-service",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "ТС назначено",
+      "description": "Обслуживание дорожного участка",
+      "taskIds": [
+        "task-2-1"
+      ],
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "req-3",
+      "number": "ЗТ-2026-1040",
+      "created": "2026-10-13",
+      "period": "13.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-energy",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "Ожидает ТС",
+      "description": "Перевозка производственного груза",
+      "taskIds": [
+        "task-3-1"
+      ],
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "req-4",
+      "number": "ЗТ-2026-1039",
+      "created": "2026-10-13",
+      "period": "13.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-service",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "На обработке",
+      "description": "Доставка персонала",
+      "taskIds": [
+        "task-4-1"
+      ],
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "req-5",
+      "number": "ЗТ-2026-1038",
+      "created": "2026-10-12",
+      "period": "12.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-energy",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "Завершена",
+      "description": "Снабжение сервисной площадки",
+      "taskIds": [
+        "task-5-1"
+      ],
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "req-6",
+      "number": "ЗТ-2026-1037",
+      "created": "2026-10-12",
+      "period": "12.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-service",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "Черновик",
+      "description": "Перевозка оборудования",
+      "taskIds": [
+        "task-6-1"
+      ],
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "req-7",
+      "number": "ЗТ-2026-1036",
+      "created": "2026-10-12",
+      "period": "12.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-energy",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "В работе",
+      "description": "Доставка топлива на базу",
+      "taskIds": [
+        "task-7-1"
+      ],
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "req-8",
+      "number": "ЗТ-2026-1035",
+      "created": "2026-10-12",
+      "period": "12.10 · 08:00–18:00",
+      "customerOrgId": "org-north",
+      "executorOrgId": "org-service",
+      "departmentId": "dep-north",
+      "contact": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "responsible": "Марина Волкова",
+      "status": "Завершена",
+      "description": "Плановый выезд на объект",
+      "taskIds": [
+        "task-8-1"
+      ],
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1-1",
+      "requestId": "req-1",
+      "number": "ЗТ-2026-1042/1",
+      "need": "Груз",
+      "period": "13.10 · 08:00–12:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": "v-44",
+      "driver": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "description": "Доставка топлива на площадку",
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T12:00:00+03:00"
+    },
+    {
+      "id": "task-1-2",
+      "requestId": "req-1",
+      "number": "ЗТ-2026-1042/2",
+      "need": "Груз",
+      "period": "13.10 · 08:00–12:00",
+      "route": "База «Северная» → Сервисная площадка",
+      "vehicleId": "v-20",
+      "driver": "Андрей Соколов",
+      "phone": "(000) 000-00-00",
+      "description": "Доставка топлива на площадку",
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T12:00:00+03:00"
+    },
+    {
+      "id": "task-2-1",
+      "requestId": "req-2",
+      "number": "ЗТ-2026-1041/1",
+      "need": "Груз",
+      "period": "13.10 · 13:00–18:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": "v-20",
+      "driver": "Андрей Соколов",
+      "phone": "(000) 000-00-00",
+      "description": "Обслуживание дорожного участка",
+      "startAt": "2026-10-13T13:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "task-3-1",
+      "requestId": "req-3",
+      "number": "ЗТ-2026-1040/1",
+      "need": "Груз",
+      "period": "13.10 · 08:00–18:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": null,
+      "driver": null,
+      "phone": null,
+      "description": "Перевозка производственного груза",
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "task-4-1",
+      "requestId": "req-4",
+      "number": "ЗТ-2026-1039/1",
+      "need": "Пассажиры",
+      "period": "13.10 · 08:00–18:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": null,
+      "driver": null,
+      "phone": null,
+      "description": "Доставка персонала",
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "task-5-1",
+      "requestId": "req-5",
+      "number": "ЗТ-2026-1038/1",
+      "need": "Груз",
+      "period": "12.10 · 08:00–18:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": "v-11",
+      "driver": "Марина Волкова",
+      "phone": "(000) 000-00-00",
+      "description": "Снабжение сервисной площадки",
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "task-6-1",
+      "requestId": "req-6",
+      "number": "ЗТ-2026-1037/1",
+      "need": "Груз",
+      "period": "12.10 · 08:00–18:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": null,
+      "driver": null,
+      "phone": null,
+      "description": "Перевозка оборудования",
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "task-7-1",
+      "requestId": "req-7",
+      "number": "ЗТ-2026-1036/1",
+      "need": "Груз",
+      "period": "12.10 · 08:00–18:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": "v-44",
+      "driver": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "description": "Доставка топлива на базу",
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "task-8-1",
+      "requestId": "req-8",
+      "number": "ЗТ-2026-1035/1",
+      "need": "Груз",
+      "period": "12.10 · 08:00–18:00",
+      "route": "База «Северная» → Площадка «Восточная»",
+      "vehicleId": "v-20",
+      "driver": "Андрей Соколов",
+      "phone": "(000) 000-00-00",
+      "description": "Плановый выезд на объект",
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    }
+  ],
+  "waybills": [
+    {
+      "id": "wb-1",
+      "number": "ПЛ-2026-318",
+      "vehicleId": "v-44",
+      "driver": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-north",
+      "period": "13.10 · 08:00–18:00",
+      "form": "Электронная",
+      "status": "Открыт",
+      "requestId": null,
+      "odometerStart": 124580,
+      "odometerEnd": null,
+      "titlesReceived": 4,
+      "titlesTotal": 6,
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "wb-2",
+      "number": "ПЛ-2026-317",
+      "vehicleId": "v-20",
+      "driver": "Андрей Соколов",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-service",
+      "period": "13.10 · 08:00–18:00",
+      "form": "Бумажная",
+      "status": "Открыт",
+      "requestId": null,
+      "odometerStart": null,
+      "odometerEnd": null,
+      "titlesReceived": null,
+      "titlesTotal": null,
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "wb-3",
+      "number": "ПЛ-2026-316",
+      "vehicleId": "v-13",
+      "driver": "Ирина Кузнецова",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-north",
+      "period": "13.10 · 08:00–18:00",
+      "form": "Электронная",
+      "status": "Открыт",
+      "requestId": null,
+      "odometerStart": null,
+      "odometerEnd": null,
+      "titlesReceived": 4,
+      "titlesTotal": 6,
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "wb-4",
+      "number": "ПЛ-2026-315",
+      "vehicleId": "v-23",
+      "driver": "Павел Морозов",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-service",
+      "period": "13.10 · 08:00–18:00",
+      "form": "Бумажная",
+      "status": "Закрыт",
+      "requestId": null,
+      "odometerStart": null,
+      "odometerEnd": null,
+      "titlesReceived": null,
+      "titlesTotal": null,
+      "startAt": "2026-10-13T08:00:00+03:00",
+      "endAt": "2026-10-13T18:00:00+03:00"
+    },
+    {
+      "id": "wb-5",
+      "number": "ПЛ-2026-314",
+      "vehicleId": "v-11",
+      "driver": "Марина Волкова",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-north",
+      "period": "12.10 · 08:00–18:00",
+      "form": "Электронная",
+      "status": "Закрыт",
+      "requestId": null,
+      "odometerStart": null,
+      "odometerEnd": null,
+      "titlesReceived": 6,
+      "titlesTotal": 6,
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "wb-6",
+      "number": "ПЛ-2026-313",
+      "vehicleId": "v-26",
+      "driver": "Сергей Лебедев",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-service",
+      "period": "12.10 · 08:00–18:00",
+      "form": "Бумажная",
+      "status": "Закрыт",
+      "requestId": null,
+      "odometerStart": null,
+      "odometerEnd": null,
+      "titlesReceived": null,
+      "titlesTotal": null,
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "wb-7",
+      "number": "ПЛ-2026-312",
+      "vehicleId": "v-44",
+      "driver": "Александр Орлов",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-north",
+      "period": "12.10 · 08:00–18:00",
+      "form": "Электронная",
+      "status": "Подготовлен",
+      "requestId": null,
+      "odometerStart": null,
+      "odometerEnd": null,
+      "titlesReceived": 2,
+      "titlesTotal": 6,
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    },
+    {
+      "id": "wb-8",
+      "number": "ПЛ-2026-311",
+      "vehicleId": "v-20",
+      "driver": "Андрей Соколов",
+      "phone": "(000) 000-00-00",
+      "operatorOrgId": "org-service",
+      "period": "12.10 · 08:00–18:00",
+      "form": "Бумажная",
+      "status": "Подготовлен",
+      "requestId": null,
+      "odometerStart": null,
+      "odometerEnd": null,
+      "titlesReceived": null,
+      "titlesTotal": null,
+      "startAt": "2026-10-12T08:00:00+03:00",
+      "endAt": "2026-10-12T18:00:00+03:00"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "v-44",
+      "plate": "Р394ОК 85",
+      "model": "КамАЗ-43118 (АТЗ-12)"
+    },
+    {
+      "id": "v-20",
+      "plate": "Р167КА 98",
+      "model": "Урал-4320 (АЦ-10)"
+    },
+    {
+      "id": "v-13",
+      "plate": "У554КЕ 55",
+      "model": "КамАЗ-43118 (АТЗ-12)"
+    },
+    {
+      "id": "v-23",
+      "plate": "С537СВ 27",
+      "model": "КамАЗ-43118 (АТЗ-12)"
+    },
+    {
+      "id": "v-11",
+      "plate": "Н995ОК 53",
+      "model": "МАЗ-5440М9"
+    },
+    {
+      "id": "v-26",
+      "plate": "Р924ЕТ 19",
+      "model": "Mercedes Sprinter"
+    }
+  ],
+  "timezone": "Europe/Moscow",
+  "demoSnapshotDate": "2026-10-13"
+}

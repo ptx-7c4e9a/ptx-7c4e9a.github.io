@@ -1,0 +1,2465 @@
+{
+  "schemaVersion": 2,
+  "synthetic": true,
+  "label": "Демонстрационные данные",
+  "source": "Прямое разрешение пользователя 13.10.2026 в чате КЛК Прототип",
+  "organization": {
+    "id": "DEMO-KLK-01",
+    "name": "Северный маршрут"
+  },
+  "objects": [
+    {
+      "id": "O01",
+      "name": "База «Северная»"
+    },
+    {
+      "id": "O02",
+      "name": "Площадка №1"
+    },
+    {
+      "id": "O03",
+      "name": "Площадка №2"
+    },
+    {
+      "id": "O04",
+      "name": "Площадка №3"
+    },
+    {
+      "id": "O05",
+      "name": "Площадка №4"
+    },
+    {
+      "id": "O06",
+      "name": "Площадка №5"
+    },
+    {
+      "id": "O07",
+      "name": "Площадка №6"
+    },
+    {
+      "id": "O08",
+      "name": "Площадка №7"
+    },
+    {
+      "id": "O09",
+      "name": "Площадка №8"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "D001",
+      "name": "Александр Орлов",
+      "personnelNumber": "001001",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, D, CE",
+      "experience": "14 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100001",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1001",
+          "expiresOn": "2027-04-15"
+        }
+      }
+    },
+    {
+      "id": "D002",
+      "name": "Михаил Волков",
+      "personnelNumber": "001002",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "8 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100002",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1002",
+          "expiresOn": "2027-05-15"
+        }
+      }
+    },
+    {
+      "id": "D003",
+      "name": "Сергей Соколов",
+      "personnelNumber": "001003",
+      "phone": "(000) 000-00-00",
+      "categories": "B",
+      "experience": "9 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100003",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1003",
+          "expiresOn": "2027-06-15"
+        }
+      }
+    },
+    {
+      "id": "D004",
+      "name": "Андрей Морозов",
+      "personnelNumber": "001004",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "10 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100004",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1004",
+          "expiresOn": "2027-07-15"
+        }
+      }
+    },
+    {
+      "id": "D005",
+      "name": "Илья Васильев",
+      "personnelNumber": "001005",
+      "phone": "(000) 000-00-00",
+      "categories": "B, D",
+      "experience": "11 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100005",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1005",
+          "expiresOn": "2027-08-15"
+        }
+      }
+    },
+    {
+      "id": "D006",
+      "name": "Олег Новиков",
+      "personnelNumber": "001006",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "12 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100006",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1006",
+          "expiresOn": "2027-09-15"
+        }
+      }
+    },
+    {
+      "id": "D007",
+      "name": "Павел Фёдоров",
+      "personnelNumber": "001007",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "13 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100007",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1007",
+          "expiresOn": "2027-03-15"
+        }
+      }
+    },
+    {
+      "id": "D008",
+      "name": "Дмитрий Кузнецов",
+      "personnelNumber": "001008",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "14 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100008",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1008",
+          "expiresOn": "2027-04-15"
+        }
+      }
+    },
+    {
+      "id": "D009",
+      "name": "Николай Попов",
+      "personnelNumber": "001009",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "15 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100009",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1009",
+          "expiresOn": "2027-05-15"
+        }
+      }
+    },
+    {
+      "id": "D010",
+      "name": "Виктор Егоров",
+      "personnelNumber": "001010",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "16 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100010",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1010",
+          "expiresOn": "2027-06-15"
+        }
+      }
+    },
+    {
+      "id": "D011",
+      "name": "Алексей Петров",
+      "personnelNumber": "001011",
+      "phone": "(000) 000-00-00",
+      "categories": "B, D",
+      "experience": "17 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100011",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1011",
+          "expiresOn": "2027-07-15"
+        }
+      }
+    },
+    {
+      "id": "D012",
+      "name": "Игорь Смирнов",
+      "personnelNumber": "001012",
+      "phone": "(000) 000-00-00",
+      "categories": "B, D",
+      "experience": "18 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100012",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1012",
+          "expiresOn": "2027-08-15"
+        }
+      }
+    },
+    {
+      "id": "D013",
+      "name": "Николай Васильев",
+      "personnelNumber": "001013",
+      "phone": "(000) 000-00-00",
+      "categories": "B",
+      "experience": "7 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100013",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1013",
+          "expiresOn": "2027-09-15"
+        }
+      }
+    },
+    {
+      "id": "D014",
+      "name": "Виктор Соколов",
+      "personnelNumber": "001014",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "8 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100014",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1014",
+          "expiresOn": "2027-03-15"
+        }
+      }
+    },
+    {
+      "id": "D015",
+      "name": "Алексей Лебедев",
+      "personnelNumber": "001015",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "9 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100015",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1015",
+          "expiresOn": "2027-04-15"
+        }
+      }
+    },
+    {
+      "id": "D016",
+      "name": "Павел Михайлов",
+      "personnelNumber": "001016",
+      "phone": "(000) 000-00-00",
+      "categories": "B, D",
+      "experience": "10 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100016",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1016",
+          "expiresOn": "2027-05-15"
+        }
+      }
+    },
+    {
+      "id": "D017",
+      "name": "Сергей Фёдоров",
+      "personnelNumber": "001017",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "11 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100017",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1017",
+          "expiresOn": "2027-06-15"
+        }
+      }
+    },
+    {
+      "id": "D018",
+      "name": "Андрей Громов",
+      "personnelNumber": "001018",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "12 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100018",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1018",
+          "expiresOn": "2027-07-15"
+        }
+      }
+    },
+    {
+      "id": "D019",
+      "name": "Роман Белов",
+      "personnelNumber": "001019",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "13 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100019",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1019",
+          "expiresOn": "2027-08-15"
+        }
+      }
+    },
+    {
+      "id": "D020",
+      "name": "Артём Павлов",
+      "personnelNumber": "001020",
+      "phone": "(000) 000-00-00",
+      "categories": "B",
+      "experience": "14 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100020",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1020",
+          "expiresOn": "2027-09-15"
+        }
+      }
+    },
+    {
+      "id": "D021",
+      "name": "Денис Захаров",
+      "personnelNumber": "001021",
+      "phone": "(000) 000-00-00",
+      "categories": "B, D",
+      "experience": "15 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100021",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1021",
+          "expiresOn": "2027-03-15"
+        }
+      }
+    },
+    {
+      "id": "D022",
+      "name": "Максим Антонов",
+      "personnelNumber": "001022",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "16 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100022",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1022",
+          "expiresOn": "2027-04-15"
+        }
+      }
+    },
+    {
+      "id": "D023",
+      "name": "Евгений Никитин",
+      "personnelNumber": "001023",
+      "phone": "(000) 000-00-00",
+      "categories": "B, C, CE",
+      "experience": "17 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №2",
+      "documents": {
+        "license": {
+          "number": "77 26 100023",
+          "expiresOn": "2031-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1023",
+          "expiresOn": "2027-05-15"
+        }
+      }
+    },
+    {
+      "id": "D024",
+      "name": "Владимир Ковалёв",
+      "personnelNumber": "001024",
+      "phone": "(000) 000-00-00",
+      "categories": "B",
+      "experience": "18 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №3",
+      "documents": {
+        "license": {
+          "number": "77 26 100024",
+          "expiresOn": "2029-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1024",
+          "expiresOn": "2027-06-15"
+        }
+      }
+    },
+    {
+      "id": "D025",
+      "name": "Антон Крылов",
+      "personnelNumber": "001025",
+      "phone": "(000) 000-00-00",
+      "categories": "B, D",
+      "experience": "7 лет",
+      "organization": "Северный маршрут",
+      "unit": "Автоколонна №1",
+      "documents": {
+        "license": {
+          "number": "77 26 100025",
+          "expiresOn": "2030-10-15"
+        },
+        "medicalCertificate": {
+          "number": "77-МС-1025",
+          "expiresOn": "2027-07-15"
+        }
+      }
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "V001",
+      "displayId": "ТС-001",
+      "plate": "А101АА 77",
+      "model": "65115",
+      "driverId": "D001",
+      "objectId": "O01",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2020,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D001",
+        "D019"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT001",
+          "isPrimary": true,
+          "isUsed": true
+        },
+        {
+          "terminalId": "AT002",
+          "isPrimary": false,
+          "isUsed": false
+        }
+      ]
+    },
+    {
+      "id": "V002",
+      "displayId": "ТС-002",
+      "plate": "А102АА 77",
+      "model": "65115",
+      "driverId": "D002",
+      "objectId": "O02",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2021,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D002"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT003",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V003",
+      "displayId": "ТС-003",
+      "plate": "А103АА 77",
+      "model": "Соболь",
+      "driverId": "D003",
+      "objectId": "O01",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:514",
+      "vehicleType": "Сервисный фургон",
+      "brand": "ГАЗ",
+      "year": 2022,
+      "classification": "Специальный",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D003",
+        "D001"
+      ],
+      "terminalLinks": []
+    },
+    {
+      "id": "V004",
+      "displayId": "ТС-004",
+      "plate": "А104АА 77",
+      "model": "65115",
+      "driverId": "D004",
+      "objectId": "O02",
+      "status": "On_line",
+      "connection": "Offline",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2023,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D004"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT004",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V005",
+      "displayId": "ТС-005",
+      "plate": "А105АА 77",
+      "model": "4208",
+      "driverId": "D005",
+      "objectId": "O01",
+      "status": "On_line",
+      "connection": "Offline",
+      "figmaAssetNode": "12150:533",
+      "vehicleType": "Вахтовый автобус",
+      "brand": "НЕФАЗ",
+      "year": 2024,
+      "classification": "Пассажирский",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D005",
+        "D001"
+      ],
+      "terminalLinks": []
+    },
+    {
+      "id": "V006",
+      "displayId": "ТС-006",
+      "plate": "А106АА 77",
+      "model": "65115",
+      "driverId": "D006",
+      "objectId": "O02",
+      "status": "On_line",
+      "connection": "Online",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2020,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D006"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT005",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V007",
+      "displayId": "ТС-007",
+      "plate": "А107АА 77",
+      "model": "43118",
+      "driverId": "D007",
+      "objectId": "O01",
+      "status": "On_line",
+      "connection": "Online",
+      "figmaAssetNode": "12150:552",
+      "vehicleType": "Бортовой грузовик",
+      "brand": "КАМАЗ",
+      "year": 2021,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D007"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT013",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V008",
+      "displayId": "ТС-008",
+      "plate": "А108АА 77",
+      "model": "65115",
+      "driverId": "D008",
+      "objectId": "O02",
+      "status": "Available",
+      "connection": "Online",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2022,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D008"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT006",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V009",
+      "displayId": "ТС-009",
+      "plate": "А109АА 77",
+      "model": "43118",
+      "driverId": "D009",
+      "objectId": "O01",
+      "status": "Available",
+      "connection": "Online",
+      "figmaAssetNode": "12150:552",
+      "vehicleType": "Бортовой грузовик",
+      "brand": "КАМАЗ",
+      "year": 2023,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D009"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT007",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V010",
+      "displayId": "ТС-010",
+      "plate": "А110АА 77",
+      "model": "43118",
+      "driverId": "D010",
+      "objectId": "O02",
+      "status": "On_line",
+      "connection": "Online",
+      "figmaAssetNode": "12150:552",
+      "vehicleType": "Бортовой грузовик",
+      "brand": "КАМАЗ",
+      "year": 2024,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D010"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT008",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V011",
+      "displayId": "ТС-011",
+      "plate": "А111АА 77",
+      "model": "4208",
+      "driverId": "D011",
+      "objectId": "O01",
+      "status": "On_line",
+      "connection": "Online",
+      "figmaAssetNode": "12150:533",
+      "vehicleType": "Вахтовый автобус",
+      "brand": "НЕФАЗ",
+      "year": 2020,
+      "classification": "Пассажирский",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D011"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT009",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V012",
+      "displayId": "ТС-012",
+      "plate": "А112АА 77",
+      "model": "4208",
+      "driverId": "D012",
+      "objectId": "O02",
+      "status": "Available",
+      "connection": "Online",
+      "figmaAssetNode": "12150:533",
+      "vehicleType": "Вахтовый автобус",
+      "brand": "НЕФАЗ",
+      "year": 2021,
+      "classification": "Пассажирский",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D012"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT010",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V013",
+      "displayId": "ТС-013",
+      "plate": "А113АА 77",
+      "model": "Соболь",
+      "driverId": "D013",
+      "objectId": "O02",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:514",
+      "vehicleType": "Сервисный фургон",
+      "brand": "ГАЗ",
+      "year": 2022,
+      "classification": "Специальный",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D013"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT014",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V014",
+      "displayId": "ТС-014",
+      "plate": "А114АА 77",
+      "model": "43118",
+      "driverId": "D014",
+      "objectId": "O02",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:552",
+      "vehicleType": "Бортовой грузовик",
+      "brand": "КАМАЗ",
+      "year": 2023,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D014"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT015",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V015",
+      "displayId": "ТС-015",
+      "plate": "А115АА 77",
+      "model": "65115",
+      "driverId": "D015",
+      "objectId": "O02",
+      "status": "Available",
+      "connection": "Offline",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2024,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D015"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT011",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V016",
+      "displayId": "ТС-016",
+      "plate": "А116АА 77",
+      "model": "4208",
+      "driverId": "D016",
+      "objectId": "O02",
+      "status": "Available",
+      "connection": "Online",
+      "figmaAssetNode": "12150:533",
+      "vehicleType": "Вахтовый автобус",
+      "brand": "НЕФАЗ",
+      "year": 2020,
+      "classification": "Пассажирский",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D016"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT016",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V017",
+      "displayId": "ТС-017",
+      "plate": "А117АА 77",
+      "model": "65115",
+      "driverId": "D017",
+      "objectId": "O02",
+      "status": "Available",
+      "connection": "Online",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2021,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D017"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT017",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V018",
+      "displayId": "ТС-018",
+      "plate": "А118АА 77",
+      "model": "43118",
+      "driverId": "D018",
+      "objectId": "O02",
+      "status": "Available",
+      "connection": "Online",
+      "figmaAssetNode": "12150:552",
+      "vehicleType": "Бортовой грузовик",
+      "brand": "КАМАЗ",
+      "year": 2022,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D018"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT018",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V019",
+      "displayId": "ТС-019",
+      "plate": "А119АА 77",
+      "model": "65115",
+      "driverId": "D019",
+      "objectId": "O01",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2023,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D019"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT019",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V020",
+      "displayId": "ТС-020",
+      "plate": "А120АА 77",
+      "model": "Соболь",
+      "driverId": "D020",
+      "objectId": "O02",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:514",
+      "vehicleType": "Сервисный фургон",
+      "brand": "ГАЗ",
+      "year": 2024,
+      "classification": "Специальный",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D020"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT020",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V021",
+      "displayId": "ТС-021",
+      "plate": "А121АА 77",
+      "model": "4208",
+      "driverId": "D021",
+      "objectId": "O01",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:533",
+      "vehicleType": "Вахтовый автобус",
+      "brand": "НЕФАЗ",
+      "year": 2020,
+      "classification": "Пассажирский",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D021"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT021",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V022",
+      "displayId": "ТС-022",
+      "plate": "А122АА 77",
+      "model": "43118",
+      "driverId": "D022",
+      "objectId": "O02",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:552",
+      "vehicleType": "Бортовой грузовик",
+      "brand": "КАМАЗ",
+      "year": 2021,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D022"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT022",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V023",
+      "displayId": "ТС-023",
+      "plate": "А123АА 77",
+      "model": "65115",
+      "driverId": "D023",
+      "objectId": "O01",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:115",
+      "vehicleType": "Бензовоз",
+      "brand": "КАМАЗ",
+      "year": 2022,
+      "classification": "Грузовой",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D023"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT023",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V024",
+      "displayId": "ТС-024",
+      "plate": "А124АА 77",
+      "model": "Соболь",
+      "driverId": "D024",
+      "objectId": "O02",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:514",
+      "vehicleType": "Сервисный фургон",
+      "brand": "ГАЗ",
+      "year": 2023,
+      "classification": "Специальный",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D024"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT024",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    },
+    {
+      "id": "V025",
+      "displayId": "ТС-025",
+      "plate": "А125АА 77",
+      "model": "4208",
+      "driverId": "D025",
+      "objectId": "O01",
+      "status": "In_repair",
+      "connection": "Online",
+      "figmaAssetNode": "12150:533",
+      "vehicleType": "Вахтовый автобус",
+      "brand": "НЕФАЗ",
+      "year": 2024,
+      "classification": "Пассажирский",
+      "foreignRegistration": false,
+      "vinOrPin": null,
+      "vinAbsent": true,
+      "driverIds": [
+        "D025"
+      ],
+      "terminalLinks": [
+        {
+          "terminalId": "AT025",
+          "isPrimary": true,
+          "isUsed": true
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "R1042",
+      "number": "КЛК-1042",
+      "status": "NEW",
+      "taskIds": [
+        "T1042-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T10:00:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №1"
+    },
+    {
+      "id": "R1043",
+      "number": "КЛК-1043",
+      "status": "NEW",
+      "taskIds": [
+        "T1043-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T11:30:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №2"
+    },
+    {
+      "id": "R1044",
+      "number": "КЛК-1044",
+      "status": "NEW",
+      "taskIds": [
+        "T1044-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T12:00:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №3"
+    },
+    {
+      "id": "R1045",
+      "number": "КЛК-1045",
+      "status": "NEW",
+      "taskIds": [
+        "T1045-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T13:30:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №4"
+    },
+    {
+      "id": "R1040",
+      "number": "КЛК-1040",
+      "status": "ASSIGNED_DEMO",
+      "taskIds": [
+        "T1040-1",
+        "T1040-2"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T08:00:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №2"
+    },
+    {
+      "id": "R1041",
+      "number": "КЛК-1041",
+      "status": "ASSIGNED_DEMO",
+      "taskIds": [
+        "T1041-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T09:00:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №3"
+    },
+    {
+      "id": "R1046",
+      "number": "КЛК-1046",
+      "status": "NEW",
+      "taskIds": [
+        "T1046-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T14:00:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №5"
+    },
+    {
+      "id": "R1047",
+      "number": "КЛК-1047",
+      "status": "NEW",
+      "taskIds": [
+        "T1047-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T14:30:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №6"
+    },
+    {
+      "id": "R1048",
+      "number": "КЛК-1048",
+      "status": "NEW",
+      "taskIds": [
+        "T1048-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T15:00:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №7"
+    },
+    {
+      "id": "R1049",
+      "number": "КЛК-1049",
+      "status": "NEW",
+      "taskIds": [
+        "T1049-1"
+      ],
+      "createdAt": "2026-10-12T16:00:00+03:00",
+      "customerOg": "Северный маршрут",
+      "customerContact": {
+        "name": "Координатор перевозки",
+        "phone": "(000) 000-00-00"
+      },
+      "plannedPeriod": {
+        "from": "2026-10-13T15:30:00+03:00",
+        "to": "2026-10-13T18:00:00+03:00"
+      },
+      "routeSummary": "База «Северная» → Площадка №8"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T1042-1",
+      "requestId": "R1042",
+      "number": "1042-1",
+      "title": "Перевозка топлива",
+      "from": "База «Северная»",
+      "to": "Площадка №1",
+      "start": "2026-10-13T10:00:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Перевозка топлива",
+      "cargoName": "Топливо",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T10:00:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Бензовоз"
+    },
+    {
+      "id": "T1043-1",
+      "requestId": "R1043",
+      "number": "1043-1",
+      "title": "Доставка оборудования",
+      "from": "База «Северная»",
+      "to": "Площадка №2",
+      "start": "2026-10-13T11:30:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Доставка оборудования",
+      "cargoName": "Оборудование",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T11:30:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Бортовой грузовик"
+    },
+    {
+      "id": "T1044-1",
+      "requestId": "R1044",
+      "number": "1044-1",
+      "title": "Перевозка бригады",
+      "from": "База «Северная»",
+      "to": "Площадка №3",
+      "start": "2026-10-13T12:00:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Перевозка бригады",
+      "cargoName": "Не применяется",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T12:00:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Вахтовый автобус"
+    },
+    {
+      "id": "T1045-1",
+      "requestId": "R1045",
+      "number": "1045-1",
+      "title": "Перевозка топлива",
+      "from": "База «Северная»",
+      "to": "Площадка №4",
+      "start": "2026-10-13T13:30:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Перевозка топлива",
+      "cargoName": "Топливо",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T13:30:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Бензовоз"
+    },
+    {
+      "id": "T1040-1",
+      "requestId": "R1040",
+      "number": "1040-1",
+      "title": "Доставка оборудования",
+      "from": "База «Северная»",
+      "to": "Площадка №2",
+      "start": "2026-10-13T08:00:00+03:00",
+      "status": "Assigned",
+      "vehicleId": "V010",
+      "driverId": "D010",
+      "localNumber": "1",
+      "displayStatusLabel": "Назначен транспорт",
+      "transportationType": "Доставка оборудования",
+      "cargoName": "Оборудование",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T08:00:00+03:00",
+      "requiredVehicleCount": 2,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [
+        "AS-T1040-1"
+      ],
+      "requiredVehicleType": "Бортовой грузовик"
+    },
+    {
+      "id": "T1041-1",
+      "requestId": "R1041",
+      "number": "1041-1",
+      "title": "Перевозка бригады",
+      "from": "База «Северная»",
+      "to": "Площадка №3",
+      "start": "2026-10-13T09:00:00+03:00",
+      "status": "Assigned",
+      "vehicleId": "V011",
+      "driverId": "D011",
+      "localNumber": "1",
+      "displayStatusLabel": "Назначен транспорт",
+      "transportationType": "Перевозка бригады",
+      "cargoName": "Не применяется",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T09:00:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [
+        "AS-T1041-1"
+      ],
+      "requiredVehicleType": "Вахтовый автобус"
+    },
+    {
+      "id": "T1046-1",
+      "requestId": "R1046",
+      "number": "1046-1",
+      "title": "Доставка материалов",
+      "from": "База «Северная»",
+      "to": "Площадка №5",
+      "start": "2026-10-13T14:00:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Доставка материалов",
+      "cargoName": "Строительные материалы",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T14:00:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Бортовой грузовик"
+    },
+    {
+      "id": "T1047-1",
+      "requestId": "R1047",
+      "number": "1047-1",
+      "title": "Перевозка бригады",
+      "from": "База «Северная»",
+      "to": "Площадка №6",
+      "start": "2026-10-13T14:30:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Перевозка бригады",
+      "cargoName": "Не применяется",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T14:30:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Вахтовый автобус"
+    },
+    {
+      "id": "T1048-1",
+      "requestId": "R1048",
+      "number": "1048-1",
+      "title": "Перевозка топлива",
+      "from": "База «Северная»",
+      "to": "Площадка №7",
+      "start": "2026-10-13T15:00:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Перевозка топлива",
+      "cargoName": "Топливо",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T15:00:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Бензовоз"
+    },
+    {
+      "id": "T1049-1",
+      "requestId": "R1049",
+      "number": "1049-1",
+      "title": "Доставка оборудования",
+      "from": "База «Северная»",
+      "to": "Площадка №8",
+      "start": "2026-10-13T15:30:00+03:00",
+      "status": "Unassigned",
+      "vehicleId": null,
+      "driverId": null,
+      "localNumber": "1",
+      "displayStatusLabel": "Новая",
+      "transportationType": "Доставка оборудования",
+      "cargoName": "Оборудование",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T15:30:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Доставка в пределах текущей смены",
+      "assignmentIds": [],
+      "requiredVehicleType": "Бортовой грузовик"
+    },
+    {
+      "id": "T1040-2",
+      "requestId": "R1040",
+      "number": "1040-2",
+      "title": "Доставка материалов",
+      "from": "База «Северная»",
+      "to": "Площадка №2",
+      "start": "2026-10-13T08:00:00+03:00",
+      "status": "REFUSED_DEMO",
+      "vehicleId": null,
+      "driverId": null,
+      "refusalReason": "Задание отменено заказчиком",
+      "localNumber": "2",
+      "displayStatusLabel": "Отказ от выполнения",
+      "transportationType": "Доставка материалов",
+      "cargoName": "Строительные материалы",
+      "submissionLocation": "База «Северная»",
+      "submissionDateTime": "2026-10-13T08:00:00+03:00",
+      "requiredVehicleCount": 1,
+      "weight": null,
+      "dimensions": null,
+      "comment": "Задание завершено отказом",
+      "assignmentIds": [],
+      "requiredVehicleType": "Бортовой грузовик"
+    }
+  ],
+  "kpi": {
+    "totalVehicles": 25,
+    "onLine": 6,
+    "inRepair": 12,
+    "unassignedTasks": 8
+  },
+  "problemVehicleIds": [
+    "V001",
+    "V002",
+    "V003",
+    "V004",
+    "V005",
+    "V013",
+    "V014",
+    "V015"
+  ],
+  "demoAssignments": [
+    {
+      "taskId": "T1042-1",
+      "vehicleId": "V008",
+      "driverId": "D008"
+    },
+    {
+      "taskId": "T1043-1",
+      "vehicleId": "V009",
+      "driverId": "D009"
+    },
+    {
+      "taskId": "T1044-1",
+      "vehicleId": "V012",
+      "driverId": "D012"
+    },
+    {
+      "taskId": "T1045-1",
+      "vehicleId": "V008",
+      "driverId": "D008"
+    }
+  ],
+  "assignmentNote": "Четыре сценария независимы и начинаются с исходного состояния. Два задания с V008 нельзя считать одновременно назначенными. Демонстрация не задаёт реальные правила доступности, статусы заявки или пересчёт KPI.",
+  "notifications": [
+    {
+      "id": "N001",
+      "entityType": "request",
+      "requestId": "R1042",
+      "title": "Новая заявка КЛК-1042",
+      "body": "Перевозка топлива",
+      "displayDate": "13 октября · 10:00",
+      "unread": true
+    },
+    {
+      "id": "N002",
+      "entityType": "assignment",
+      "taskId": "T1040-1",
+      "vehicleId": "V010",
+      "title": "Ресурсы назначены",
+      "body": "Задание № 1040-1 · А110АА 77",
+      "displayDate": "13 октября",
+      "unread": true
+    },
+    {
+      "id": "N003",
+      "entityType": "vehicle",
+      "vehicleId": "V001",
+      "title": "Транспорт в ремонте",
+      "body": "А101АА 77 · Бензовоз",
+      "displayDate": "13 октября",
+      "unread": true
+    }
+  ],
+  "notificationNote": "Синтетические иллюстрации разных сущностей по поручению пользователя; не реальные события и не подтверждение уведомлений из интеграций.",
+  "expansionNote": "14.10.2026: 7 дополнительных синтетических ТС в ремонте по прямому запросу пользователя: больше данных, scroll и фильтры.",
+  "productionEvidence": "production-contract-2026-10-14.json",
+  "frozenDemoClock": "2026-10-13T10:00:00+03:00",
+  "roles": {
+    "demo": {
+      "label": "Менеджер / диспетчер",
+      "canView": true,
+      "canAssignDemo": true,
+      "canCrud": false,
+      "canImport": false
+    },
+    "accountRoleVerified": false
+  },
+  "terminals": [
+    {
+      "id": "AT001",
+      "atCode": "DEMO-AT-001",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-01",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:50:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT002",
+      "atCode": "DEMO-AT-002",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-02",
+      "isPrimary": false,
+      "lastActivityAt": "2026-10-13T08:00:00+03:00",
+      "freshness": "between30mAnd24h",
+      "note": "Резервный терминал"
+    },
+    {
+      "id": "AT003",
+      "atCode": "DEMO-AT-003",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-03",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-11T12:00:00+03:00",
+      "freshness": "older24h",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT004",
+      "atCode": "DEMO-AT-004",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-04",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-11T12:00:00+03:00",
+      "freshness": "older24h",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT005",
+      "atCode": "DEMO-AT-005",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-05",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:50:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT006",
+      "atCode": "DEMO-AT-006",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-06",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T08:00:00+03:00",
+      "freshness": "between30mAnd24h",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT007",
+      "atCode": "DEMO-AT-007",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-07",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-11T12:00:00+03:00",
+      "freshness": "older24h",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT008",
+      "atCode": "DEMO-AT-008",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-08",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-11T12:00:00+03:00",
+      "freshness": "older24h",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT009",
+      "atCode": "DEMO-AT-009",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-09",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:50:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT010",
+      "atCode": "DEMO-AT-010",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-10",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T08:00:00+03:00",
+      "freshness": "between30mAnd24h",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT011",
+      "atCode": "DEMO-AT-011",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-11",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-11T12:00:00+03:00",
+      "freshness": "older24h",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT012",
+      "atCode": "DEMO-AT-012",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-12",
+      "isPrimary": true,
+      "lastActivityAt": null,
+      "freshness": "never",
+      "note": "Не прикреплён к ТС"
+    },
+    {
+      "id": "AT013",
+      "atCode": "DEMO-AT-013",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-13",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:48:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT014",
+      "atCode": "DEMO-AT-014",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-14",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:49:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT015",
+      "atCode": "DEMO-AT-015",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-15",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:50:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT016",
+      "atCode": "DEMO-AT-016",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-16",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:51:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT017",
+      "atCode": "DEMO-AT-017",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-17",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:52:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT018",
+      "atCode": "DEMO-AT-018",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-18",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:53:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT019",
+      "atCode": "DEMO-AT-019",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-19",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:54:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT020",
+      "atCode": "DEMO-AT-020",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-20",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:55:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT021",
+      "atCode": "DEMO-AT-021",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-21",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:56:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT022",
+      "atCode": "DEMO-AT-022",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-22",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:57:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT023",
+      "atCode": "DEMO-AT-023",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-23",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:58:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT024",
+      "atCode": "DEMO-AT-024",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-24",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:35:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    },
+    {
+      "id": "AT025",
+      "atCode": "DEMO-AT-025",
+      "type": "Абонентский терминал",
+      "installationDate": "2026-09-25",
+      "isPrimary": true,
+      "lastActivityAt": "2026-10-13T09:36:00+03:00",
+      "freshness": "recent30m",
+      "note": "Основное оборудование"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "AS-T1040-1",
+      "selectedTaskIds": [
+        "T1040-1"
+      ],
+      "resourceRows": [
+        {
+          "vehicleId": "V010",
+          "driverIds": [
+            "D010"
+          ],
+          "terminalIds": [
+            "AT008"
+          ],
+          "waybill": {
+            "number": "1040",
+            "series": "ДЕМО",
+            "issueDate": "2026-10-13"
+          },
+          "atIndicator": null
+        },
+        {
+          "vehicleId": "V007",
+          "driverIds": [
+            "D007"
+          ],
+          "terminalIds": [],
+          "waybill": {
+            "number": "1040-2",
+            "series": "ДЕМО",
+            "issueDate": "2026-10-13"
+          },
+          "atIndicator": null
+        }
+      ]
+    },
+    {
+      "id": "AS-T1041-1",
+      "selectedTaskIds": [
+        "T1041-1"
+      ],
+      "resourceRows": [
+        {
+          "vehicleId": "V011",
+          "driverIds": [
+            "D011"
+          ],
+          "terminalIds": [
+            "AT009"
+          ],
+          "waybill": {
+            "number": "1040",
+            "series": "ДЕМО",
+            "issueDate": "2026-10-13"
+          },
+          "atIndicator": null
+        }
+      ]
+    }
+  ],
+  "compatibility": {
+    "vehicleDriverId": "vehicle.driverIds is canonical; driverId projects its first member",
+    "vehicleType": "vehicle.model now actual model; legacy Figma Vehicle/model intentionally projects vehicleType until renamed",
+    "taskSingularResources": "assignments.resourceRows is canonical; task.vehicleId/driverId project its first row",
+    "demoRefusal": "REFUSED_DEMO is synthetic; backend enum unknown",
+    "unassigned": "8 tasks with status Unassigned in 8 NEW parents; refusal excluded",
+    "freshness": "Frozen demo clock, no verified API boundary; does not change lifecycle status",
+    "phone": "All contact phones are user-supplied placeholder",
+    "crud": "Permission-gated. No role-wide production rights inferred",
+    "assignmentPreset": "Figma second row is a fixed additional-resource example; real availability, uniqueness and validation are unverified."
+  },
+  "catalogs": {
+    "brandsAndModels": [
+      {
+        "id": "BRAND-KAMAZ",
+        "name": "КАМАЗ",
+        "parentId": null,
+        "type": "brand"
+      },
+      {
+        "id": "MODEL-KAMAZ-6520",
+        "name": "6520",
+        "parentId": "BRAND-KAMAZ",
+        "type": "model",
+        "classificationId": "CLASS-DUMP"
+      },
+      {
+        "id": "MODEL-KAMAZ-43118",
+        "name": "43118",
+        "parentId": "BRAND-KAMAZ",
+        "type": "model",
+        "source": "Existing authorized synthetic fleet brand/model; no catalog status or class relation supplied"
+      },
+      {
+        "id": "MODEL-KAMAZ-65115",
+        "name": "65115",
+        "parentId": "BRAND-KAMAZ",
+        "type": "model",
+        "source": "Existing authorized synthetic fleet brand/model; no catalog status or class relation supplied"
+      },
+      {
+        "id": "BRAND-GAZ",
+        "name": "ГАЗ",
+        "parentId": null,
+        "type": "brand",
+        "source": "Existing authorized synthetic fleet brand/model; no catalog status or class relation supplied"
+      },
+      {
+        "id": "MODEL-GAZ-SOBOL",
+        "name": "Соболь",
+        "parentId": "BRAND-GAZ",
+        "type": "model",
+        "source": "Existing authorized synthetic fleet brand/model; no catalog status or class relation supplied"
+      },
+      {
+        "id": "BRAND-NEFAZ",
+        "name": "НЕФАЗ",
+        "parentId": null,
+        "type": "brand",
+        "source": "Existing authorized synthetic fleet brand/model; no catalog status or class relation supplied"
+      },
+      {
+        "id": "MODEL-NEFAZ-4208",
+        "name": "4208",
+        "parentId": "BRAND-NEFAZ",
+        "type": "model",
+        "source": "Existing authorized synthetic fleet brand/model; no catalog status or class relation supplied"
+      }
+    ],
+    "classifications": [
+      {
+        "id": "CLASS-CARGO",
+        "name": "Грузовые",
+        "parentId": null,
+        "type": "group"
+      },
+      {
+        "id": "CLASS-DUMP",
+        "name": "Самосвал",
+        "parentId": "CLASS-CARGO",
+        "type": "class"
+      },
+      {
+        "id": "CLASS-TANKER",
+        "name": "Бензовоз",
+        "parentId": "CLASS-CARGO",
+        "type": "class",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-FLATBED",
+        "name": "Бортовой грузовик",
+        "parentId": "CLASS-CARGO",
+        "type": "class",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-PASSENGER",
+        "name": "Пассажирские",
+        "parentId": null,
+        "type": "group",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-CREW-BUS",
+        "name": "Вахтовый автобус",
+        "parentId": "CLASS-PASSENGER",
+        "type": "class",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-MINIBUS",
+        "name": "Микроавтобус",
+        "parentId": "CLASS-PASSENGER",
+        "type": "class",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-SPECIAL",
+        "name": "Специальные",
+        "parentId": null,
+        "type": "group",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-SERVICE-VAN",
+        "name": "Сервисный фургон",
+        "parentId": "CLASS-SPECIAL",
+        "type": "class",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-CRANE",
+        "name": "Автокран",
+        "parentId": "CLASS-SPECIAL",
+        "type": "class",
+        "synthetic": true
+      },
+      {
+        "id": "CLASS-AERIAL-PLATFORM",
+        "name": "Автогидроподъёмник",
+        "parentId": "CLASS-SPECIAL",
+        "type": "class",
+        "synthetic": true
+      }
+    ],
+    "readOnly": true,
+    "sourceNote": "BA example KAMAZ6520/CLASS-DUMP retained; additional brands/models from authorized synthetic vehicles. 15.10.2026: user requested more catalog demo content while retaining BA one-level group-to-class structure. Three groups/eight classes; all additions are synthetic. Tanker, flatbed, crew bus and service van names reuse authorized demo vehicle types; catalog relations are not verified business NSI. Minibus, crane and aerial platform exist only as demo catalog examples, with no corresponding fleet claim. Related vehicle counts for brands/models derive from existing fleet; model6520 has0.",
+    "classificationStatusNote": "All displayed Active badges in the expanded classifier are demonstration values. Actual catalog statuses were not supplied. No model-to-class or fleet-to-class business mapping is inferred from these examples."
+  },
+  "assignmentScenarios": [
+    {
+      "id": "DEMO-SCENARIO-1",
+      "selectedTaskIds": [
+        "T1042-1"
+      ],
+      "resourceRows": [
+        {
+          "vehicleId": "V008",
+          "driverIds": [
+            "D008"
+          ],
+          "terminalIds": [
+            "AT006"
+          ],
+          "waybill": {
+            "number": null,
+            "series": null,
+            "issueDate": null
+          },
+          "atIndicator": null
+        }
+      ],
+      "independent": true,
+      "additionalResourcePreset": {
+        "vehicleId": "V009",
+        "driverIds": [
+          "D009"
+        ],
+        "terminalIds": [
+          "AT007"
+        ]
+      }
+    },
+    {
+      "id": "DEMO-SCENARIO-2",
+      "selectedTaskIds": [
+        "T1043-1"
+      ],
+      "resourceRows": [
+        {
+          "vehicleId": "V009",
+          "driverIds": [
+            "D009"
+          ],
+          "terminalIds": [
+            "AT007"
+          ],
+          "waybill": {
+            "number": null,
+            "series": null,
+            "issueDate": null
+          },
+          "atIndicator": null
+        }
+      ],
+      "independent": true,
+      "additionalResourcePreset": {
+        "vehicleId": "V009",
+        "driverIds": [
+          "D009"
+        ],
+        "terminalIds": [
+          "AT007"
+        ]
+      }
+    },
+    {
+      "id": "DEMO-SCENARIO-3",
+      "selectedTaskIds": [
+        "T1044-1"
+      ],
+      "resourceRows": [
+        {
+          "vehicleId": "V012",
+          "driverIds": [
+            "D012"
+          ],
+          "terminalIds": [
+            "AT010"
+          ],
+          "waybill": {
+            "number": null,
+            "series": null,
+            "issueDate": null
+          },
+          "atIndicator": null
+        }
+      ],
+      "independent": true,
+      "additionalResourcePreset": {
+        "vehicleId": "V009",
+        "driverIds": [
+          "D009"
+        ],
+        "terminalIds": [
+          "AT007"
+        ]
+      }
+    },
+    {
+      "id": "DEMO-SCENARIO-4",
+      "selectedTaskIds": [
+        "T1045-1"
+      ],
+      "resourceRows": [
+        {
+          "vehicleId": "V008",
+          "driverIds": [
+            "D008"
+          ],
+          "terminalIds": [
+            "AT006"
+          ],
+          "waybill": {
+            "number": null,
+            "series": null,
+            "issueDate": null
+          },
+          "atIndicator": null
+        }
+      ],
+      "independent": true,
+      "additionalResourcePreset": {
+        "vehicleId": "V009",
+        "driverIds": [
+          "D009"
+        ],
+        "terminalIds": [
+          "AT007"
+        ]
+      }
+    }
+  ],
+  "driverProfileProvenance": {
+    "synthetic": true,
+    "permission": "KLK/intake/2026-10-14-product-rationale-ia.md",
+    "inventedFields": [
+      "categories",
+      "experience",
+      "organization",
+      "unit"
+    ],
+    "newLinks": {
+      "D001": [
+        "V003",
+        "V005"
+      ]
+    },
+    "note": "Категории, стаж, подразделение и дополнительные связи — вымышленные демонстрационные значения. Не являются кадровыми данными или правилом допуска к назначению."
+  },
+  "driverDocumentsProvenance": {
+    "synthetic": true,
+    "authorizedOn": "2026-10-15",
+    "authorization": "Добавить демодокументы водителя",
+    "basis": "KLK source did not confirm license/medical fields; legacy EKTP UI-22 suggests this concept only. Dates and numbers generated solely for demo, no eligibility/medical fitness or verified document status inferred."
+  },
+  "demoContentRevision": 1,
+  "equipmentContentProvenance": {
+    "synthetic": true,
+    "authorizedBy": "C175",
+    "authorization": "orchestration/intake/2026-10-17-demo-coverage-fuel-placement.md",
+    "basis": "Original KLK materials and demo fixture contain 12 terminals and no links for15 of25 vehicles. These13 added records and links are authored content hypotheses, not production observations.",
+    "addedTerminalIds": [
+      "AT013",
+      "AT014",
+      "AT015",
+      "AT016",
+      "AT017",
+      "AT018",
+      "AT019",
+      "AT020",
+      "AT021",
+      "AT022",
+      "AT023",
+      "AT024",
+      "AT025"
+    ],
+    "vehiclesWithAddedLinks": [
+      "V007",
+      "V013",
+      "V014",
+      "V016",
+      "V017",
+      "V018",
+      "V019",
+      "V020",
+      "V021",
+      "V022",
+      "V023",
+      "V024",
+      "V025"
+    ],
+    "retainedUnlinkedVehicles": [
+      "V003",
+      "V005"
+    ],
+    "retainedUnlinkedTerminal": "AT012",
+    "clock": "2026-10-13T10:00:00+03:00",
+    "inventedFields": [
+      "terminal IDs/codes",
+      "installation date",
+      "last activity",
+      "primary/used link"
+    ],
+    "limits": "No availability, eligibility, or real telemetry inferred. Existing rows and relationships retained."
+  }
+}

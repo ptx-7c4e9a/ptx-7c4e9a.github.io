@@ -1,0 +1,544 @@
+{
+  "version": 5,
+  "date": "2026-10-15",
+  "implementationStatus": "Figma composition and native keyframes; application not started",
+  "rootNodeId": "13112:12225",
+  "figmaPage": "12290:2",
+  "reference": {
+    "width": 1440,
+    "height": 900
+  },
+  "products": [
+    {
+      "id": "ektp",
+      "label": "Прототип ЕКТП",
+      "figmaStart": "12422:11060",
+      "proposedCodeRoute": "/ektp",
+      "rationale": "ektp",
+      "rationaleNode": "12766:21775",
+      "launcherDescription": "Карта транспорта: положение и история движения, данные датчиков и топливные отчёты.",
+      "prototypeButtonNodeId": "13112:12241",
+      "rationaleButtonNodeId": "13112:12251",
+      "homeAfterLogin": "12290:3",
+      "rationaleCodeRoute": "/rationale/ektp",
+      "descriptionScope": "verified live prototype content and layout"
+    },
+    {
+      "id": "klk-1",
+      "label": "Прототип КЛК Вариант 1",
+      "figmaStart": "12411:7422",
+      "proposedCodeRoute": "/klk/1",
+      "rationale": "klk",
+      "rationaleNode": "12765:10429",
+      "profilePosition": "header",
+      "launcherDescription": "Заявки и назначение транспорта и водителей. Разделы — слева, меню пользователя — в верхней панели.",
+      "prototypeButtonNodeId": "13112:12261",
+      "rationaleButtonNodeId": "13112:12271",
+      "homeAfterLogin": "12303:46318",
+      "rationaleCodeRoute": "/rationale/klk/1",
+      "descriptionScope": "verified live prototype content and layout"
+    },
+    {
+      "id": "klk-2",
+      "label": "Прототип КЛК Вариант 2",
+      "figmaStart": "12409:5977",
+      "proposedCodeRoute": "/klk/2",
+      "rationale": "klk",
+      "rationaleNode": "12765:10429",
+      "launcherDescription": "Заявки и назначения. Разделы — слева, меню пользователя — внизу боковой панели.",
+      "descriptionScope": "verified live prototype content and layout",
+      "prototypeButtonNodeId": "13112:12281",
+      "rationaleButtonNodeId": "13112:12291",
+      "homeAfterLogin": "12266:2518",
+      "rationaleCodeRoute": "/rationale/klk/2",
+      "profilePosition": "sidebar-bottom"
+    }
+  ],
+  "motion": {
+    "durationSeconds": 32,
+    "codeLoop": "infinite",
+    "nativeLoopPlaybackVerified": false,
+    "headDiameterPx": 8,
+    "numberOfRoutes": 4,
+    "arcLengthSampling": 256,
+    "phases": [
+      0.46,
+      0.74,
+      0.18,
+      0.91
+    ],
+    "headToken": "Brand/500",
+    "glowMotionHalfCycleSeconds": 4,
+    "easingForGlows": "EASE_IN_AND_OUT",
+    "contentMoves": false,
+    "cars": false,
+    "reducedMotion": "static composition",
+    "decorativeLayer": {
+      "ariaHidden": true,
+      "pointerEvents": "none"
+    },
+    "visibilityHandling": "pause while hidden; discard old trail history",
+    "geometry": {
+      "reference": {
+        "width": 1440,
+        "height": 900
+      },
+      "paths": [
+        {
+          "id": "13112:12230",
+          "data": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 127.73397827148438 C 344.0457106370192 -19.651381272536042 606.1757758842718 206.3395033616286 966.6046155992444 68.7798344538762 C 1195.9684226905906 -19.651381272536057 1392.5659716260302 58.95414381760817 1490.86474609375 0"
+            }
+          ],
+          "transform": [
+            [
+              0.9912938475608826,
+              0.1456654816865921,
+              -42
+            ],
+            [
+              -0.1316683292388916,
+              0.9893339276313782,
+              326.298583984375
+            ]
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.315,
+                "g": 0.3045,
+                "b": 0.285
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:10416:297"
+                }
+              }
+            }
+          ],
+          "strokeWeight": 1.5,
+          "strokeDashes": [],
+          "opacity": 0.4
+        },
+        {
+          "id": "13112:12231",
+          "data": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 127.73397827148438 C 376.87928558677754 -19.651381272536042 639.0561799080142 206.3395033616286 999.5494095997144 68.7798344538762 C 1228.9541921307964 -19.651381272536057 1425.5868628717237 58.95414381760817 1523.9031982421875 0"
+            }
+          ],
+          "transform": [
+            [
+              0.9912938475608826,
+              0.1456654816865921,
+              -38.56471252441406
+            ],
+            [
+              -0.1316683292388916,
+              0.9893339276313782,
+              349.62890625
+            ]
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.315,
+                "g": 0.3045,
+                "b": 0.285
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:10416:297"
+                }
+              }
+            }
+          ],
+          "strokeWeight": 2,
+          "strokeDashes": [
+            12,
+            12
+          ],
+          "opacity": 0.4
+        },
+        {
+          "id": "13112:12232",
+          "data": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 25.224301951244378 C 391.2275065104167 196.09021945794663 619.4435519748265 -81.56689649044455 994.3699123806424 25.224301951244378 C 1206.2848117404515 78.61990117208884 1352.9951266818575 142.69462023710219 1467.1031494140625 14.545182107075487"
+            }
+          ],
+          "transform": [
+            [
+              0.9958669543266296,
+              0.08465639501810074,
+              0.0001220703125
+            ],
+            [
+              -0.0908242017030716,
+              0.9964102506637573,
+              747.6812744140625
+            ]
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.315,
+                "g": 0.3045,
+                "b": 0.285
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:10416:297"
+                }
+              }
+            }
+          ],
+          "strokeWeight": 1.5,
+          "strokeDashes": [],
+          "opacity": 0.4
+        },
+        {
+          "id": "13112:12233",
+          "data": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 25.224301951244378 C 391.2275065104167 196.09021945794663 619.4435519748265 -81.56689649044455 994.3699123806424 25.224301951244378 C 1206.2848117404515 78.61990117208884 1352.9951266818575 142.69462023710219 1467.1031494140625 14.545182107075487"
+            }
+          ],
+          "transform": [
+            [
+              0.9958669543266296,
+              0.08465639501810074,
+              2.1617431640625
+            ],
+            [
+              -0.0908242017030716,
+              0.9964102506637573,
+              773.1226806640625
+            ]
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.315,
+                "g": 0.3045,
+                "b": 0.285
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:10416:297"
+                }
+              }
+            }
+          ],
+          "strokeWeight": 1.5,
+          "strokeDashes": [],
+          "opacity": 0.4
+        }
+      ],
+      "glows": [
+        {
+          "id": "13112:12227",
+          "x": 620,
+          "y": 180,
+          "width": 860,
+          "height": 860,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:10416:266"
+                }
+              }
+            }
+          ],
+          "effects": [
+            {
+              "type": "LAYER_BLUR",
+              "radius": 100,
+              "visible": true,
+              "blurType": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "13112:12228",
+          "x": -200,
+          "y": -60,
+          "width": 900,
+          "height": 900,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8100000023841858,
+                "g": 0.8040000200271606,
+                "b": 0.7900000214576721
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:10416:271"
+                }
+              }
+            }
+          ],
+          "effects": [
+            {
+              "type": "LAYER_BLUR",
+              "radius": 100,
+              "visible": true,
+              "blurType": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "13140:29921",
+          "x": 1060,
+          "y": -180,
+          "width": 720,
+          "height": 720,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:10416:266"
+                }
+              }
+            }
+          ],
+          "effects": [
+            {
+              "type": "LAYER_BLUR",
+              "radius": 100,
+              "visible": true,
+              "blurType": "NORMAL"
+            }
+          ]
+        }
+      ]
+    },
+    "travelDurationSeconds": 8,
+    "nativeTimelineDurationSeconds": 32,
+    "headPulse": {
+      "fields": [
+        "OPACITY",
+        "SCALE_XY"
+      ],
+      "periodSeconds": 2,
+      "range": [
+        0.45,
+        1
+      ],
+      "scaleRange": [
+        1,
+        1.5
+      ],
+      "baseDiameter": 8,
+      "maxDiameter": 12,
+      "pivot": "visual centre"
+    },
+    "particleModel": "birth at emitter position, independent randomized drift and fade; no linear tail",
+    "particleCount": 124,
+    "particleSlotsPerRoute": 31,
+    "particleLifetimeMs": 2000,
+    "particleDiameterRange": [
+      2,
+      4
+    ],
+    "particlePeriodPerSlotSeconds": 4,
+    "particleTokens": [
+      "Content/Neutral/Medium",
+      "Content/Neutral/Default",
+      "Content/Neutral/Low",
+      "Content/Neutral/Subtle"
+    ],
+    "particlePRNG": {
+      "type": "xorshift32",
+      "seedFormula": "15102026 + routeIndex * 8191 + particleIndex * 131",
+      "randomOncePerBirth": true,
+      "scatterDistanceRangePx": [
+        19.5,
+        50.7
+      ]
+    },
+    "speedComparison": {
+      "launcher": 8,
+      "authPreviewProposal": 16,
+      "status": "implementation defaults; existing auth runtime not measured"
+    },
+    "glowCycleSeconds": 8,
+    "glowTokens": [
+      "Surface/Neutral/Lowest",
+      "Surface/Neutral/Medium"
+    ],
+    "relativeParticleDriftSpeedToV2": 0.325,
+    "glowCount": 3,
+    "glowBlur": 100,
+    "glowConfigs": [
+      {
+        "id": "13112:12227",
+        "x": 620,
+        "y": 180,
+        "size": 860,
+        "dx": -360,
+        "dy": -240,
+        "min": 0.45,
+        "max": 1,
+        "white": true
+      },
+      {
+        "id": "13112:12228",
+        "x": -200,
+        "y": -60,
+        "size": 900,
+        "dx": 580,
+        "dy": 180,
+        "min": 0.22,
+        "max": 0.95,
+        "white": false
+      },
+      {
+        "id": "13140:29921",
+        "x": 1060,
+        "y": -180,
+        "size": 720,
+        "dx": -600,
+        "dy": 480,
+        "min": 0.3,
+        "max": 1,
+        "white": true
+      }
+    ]
+  },
+  "rationaleReader": {
+    "proposedRoutes": [
+      "/rationale/ektp",
+      "/rationale/klk"
+    ],
+    "sharedKlkRationale": true,
+    "backButton": {
+      "label": "Назад",
+      "behavior": "Return to originating page and restore its scroll position; direct-link fallback is launcher /"
+    },
+    "topFab": {
+      "label": "В начало",
+      "behavior": "Scroll documentation reader to top; accessible keyboard focus; instant scroll"
+    },
+    "decorativeMotion": false,
+    "layout": "read-only document with heading hierarchy, IA diagrams and native scrolling; launcher background excluded"
+  },
+  "validation": {
+    "source": "verification.json",
+    "routing": "routes.json",
+    "staticImage": "launcher-static.png",
+    "presentChecks": [
+      {
+        "action": "Прототип ЕКТП",
+        "result": "URL node-id=12422-11060 after actual click in IAB"
+      }
+    ],
+    "notVerified": [
+      "native automatic playback and looping in Present",
+      "video frame playback validation",
+      "local application implementation and runtime",
+      "published site"
+    ],
+    "finalSource": "verification-v4.json",
+    "currentStaticImage": "launcher-static.png",
+    "copySource": "copy-and-routing-v5.json",
+    "copyLayout": "copy-layout-v5.json"
+  },
+  "theme": "Light only for launcher",
+  "rules": "../ANIMATION_RULES.md",
+  "appearance": {
+    "logo": {
+      "id": "13124:12249",
+      "type": "native KLK mark",
+      "size": 40
+    },
+    "cards": {
+      "alpha": 0.44,
+      "backgroundBlur": 4,
+      "foregroundOpacity": 1,
+      "externalShadows": false,
+      "innerGlow": {
+        "color": "#FFFFFF",
+        "alpha": 0.9,
+        "blur": 16,
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "spread": 0
+      },
+      "currentHeight": 386,
+      "currentY": 400
+    },
+    "lineGroupOpacity": 1,
+    "lineOpacity": 0.4,
+    "footerRight": 1392,
+    "containerRight": 1392,
+    "lineToken": "Content/Neutral/Default",
+    "lineVariableId": "VariableID:10416:297",
+    "lineScopes": [
+      "launcher",
+      "all five login states"
+    ]
+  },
+  "homeFab": {
+    "icon": "house",
+    "label": "На главную",
+    "destination": "/",
+    "smooth": true,
+    "reducedMotion": "instant",
+    "scope": "prototype screens and rationale readers; not redundant on launcher"
+  },
+  "publication": {
+    "rules": "../../../PUBLICATION_RULES.md",
+    "threadId": "01a14053-c2ee-73f0-a73b-eff1c9c2a928",
+    "requiresDirectUserInstructionsInPublicationThread": true
+  },
+  "routingContract": "button-routes.json",
+  "copyRecheckedOn": "2026-10-16",
+  "copyEvidence": "../../../orchestration/canvas-2026-10-16/launcher-recheck.json"
+}

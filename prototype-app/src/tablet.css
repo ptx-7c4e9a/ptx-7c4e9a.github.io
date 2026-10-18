@@ -1,0 +1,69 @@
+/* C180: tablet extension of the approved desktop UI. No phone layout. */
+/* C252: with compact navigation, personal controls sit above the object filter. */
+@media(max-width:1100px){
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header){display:grid;grid-template-columns:minmax(0,1fr) repeat(3,auto);height:auto;min-height:120px;gap:8px 12px;padding:12px}
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header) .header-scope{display:contents}
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header) .header-scope>div{grid-column:1;grid-row:1;min-width:0;max-width:none}
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header) .header-scope>.select-control{grid-column:2/-1;grid-row:2;width:100%;max-width:none}
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header)>.header-search{grid-column:1;grid-row:2;min-width:0;max-width:none}
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header)>.profile-header{grid-column:2;grid-row:1}
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header)>.theme-switch{grid-column:3;grid-row:1}
+ .app-shell:not(.ektp-shell) .app-header:has(>.profile-header)>.notification-button{grid-column:4;grid-row:1}
+}
+body{min-width:0}
+.map-motion-state.info{color:var(--status-system-info-content)}
+.map-motion-state.danger{color:var(--status-system-alert-content)}
+.map-motion-state.neutral{color:var(--status-system-neutral-content)}
+.vehicle-context-actions:has(>.vehicle-refresh)>.button:not(.icon-button){height:auto;min-height:40px}
+.reader-contents{display:none}
+.reader-layout>nav a[aria-current=location]{color:var(--text)}
+@media(max-width:1000px){
+ .reader>header{padding:16px 24px;gap:16px}
+ .reader-contents{display:block;flex:none;padding:16px 24px 0}
+ .reader-contents>.select-control{width:100%;max-width:100%}
+ .reader-layout{display:flex;padding:16px 24px 24px}
+ .reader-layout>nav{display:none}
+ .reader-scroll{flex:1;padding:24px 32px 64px}
+ .reader-scroll h1{font-size:32px;line-height:40px}
+ .reader-scroll .reader-lead{font-size:20px;line-height:30px}
+}
+/* Stack the welcome and sign-in form before their desktop columns collide. */
+@media(max-width:1000px){
+ .auth-screen:has(>.auth-introduction){display:flex;flex-direction:column;gap:24px;padding:24px 32px;overflow:auto;overscroll-behavior:contain}
+ .auth-screen .auth-introduction{position:relative;left:auto;top:auto;transform:none;width:100%;max-width:640px;margin:0 auto;flex:none}
+ .auth-screen .auth-introduction h1{font-size:32px;line-height:40px;letter-spacing:0}
+ .auth-screen .auth-introduction p{margin-top:16px;max-width:none}
+ .auth-screen .login-card-frame{position:relative;right:auto;top:auto;transform:none;width:440px;max-width:100%;margin:0 auto;flex:none}
+ .auth-screen:has(>.auth-introduction)>footer{position:relative;left:auto;right:auto;bottom:auto;gap:16px;flex-wrap:wrap;flex:none;margin-top:auto}
+}
+@media(max-width:1000px){
+ .app-shell .app-header{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,auto);height:auto;min-height:120px;gap:8px 12px;padding:12px}
+ .app-shell:not(.ektp-shell) .header-scope{grid-column:1/-1;gap:12px}
+ .app-shell:not(.ektp-shell) .header-scope>div{min-width:0;max-width:none;flex:1}
+ .app-shell:not(.ektp-shell) .header-scope>.select-control{width:220px;max-width:50%}
+ .app-shell:not(.ektp-shell) .header-search{grid-column:1;min-width:0;max-width:none}
+ .ektp-shell .header-heading{grid-column:1/-1}
+ .ektp-shell .ektp-context-select,.ektp-shell .ektp-context-caption{min-width:0;width:100%;max-width:100%;grid-column:1}
+ .ektp-shell .ektp-context-select>.select-control,.ektp-shell .ektp-context-caption>.select-control{width:100%;max-width:100%}
+ .app-shell .app-footer{height:64px;min-height:64px;padding:12px 16px}
+}
+
+@media(max-width:900px){
+ .history-controls{gap:8px}
+ /* Keep the KPI reorder on one axis; separate utility icons from the label. */
+ .kpi-card{min-height:188px}
+ .kpi-content{padding-top:28px}
+ .kpi-content>span{padding-right:0}
+ /* One viewport-contained scrolling region, with full-width dashboard panels. */
+ .dashboard{overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+ .dashboard-panels{grid-template-columns:minmax(0,1fr);flex:none}
+ .dashboard-panel .scroll-content{flex:none;overflow:visible}
+ .dashboard-panel>header,.dashboard-panel .summary-drag-handle{touch-action:none}
+}
+
+.request-list-back{display:none}
+@media(max-width:900px){
+ .requests-layout{grid-template-columns:minmax(0,1fr)}
+ .requests-layout:not(.request-open)>.record-panel,.requests-layout.request-open>.registry{display:none}
+ .requests-layout .request-list-back{display:inline-flex;align-self:flex-start;margin:0 0 12px;width:auto}
+}

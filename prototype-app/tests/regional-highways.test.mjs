@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import geography from '../src/data/geography.json' with {type:'json'};
+import {vehicleAssignments,vehiclePose} from '../src/ektp/vehicle-motion.mjs';
+const distance=(a,b)=>{const p=a[1]*Math.PI/180,q=b[1]*Math.PI/180,dl=(a[0]-b[0])*Math.PI/180;return 6371.0088*2*Math.asin(Math.min(1,Math.sqrt(Math.sin((p-q)/2)**2+Math.cos(p)*Math.cos(q)*Math.sin(dl/2)**2)));};
+test('C204 every pair of complete road windows stays at least200km apart',()=>{const roads=[...vehicleAssignments.values()].map(a=>a.district);for(let i=0;i<roads.length;i++){const a=roads[i];assert.ok(a.path.every(p=>distance(a.center,p)<=a.radiusKm));for(const b of roads.slice(i+1))assert.ok(distance(a.center,b.center)-a.radiusKm-b.radiusKm>=200,`${a.id}/${b.id}`);}assert.ok(geography.regionalPlacement.certifiedRouteLowerBoundKm>=200);});
+test('C171 all road windows avoid the four original city centres by40km',()=>{for(const {district:a} of vehicleAssignments.values())for(const c of Object.values(geography.regionalPlacement.cityCenters))assert.ok(distance(a.center,c)-a.radiusKm>=40,a.id);});
+test('C171 operational points and zones are regional and separated by50km',()=>{for(let i=0;i<geography.points.length;i++){const a=geography.points[i];for(const b of geography.points.slice(i+1))assert.ok(distance(a.coordinates,b.coordinates)>=50);for(const c of Object.values(geography.regionalPlacement.cityCenters))assert.ok(distance(a.coordinates,c)>40);}for(const z of geography.zones)for(const p of z.polygon)for(const c of Object.values(geography.regionalPlacement.cityCenters))assert.ok(distance(p,c)>40);});

@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "source": "Figma zRLM56kfYe5yTjNEy5GtZW node12375:23033, checked2026-10-16; existing prototype events, not live telemetry",
+  "items": [
+    {"id":"stale-v20","vehicleId":"v-20","title":"Данные ТС давно не обновлялись","body":"Р167КА 98 · Урал-4320 (АЦ-10)","displayDate":"Последние данные: 12 октября · 15:47","art":"notification-info"},
+    {"id":"position-v44","vehicleId":"v-44","title":"Обновлено положение ТС","body":"Р394ОК 85 · КамАЗ-43118 (АТЗ-12)","displayDate":"13 октября · 11:44","art":"notification-position"},
+    {"id":"data-v44","vehicleId":"v-44","title":"Обновлены данные ТС","body":"Р394ОК 85 · КамАЗ-43118 (АТЗ-12)","displayDate":"13 октября · 11:44","art":"notification-data"}
+  ]
+}

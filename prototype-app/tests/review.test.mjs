@@ -1,0 +1,17 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {calendarDays,parseLocalDate,localDateValue} from '../src/logic.mjs';
+import {compileRoad,poseAlong,vehicleAssignments,vehiclePose,LOOP_DURATION_MS,MOTION_SLOWDOWN} from '../src/ektp/vehicle-motion.mjs';
+import fleet from '../src/data/ektp.json' with {type:'json'};
+import {selectRows} from '../src/logic.mjs';
+import {readingAt,telemetryRange} from '../src/ektp/telemetry.mjs';
+import geography from '../src/data/geography.json' with {type:'json'};
+test('calendar has 42 Monday-first dates including leap day and year boundary',()=>{const feb=calendarDays(2028,1);assert.equal(feb.length,42);assert.equal(feb[0].getDay(),1);assert.ok(feb.some(d=>d.getMonth()===1&&d.getDate()===29));const dec=calendarDays(2026,11);assert.ok(dec.some(d=>d.getFullYear()===2027));});
+test('date/time roundtrip retains local wall-clock value without timezone drift',()=>{for(const value of ['2026-10-13T08:00','2028-02-29T23:59','2027-01-01T00:00'])assert.equal(localDateValue(parseLocalDate(value)),value);});
+test('cab bearing follows road east, south, west and north',()=>{for(const [end,bearing] of [[[1,0],90],[[0,-1],180],[[-1,0],-90],[[0,1],0]]){const pose=poseAlong(compileRoad([[0,0],end]),.5);assert.equal(pose.heading,bearing);assert.deepEqual(pose.coordinates,end.map(v=>v*.5));}});
+test('C171 all44 vehicles have independent closed highway windows without position jumps',()=>{assert.equal(vehicleAssignments.size,44);const ids=new Set();for(const v of fleet.fleet){const a=vehicleAssignments.get(v.id);ids.add(a.district.id);assert.ok(a.district.roadRef);assert.ok(a.road.path.length>2);assert.deepEqual(a.road.path[0],a.road.path.at(-1),'closed road must not teleport');}assert.equal(ids.size,44);});
+test('motion duration is five times longer, stale and stopped vehicles stay still',()=>{assert.equal(MOTION_SLOWDOWN,5);assert.equal(LOOP_DURATION_MS,800000);for(const v of fleet.fleet.filter(v=>v.speed===0||String(v.signal).includes('12.10')))assert.deepEqual(vehiclePose(v,0),vehiclePose(v,500000));const moving=fleet.fleet.find(v=>v.speed>0&&!String(v.signal).includes('12.10'));assert.notDeepEqual(vehiclePose(moving,0).coordinates,vehiclePose(moving,10000).coordinates);});
+test('C171 movement follows displayed speed with the agreed five-times slowdown',()=>{for(const v of fleet.fleet){const a=vehicleAssignments.get(v.id);assert.ok(Math.abs(a.road.total/a.durationMs-Math.max(1,v.speed)/3.6/1000/5)<1e-10);}});
+test('request facet matches any required vehicle type, not only the first task',()=>{const rows=[{id:'r1',types:['Топливо','Груз']},{id:'r2',types:['Топливо']}];assert.deepEqual(selectRows(rows,{filters:{types:'Груз'}}).map(r=>r.id),['r1']);});
+test('synchronized readout keeps sample timestamps and uses last discrete state',()=>{const analog={samples:[{time:'09:00',value:4},{time:'09:10',value:8}]},digital={...analog,discrete:true};assert.deepEqual(readingAt(analog,548),{time:'09:10',value:8});assert.deepEqual(readingAt(digital,548),{time:'09:00',value:4});assert.equal(readingAt({samples:[]},548),null);});
+test('telemetry range excludes outside dates instead of reusing previous values',()=>{const channels=[{id:'x',samples:[{time:'09:00',value:1},{time:'10:00',value:2}]}];assert.equal(telemetryRange(channels,{from:'2026-10-12T08:00',to:'2026-10-12T12:00'}).length,0);assert.deepEqual(telemetryRange(channels,{from:'2026-10-13T09:30',to:'2026-10-13T10:30'})[0].samples,[{time:'10:00',value:2}]);});

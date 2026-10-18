@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "scope": "Authentication and loading for EKTP and both KLK variants; launcher geometry unchanged",
+  "reference": {
+    "width": 1440,
+    "height": 900,
+    "coordinateSpace": "screen-local-px",
+    "geographicCoordinates": false
+  },
+  "loginCurves": [
+    [
+      [
+        [
+          -100,
+          230
+        ],
+        [
+          320,
+          150
+        ],
+        [
+          560,
+          300
+        ],
+        [
+          920,
+          190
+        ]
+      ],
+      [
+        [
+          920,
+          190
+        ],
+        [
+          1180,
+          130
+        ],
+        [
+          1360,
+          250
+        ],
+        [
+          1540,
+          180
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          -100,
+          254
+        ],
+        [
+          320,
+          174
+        ],
+        [
+          560,
+          324
+        ],
+        [
+          920,
+          214
+        ]
+      ],
+      [
+        [
+          920,
+          214
+        ],
+        [
+          1180,
+          154
+        ],
+        [
+          1360,
+          274
+        ],
+        [
+          1540,
+          204
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          -100,
+          690
+        ],
+        [
+          320,
+          780
+        ],
+        [
+          600,
+          620
+        ],
+        [
+          920,
+          700
+        ]
+      ],
+      [
+        [
+          920,
+          700
+        ],
+        [
+          1180,
+          760
+        ],
+        [
+          1360,
+          650
+        ],
+        [
+          1540,
+          710
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          -100,
+          714
+        ],
+        [
+          320,
+          804
+        ],
+        [
+          600,
+          644
+        ],
+        [
+          920,
+          724
+        ]
+      ],
+      [
+        [
+          920,
+          724
+        ],
+        [
+          1180,
+          784
+        ],
+        [
+          1360,
+          674
+        ],
+        [
+          1540,
+          734
+        ]
+      ]
+    ]
+  ],
+  "loadingCurves": [
+    [
+      [
+        [
+          220,
+          -120
+        ],
+        [
+          120,
+          180
+        ],
+        [
+          320,
+          300
+        ],
+        [
+          210,
+          500
+        ]
+      ],
+      [
+        [
+          210,
+          500
+        ],
+        [
+          120,
+          680
+        ],
+        [
+          300,
+          820
+        ],
+        [
+          210,
+          1020
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          244,
+          -120
+        ],
+        [
+          144,
+          180
+        ],
+        [
+          344,
+          300
+        ],
+        [
+          234,
+          500
+        ]
+      ],
+      [
+        [
+          234,
+          500
+        ],
+        [
+          144,
+          680
+        ],
+        [
+          324,
+          820
+        ],
+        [
+          234,
+          1020
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          1210,
+          -120
+        ],
+        [
+          1320,
+          180
+        ],
+        [
+          1110,
+          320
+        ],
+        [
+          1230,
+          500
+        ]
+      ],
+      [
+        [
+          1230,
+          500
+        ],
+        [
+          1320,
+          680
+        ],
+        [
+          1130,
+          840
+        ],
+        [
+          1210,
+          1020
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          1234,
+          -120
+        ],
+        [
+          1344,
+          180
+        ],
+        [
+          1134,
+          320
+        ],
+        [
+          1254,
+          500
+        ]
+      ],
+      [
+        [
+          1254,
+          500
+        ],
+        [
+          1344,
+          680
+        ],
+        [
+          1154,
+          840
+        ],
+        [
+          1234,
+          1020
+        ]
+      ]
+    ]
+  ],
+  "lineToken": "Content/Neutral/Default",
+  "lineVariableId": "VariableID:10416:297",
+  "lineStrokePx": 1.5,
+  "lineOpacity": 0.4,
+  "head": {
+    "count": 4,
+    "baseDiameterPx": 8,
+    "maxVisualDiameterPx": 8,
+    "scaleRange": [
+      0.6666666666666666,
+      1
+    ],
+    "phases": [
+      0.46,
+      0.74,
+      0.18,
+      0.91
+    ],
+    "cycleSeconds": 16
+  },
+  "particles": {
+    "count": 124,
+    "diameterPx": "preserved from source",
+    "opacityTiming": "preserve source lifecycle; code reference lifetime 1s",
+    "scatterPx": [
+      19.5,
+      32
+    ],
+    "perpendicularSwayPx": 3,
+    "protectedAreaPaddingPx": 36
+  },
+  "glows": {
+    "count": 3,
+    "motionPreserved": true
+  },
+  "loader": {
+    "rotationDegreesPerSecond": -360,
+    "centerPulse": "future code may separate center; Figma source instance sublayers unchanged",
+    "dwellMs": {
+      "ektp": 3000,
+      "klk": 2000
+    },
+    "doesNotWaitForBackgroundLoop": true
+  },
+  "protectedAreas": {
+    "login": "intro/title/body, logo, footer; form may overlay routes",
+    "loadingReference": {
+      "x": 352,
+      "y": 285,
+      "width": 736,
+      "height": 310
+    },
+    "responsive": "Measure actual content bounds at 1920/1440/1024; move/compress side corridors and cap scatter to preserve clearance; do not merely stretch 1440 geometry"
+  },
+  "reducedMotion": "Static decor; loading status remains perceivable",
+  "mappings": [
+    {
+      "direction": "ektp",
+      "rootNodeId": "12422:11060",
+      "kind": "login",
+      "backgroundNodeId": "13211:15821",
+      "trajectoryNodeIds": [
+        "13211:15826",
+        "13211:15827",
+        "13211:15828",
+        "13211:15829"
+      ],
+      "loaderInstance": null,
+      "loaderDwellSeconds": null,
+      "uiStampPreserved": true
+    },
+    {
+      "direction": "ektp",
+      "rootNodeId": "12422:11137",
+      "kind": "login",
+      "backgroundNodeId": "13211:52835",
+      "trajectoryNodeIds": [
+        "13211:52840",
+        "13211:52841",
+        "13211:52842",
+        "13211:52843"
+      ],
+      "loaderInstance": null,
+      "loaderDwellSeconds": null,
+      "uiStampPreserved": true
+    },
+    {
+      "direction": "ektp",
+      "rootNodeId": "12422:11269",
+      "kind": "login",
+      "backgroundNodeId": "13211:89849",
+      "trajectoryNodeIds": [
+        "13211:89854",
+        "13211:89855",
+        "13211:89856",
+        "13211:89857"
+      ],
+      "loaderInstance": null,
+      "loaderDwellSeconds": null,
+      "uiStampPreserved": true
+    },
+    {
+      "direction": "ektp",
+      "rootNodeId": "12445:12621",
+      "kind": "loading",
+      "backgroundNodeId": "13211:126863",
+      "trajectoryNodeIds": [
+        "13211:126868",
+        "13211:126869",
+        "13211:126870",
+        "13211:126871"
+      ],
+      "loaderInstance": "12445:12622",
+      "loaderDwellSeconds": 3,
+      "uiStampPreserved": true
+    },
+    {
+      "direction": "klk",
+      "rootNodeId": "12411:7422",
+      "kind": "login",
+      "backgroundNodeId": "13352:11058",
+      "trajectoryNodeIds": [
+        "13352:11191",
+        "13352:11192",
+        "13352:11193",
+        "13352:11194"
+      ],
+      "loaderInstance": null,
+      "loaderDwellSeconds": null,
+      "uiStampPreserved": true
+    },
+    {
+      "direction": "klk",
+      "rootNodeId": "12409:5977",
+      "kind": "login",
+      "backgroundNodeId": "13352:30567",
+      "trajectoryNodeIds": [
+        "13352:30700",
+        "13352:30701",
+        "13352:30702",
+        "13352:30703"
+      ],
+      "loaderInstance": null,
+      "loaderDwellSeconds": null,
+      "uiStampPreserved": true
+    },
+    {
+      "direction": "klk",
+      "rootNodeId": "12446:8552",
+      "kind": "loading",
+      "backgroundNodeId": "13352:50076",
+      "trajectoryNodeIds": [
+        "13352:50209",
+        "13352:50210",
+        "13352:50211",
+        "13352:50212"
+      ],
+      "loaderInstance": "12446:8553",
+      "loaderDwellSeconds": 2,
+      "uiStampPreserved": true
+    },
+    {
+      "direction": "klk",
+      "rootNodeId": "12446:8503",
+      "kind": "loading",
+      "backgroundNodeId": "13352:69588",
+      "trajectoryNodeIds": [
+        "13352:69721",
+        "13352:69722",
+        "13352:69723",
+        "13352:69724"
+      ],
+      "loaderInstance": "12446:8504",
+      "loaderDwellSeconds": 2,
+      "uiStampPreserved": true
+    }
+  ],
+  "applicationImplemented": false,
+  "fullCyclePlaybackVerified": false
+}

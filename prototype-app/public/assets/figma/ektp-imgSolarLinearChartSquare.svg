@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Solar Linear / Chart Square" clip-path="url(#clip0_0_1077)">
+<path id="Vector" d="M1.66667 10C1.66667 6.07163 1.66667 4.10744 2.88706 2.88706C4.10744 1.66667 6.07163 1.66667 10 1.66667C13.9283 1.66667 15.8926 1.66667 17.1129 2.88706C18.3333 4.10744 18.3333 6.07163 18.3333 10C18.3333 13.9283 18.3333 15.8926 17.1129 17.1129C15.8926 18.3333 13.9283 18.3333 10 18.3333C6.07163 18.3333 4.10744 18.3333 2.88706 17.1129C1.66667 15.8926 1.66667 13.9283 1.66667 10Z" stroke-width="1.5" stroke="#0C0A09"/>
+<path id="Vector_2" d="M5.83333 15V7.5" stroke-width="1.5" stroke-linecap="round" stroke="#0C0A09"/>
+<path id="Vector_3" d="M10 15V5" stroke-width="1.5" stroke-linecap="round" stroke="#0C0A09"/>
+<path id="Vector_4" d="M14.1667 15V10.8333" stroke-width="1.5" stroke-linecap="round" stroke="#0C0A09"/>
+</g>
+<defs>
+<clipPath id="clip0_0_1077">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

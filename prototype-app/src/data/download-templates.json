@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-16",
+  "purpose": "Local code demo downloads; no production endpoint dependency",
+  "applicationImplemented": false,
+  "figmaButtons": [
+    "12498:59393",
+    "12498:6857"
+  ],
+  "generationPolicy": {
+    "format": "xlsx",
+    "headerOnly": true,
+    "includeProductionRows": false,
+    "copyRawWorkbookToPublicAssets": false,
+    "validationRules": "Only observed headers; no invented backend validation or DTO"
+  },
+  "templates": [
+    {
+      "entity": "vehicles",
+      "sourcePath": "KLK/sources/production-2026-10-14/exports/transport-import-template.xlsx",
+      "sourceSha256": "8a27ed6899684c1bfea7ddc9ed2e4560c47cf5d7843e0f0e267f5adcd89377d9",
+      "sourceBytes": 9428,
+      "sheetName": "Лист1",
+      "headers": [
+        "RegNumber",
+        "Model",
+        "Year",
+        "Type",
+        "Vin",
+        "Mark"
+      ],
+      "sourceNonemptyRows": 4,
+      "assetRelativePath": "assets/templates/transport-import-template.xlsx",
+      "downloadFilename": "transport-import-template.xlsx"
+    },
+    {
+      "entity": "drivers",
+      "sourcePath": "KLK/sources/production-2026-10-14/exports/driver-import-template.xlsx",
+      "sourceSha256": "385c710b81433eac5ec7024a76e328e2815aaf81b4af19389cc8343674ca47b5",
+      "sourceBytes": 10123,
+      "sheetName": "Лист1",
+      "headers": [
+        "ФИО",
+        "Табельный номер",
+        "Номер телефона"
+      ],
+      "sourceNonemptyRows": 3,
+      "assetRelativePath": "assets/templates/driver-import-template.xlsx",
+      "downloadFilename": "driver-import-template.xlsx"
+    },
+    {
+      "entity": "terminals",
+      "sourcePath": "KLK/sources/production-2026-10-14/exports/terminal-import-template.xlsx",
+      "sourceSha256": "d1f8c12e17607c543324aef52cb9f4bd281cadaea3194aa3548d2a6a12999f9d",
+      "sourceBytes": 9496,
+      "sheetName": "Sheet1",
+      "headers": [
+        "Основной",
+        "Активный",
+        "Код АТ",
+        "Не учитывать пробег при выключенном зажигании",
+        "Примечание",
+        "Дата установки",
+        "Метод расчета пробега",
+        "Наименование типа",
+        "Идентифкиатор класса",
+        "Время ожидания данных в режиме остановки, с",
+        "Время ожидания данных в режиме движения, с",
+        "Подключенные камеры"
+      ],
+      "sourceNonemptyRows": 4,
+      "assetRelativePath": "assets/templates/terminal-import-template.xlsx",
+      "downloadFilename": "terminal-import-template.xlsx"
+    }
+  ],
+  "sourcePathsRelativeTo": "Proto root"
+}
