@@ -427,6 +427,7 @@
   "ektp.imgIcon": "/assets/figma/ektp-imgIcon.svg",
   "ektp.imgIcon1": "/assets/figma/ektp-imgIcon1.svg",
   "ektp.imgSGps": "/assets/figma/ektp-imgSGps.svg",
+  "ui.pinS": "/assets/figma/ui-pin-s.svg",
   "ui.gpsS": "/assets/figma/ui-gps-s.svg",
   "ektp.imgSPlus": "/assets/figma/ektp-imgSPlus.svg",
   "ektp.imgSMinus": "/assets/figma/ektp-imgSMinus.svg",
@@ -469,5 +470,7 @@
   "ui.trash": "/assets/figma/ui-trash.svg",
   "ui.menu": "/assets/figma/menu-source-2026-10-18.svg",
   "ui.layers": "/assets/figma/layers-source-2026-10-18.svg",
-  "ui.refresh": "/assets/figma/ui-refresh.svg"
+  "ui.refresh": "/assets/figma/ui-refresh.svg",
+  "ui.listS": "/assets/figma/ui-list-s.svg",
+  "ui.pinListS": "/assets/figma/ui-pin-list-s.svg"
 }

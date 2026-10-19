@@ -8,7 +8,7 @@ on:
         description: Reviewed dist content SHA-256
         required: true
         type: string
-        default: 5ad52c5220f6bcbec8d9cf8d4bf2b7a1efd72a56b081fcccf0a83f82594f2ee4
+        default: f14ce44d6f564bf2cdcb8325eddafe88547d511aa38f903522b1989261362741
 
 permissions:
   contents: read

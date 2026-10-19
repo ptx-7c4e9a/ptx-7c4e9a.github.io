@@ -8,9 +8,10 @@
     "local:status": "node scripts/local-server.mjs --status",
     "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
     "build": "tsc --noEmit && vite build",
-    "build:candidate": "pnpm build && node scripts/prepare-static.mjs",
+    "build:candidate": "pnpm rationale:check && pnpm build && node scripts/prepare-static.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "rationale:check": "node scripts/check-rationale-freshness.mjs"
   },
   "dependencies": {
     "figma-squircle": "1.1.0",

@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "5ad52c5220f6bcbec8d9cf8d4bf2b7a1efd72a56b081fcccf0a83f82594f2ee4",
-  "files": 574,
-  "totalBytes": 44823793,
+  "contentSha256": "f14ce44d6f564bf2cdcb8325eddafe88547d511aa38f903522b1989261362741",
+  "files": 589,
+  "totalBytes": 48758054,
   "routes": 27,
-  "review": "C276 verified local update: navigation footer, 20 px vehicle actions, speed threshold, compact map markers, list return, map location routing, and mobile footer CTA removal; unanswered proposals excluded"
+  "review": "C297 scoped verified C278-C293 and C295: pinned-vehicle popover PinList, vehicle actions, control states, current rationale screenshots/functionality; unanswered proposals, C294 DS tokens and C296 animation proposal excluded"
 }

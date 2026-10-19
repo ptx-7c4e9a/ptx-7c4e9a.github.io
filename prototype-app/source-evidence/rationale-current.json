@@ -1,0 +1,120 @@
+{
+  "reviewedAt": "2026-10-19T16:29:46.330054+00:00",
+  "review": "C295:5 affected EKTP images refreshed, unchanged KLK/fuel/table retained from C289; Light1440 and Dark768 actual trigger checked",
+  "images": {
+    "/assets/rationale/current-2026-10-19/ektp-selected.png": {
+      "sha256": "482be2edc4925a08d0c16993ccfe8a91e87dafd6b1652219c0220f9df2369789",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c295-pinlist-2026-10-19/ektp-selected.jpg",
+      "unchangedAfterLastStyleFix": false,
+      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+    },
+    "/assets/rationale/current-2026-10-19/ektp-sensors.png": {
+      "sha256": "1948201ae82d12c1a833fa9fffbab29b87337ac2d4596221a16b943870043aa1",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c295-pinlist-2026-10-19/ektp-sensors.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+    },
+    "/assets/rationale/current-2026-10-19/ektp-fuel.png": {
+      "sha256": "92318633beb144e2618e1b1ebbe585317e22b19c91e3dd7bf9d2b001585201a3",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c289-rationale-refresh-2026-10-19/ektp-fuel.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+    },
+    "/assets/rationale/current-2026-10-19/ektp-period.png": {
+      "sha256": "5761fe832941fb86100da9ba0c5d94ebc0687dd1951bb4ab1c953ea35f40d659",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c295-pinlist-2026-10-19/ektp-period.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+    },
+    "/assets/rationale/current-2026-10-19/ektp-profile.png": {
+      "sha256": "bca352ae6886224de223a506da2e952ec44b3a91cd0bdb41ef7a1fb3c552c72c",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c295-pinlist-2026-10-19/ektp-profile.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+    },
+    "/assets/rationale/current-2026-10-19/ektp-pagination.png": {
+      "sha256": "c875b44ff83178b3e33e94cf4c803294593162a5f53a661a11777b8140bac652",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c289-rationale-refresh-2026-10-19/ektp-pagination.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+    },
+    "/assets/rationale/current-2026-10-19/ektp-actions.png": {
+      "sha256": "dff4c46e43b2bf49b09ef8773b0cf9ed9d4cc5f32e0101e6057f96aaa044392d",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c295-pinlist-2026-10-19/ektp-actions.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+    },
+    "/assets/rationale/current-2026-10-19/klk-a-home.png": {
+      "sha256": "40374ade928382b6721cbcd85c4ac4fc48bdb77050b7c1d96f5a9572f900737e",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-a-home.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+    },
+    "/assets/rationale/current-2026-10-19/klk-a-compact.png": {
+      "sha256": "02828e809012a7f1206c3be9a6bc1d29fbc49c945230da1fc4c41197dd1429ca",
+      "width": 1024,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-a-compact.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+    },
+    "/assets/rationale/current-2026-10-19/klk-navigation.png": {
+      "sha256": "3c94fa376cfa7416af10a0db90359d7d9b168a3b21857b2f063f1258961b1f40",
+      "width": 1024,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-navigation.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+    },
+    "/assets/rationale/current-2026-10-19/klk-b-home.png": {
+      "sha256": "0a5c7c1bec2403959feb7e6f9f53ad5fbaec75683c2c0f92a1fa9f25a34affb1",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-b-home.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+    },
+    "/assets/rationale/current-2026-10-19/klk-b-compact-menu.png": {
+      "sha256": "d09d09e3fa769cf9f5e1322061dcffd7411abeb137c088c287533620e5fd1499",
+      "width": 768,
+      "height": 1024,
+      "visuallyReviewed": true,
+      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-b-compact-menu.jpg",
+      "unchangedAfterLastStyleFix": true,
+      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+    }
+  },
+  "readers": {
+    "ektp": "9ec37827756798d604aedacdbcab345c39c486d5d67c11fc97e76822248e8009",
+    "klk": "845f0b157495535253aa0b606e4025322d0e2f8ef75e6e61ff9969988cb8e7a0",
+    "klk-2": "24010e77f9f7000ccca616f394e63bc7cc6c7926c7cc7b632c7503fe710a3a3e"
+  },
+  "interfaceSha256": "c3ef69d08bb45049d19be4e1d310e2b0318f97cf7508df21fa194daac313aed4"
+}

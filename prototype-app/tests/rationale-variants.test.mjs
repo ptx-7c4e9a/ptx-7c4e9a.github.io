@@ -15,7 +15,9 @@ test('both standalone readers retain every verified Figma text and source link',
   const actual=new Map(reader.sections.flatMap(s=>s.text).map(t=>[t.id,t]));
   const expected=[...source.sections.flatMap(s=>texts(s.tree)),...native.native.flatMap(n=>n.texts)];
   assert.equal(actual.size,expected.length);
-  for(const row of expected){assert.equal(actual.get(row.id)?.text,row.text,`Lost Figma text ${row.id}`);if(row.hyperlink?.type==='URL')assert.equal(actual.get(row.id)?.href,row.hyperlink.value);}
+  const overrides=new Map((reader.c289Source?.textOverrides??[]).map(row=>[row.id,row]));
+  for(const row of expected){const override=overrides.get(row.id);if(override){assert.equal(override.previousText,row.text,`Override must retain Figma source ${row.id}`);assert.ok(override.authority);}assert.equal(actual.get(row.id)?.text,override?.text??row.text,`Lost Figma text or authorised revision ${row.id}`);if(row.hyperlink?.type==='URL')assert.equal(actual.get(row.id)?.href,row.hyperlink.value);}
+  for(const id of overrides.keys())assert.ok(expected.some(row=>row.id===id),`Unknown source text override ${id}`);
  }
  assert.notEqual(docs[0].id,docs[1].id);
  const launcher=JSON.parse(fs.readFileSync(new URL('../src/data/launcher.json',import.meta.url),'utf8'));

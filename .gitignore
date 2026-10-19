@@ -23,11 +23,13 @@
 !/prototype-app/scripts/
 /prototype-app/scripts/*
 !/prototype-app/scripts/prepare-static.mjs
+!/prototype-app/scripts/check-rationale-freshness.mjs
 !/prototype-app/scripts/install-local-startup.mjs
 !/prototype-app/scripts/local-server.mjs
 !/prototype-app/source-evidence/
 /prototype-app/source-evidence/*
 !/prototype-app/source-evidence/long-trips-selected-2026-10-18.json
+!/prototype-app/source-evidence/rationale-current.json
 **/.env*
 !prototype-app/.env.example
 **/node_modules/
