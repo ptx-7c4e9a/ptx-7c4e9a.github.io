@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "5f36da5803afc3aab5a8d0a886db27e320a154fe54e01188cdb14701e5d351b9",
-  "files": 572,
-  "totalBytes": 44822454,
+  "contentSha256": "5ad52c5220f6bcbec8d9cf8d4bf2b7a1efd72a56b081fcccf0a83f82594f2ee4",
+  "files": 574,
+  "totalBytes": 44823793,
   "routes": 27,
-  "review": "C267 centered drawer logout and C268 reader source-note removal scoped pass approved for final release 2026-10-19; full acceptance deferred"
+  "review": "C276 verified local update: navigation footer, 20 px vehicle actions, speed threshold, compact map markers, list return, map location routing, and mobile footer CTA removal; unanswered proposals excluded"
 }

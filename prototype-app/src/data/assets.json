@@ -427,6 +427,7 @@
   "ektp.imgIcon": "/assets/figma/ektp-imgIcon.svg",
   "ektp.imgIcon1": "/assets/figma/ektp-imgIcon1.svg",
   "ektp.imgSGps": "/assets/figma/ektp-imgSGps.svg",
+  "ui.gpsS": "/assets/figma/ui-gps-s.svg",
   "ektp.imgSPlus": "/assets/figma/ektp-imgSPlus.svg",
   "ektp.imgSMinus": "/assets/figma/ektp-imgSMinus.svg",
   "klk.imgSizeMValueUncheckedInteractionDefault": "/assets/figma/klk-imgSizeMValueUncheckedInteractionDefault.svg",
@@ -468,5 +469,5 @@
   "ui.trash": "/assets/figma/ui-trash.svg",
   "ui.menu": "/assets/figma/menu-source-2026-10-18.svg",
   "ui.layers": "/assets/figma/layers-source-2026-10-18.svg",
-  "ui.refresh": "/assets/figma/ui-restart-circle.svg"
+  "ui.refresh": "/assets/figma/ui-refresh.svg"
 }

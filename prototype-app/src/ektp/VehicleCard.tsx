@@ -30,8 +30,8 @@ export default function VehicleCard({vehicle,theme,tab,onTab,onTelemetry,onHisto
    <Button icon="route" tone="primary" data-tooltip={historyActive?'Вернуться к последнему известному положению транспорта':'Показать маршрут и воспроизвести движение выбранного транспорта за период'} onClick={onHistory}>{historyActive?'Последняя позиция':'История движения'}</Button>
    {tab==='sensors'&&<Button data-vehicle-period="" tone="outline" data-tooltip="Открыть графики топлива, напряжения и зажигания за выбранный период" onClick={()=>onTelemetry('fuel')}>Показания за период</Button>}
    <Smooth.div className="vehicle-context-actions" ref={actions}>
-    <IconButton className="button button-outline icon-button vehicle-location" name="gps" label="Местоположение" data-tooltip="Показать последнее известное положение транспорта" onClick={onLocation}/>
-    {(!hasFreshPosition(vehicle)||refreshing)&&<IconButton className="button button-outline icon-button vehicle-refresh" name="refresh" label="Обновить позицию" loading={refreshing} aria-disabled={refreshing||undefined} onClick={()=>{if(!refreshing)onRefresh?.(vehicle);}}/>}
+    <IconButton className="button button-outline icon-button vehicle-location" name="gps" iconSize={20} label="Местоположение" data-tooltip="Показать последнее известное положение транспорта" onClick={onLocation}/>
+    {(!hasFreshPosition(vehicle)||refreshing)&&<IconButton className="button button-outline icon-button vehicle-refresh" name="refresh" iconSize={20} label="Обновить позицию" loading={refreshing} aria-disabled={refreshing||undefined} onClick={()=>{if(!refreshing)onRefresh?.(vehicle);}}/>}
     <Button tone="gray-tertiary" data-tooltip="Открыть заправки и другие топливные транзакции выбранного транспорта за период" onClick={onFuel}>Топливные транзакции</Button>
    </Smooth.div>
   </Smooth.div>
