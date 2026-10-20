@@ -1,6 +1,6 @@
 {
-  "reviewedAt": "2026-10-20T14:30:14.004988+00:00",
-  "review": "C321: actual local CUA review, all17 unique images refreshed and reviewed;18 placements/3readers loaded with correct natural sizes, no scoped layout/type probe findings. Profile placement text updated, code/sidebar checked separately. Not full historical acceptance or publication.",
+  "reviewedAt": "2026-10-20T18:11:36.335Z",
+  "review": "C322-C324 scoped review: 24 collapsed menu captures, both themes, six viewports; keyboard/drawer/defer/BI scroll checks. New C323 collapsed-navigation illustration and accurate two-node text replace the former 16px anchoring explanation. Three readers loaded all19 placements/18 unique images; scoped layout/type probes and 18-image contact review passed. Existing C321 images are retained with their original capture provenance for unchanged depicted content/states; none shows the changed defer action or collapsed EKTP groups. C324 changes scrollbar styling/chaining, not illustrated BI values or control workflows. Not full historical acceptance or publication. C325 final native sync: node12939:14421 includes the C324 table-scroll explanation; actual reader text reviewed at1440x900 and768x1024 without horizontal overflow. Application interface fingerprint and all existing image assets are unchanged.",
   "images": {
     "/assets/rationale/current-2026-10-19/ektp-selected.png": {
       "sha256": "e749827a16e433f039d1edfa0eb19a221ac3a709b8d9c699feef26d40adc298d",
@@ -164,12 +164,20 @@
       "visuallyReviewed": true,
       "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-transactions.jpg",
       "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
+    },
+    "/assets/rationale/current-2026-10-20-controls/ektp-collapsed-navigation.png": {
+      "sha256": "ab47fd11ae544bed1d00484b50f4dd4c37d3152c497994675445c90a82dfdd1d",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c322-c324-2026-10-20/final-collapsed-monitoring-light.png",
+      "note": "C323 actual local CUA capture; 1440x900 Light, native line/dots and flyout at trigger.right/bottom. PNG format conversion only."
     }
   },
   "readers": {
-    "ektp": "0ab82a9f5040cedc7ae274b278573ec83412b7c2d396ad22a7b9a99e7d944db5",
+    "ektp": "a27cae7d4125438c290f4e970b662e6f7848485bbffe0d63b2d36a51ecbc3795",
     "klk": "5c6b55ee39bb71fd10f708b16c8ee52fd671be65af4afce2513b644f33bd7d34",
     "klk-2": "3114458851faf701d8febdda5dc2b9d7848d06d644ecbe2316d680db12cf2562"
   },
-  "interfaceSha256": "8d1b0a55d03c63f8a65b769f2b39378864b4ccc682de8099527717a83768bf36"
+  "interfaceSha256": "fabea0755cd54e890f2c91bd6ffd965ab961967ec6a55d51f22d983eec9f15ed"
 }

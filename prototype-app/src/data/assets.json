@@ -472,5 +472,6 @@
   "ui.layers": "/assets/figma/layers-source-2026-10-18.svg",
   "ui.refresh": "/assets/figma/ui-refresh.svg",
   "ui.listS": "/assets/figma/ui-list-s.svg",
-  "ui.pinListS": "/assets/figma/ui-pin-list-s.svg"
+  "ui.pinListS": "/assets/figma/ui-pin-list-s.svg",
+  "ui.archiveDownS": "/assets/figma/archive-down-s.svg"
 }

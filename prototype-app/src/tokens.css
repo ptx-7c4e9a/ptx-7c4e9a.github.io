@@ -1,5 +1,6 @@
 /* Live AtomicSystem semantic variables, Light/Dark resolved read-only on 2026-10-16. */
 :root,[data-theme="light"]{
+--border-neutral-weak:rgba(221.085,220.0735,217.515,1);
 --interaction-brand-primary-default:rgba(255,209.99989,0,1);
 --interaction-brand-primary-hover:rgba(204.0,161.99997,3.99993,1);
 --interaction-brand-primary-pressed:rgba(109.00001,77.99991,10.00008,1);
@@ -219,6 +220,7 @@
 --status-data-iota-emphasis:rgba(108.732,105.94408,100.368,1);
 }
 [data-theme="dark"]{
+--border-neutral-weak:rgba(35.802,33.7688,30.498,1);
 --interaction-brand-primary-default:rgba(255,209.99989,0,1);
 --interaction-brand-primary-hover:rgba(251.99992,216.9999,54.00008,1);
 --interaction-brand-primary-pressed:rgba(249.99996,226.99998,107.99989,1);
