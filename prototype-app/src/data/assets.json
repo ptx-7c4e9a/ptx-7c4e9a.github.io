@@ -473,5 +473,7 @@
   "ui.refresh": "/assets/figma/ui-refresh.svg",
   "ui.listS": "/assets/figma/ui-list-s.svg",
   "ui.pinListS": "/assets/figma/ui-pin-list-s.svg",
-  "ui.archiveDownS": "/assets/figma/archive-down-s.svg"
+  "ui.archiveDownS": "/assets/figma/archive-down-s.svg",
+  "ui.dispatchPhoneS": "/assets/figma/contact-phone-s.svg",
+  "ui.dispatchLetterS": "/assets/figma/contact-letter-s.svg"
 }

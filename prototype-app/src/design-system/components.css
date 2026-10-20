@@ -302,7 +302,8 @@ html.theme-atomic::view-transition-new(root){animation:theme-page-in 1000ms ease
 
 .linked-record>.direction-icon,.related-vehicle>.direction-icon,.attention-row>.direction-icon,.notification-item>.direction-icon{align-self:center}
 
-.kpi-info,.summary-drag-handle{color:var(--content-neutral-low)}
+.kpi-info{color:var(--content-neutral-low)}
+.summary-drag-handle{color:var(--content-neutral-higher);opacity:1}
 .kpi-info:hover:not(:disabled),.summary-drag-handle:hover{color:var(--interaction-neutral-primary-hover)}
 .summary-card.reordering{user-select:none}
 
@@ -495,6 +496,25 @@ html.theme-atomic::view-transition-new(root){animation:theme-page-in 1000ms ease
 .batch-toolbar>.batch-buttons{width:var(--registry-trailing-width,360px);max-width:100%;margin:0}
 .ektp-registry>.batch-toolbar>.batch-buttons{margin-left:auto}
 @media(max-width:1100px){.ektp-registry{--registry-trailing-width:100%}.ektp-registry-filters>.search{order:-1;flex:1 0 100%;margin-left:0}}
+
+/* One contact surface for product screens, entry pages and rationale readers. */
+footer.dispatch-footer,.launcher>footer.dispatch-footer,.auth-screen>footer.dispatch-footer{display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px;color:var(--text);font-size:14px;line-height:20px}
+.app-footer.dispatch-footer{height:auto;min-height:80px;padding:16px}
+.dispatch-name{flex:1 1 260px;min-width:0}
+.dispatch-contact{display:inline-flex;align-items:center;gap:8px;min-height:40px;flex:none;white-space:nowrap;color:inherit;text-decoration:none;text-underline-offset:4px}
+.dispatch-contact:hover{text-decoration:underline}
+.dispatch-contact:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
+.dispatch-copyright{flex-basis:100%;font-size:12px;line-height:16px;color:var(--muted)}
+.auth-screen:has(>.auth-introduction)>footer.dispatch-footer{display:grid;grid-template-columns:max-content max-content;justify-content:start;gap:0 24px}
+.auth-screen>footer.dispatch-footer>.dispatch-name,.auth-screen>footer.dispatch-footer>.dispatch-copyright{grid-column:1/-1}
+.auth-screen>footer.dispatch-footer>.dispatch-name{margin:0;font-size:16px;line-height:24px;font-weight:600}
+.auth-screen>footer.dispatch-footer>.dispatch-copyright{margin-top:4px}
+.dispatch-support{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px}
+.dispatch-support>.dispatch-name{flex-basis:100%}
+.reader>.dispatch-footer{flex:none;padding:8px 16px;background:var(--surface);border-radius:16px}
+.reader-layout{position:relative}
+.reader .top-fab{position:absolute;right:24px;bottom:24px}
+@media(max-width:600px){.dispatch-name{flex-basis:100%}.auth-screen>footer.dispatch-footer{left:24px;right:24px;bottom:16px}}
 .batch-delete-dialog .dialog-content{display:flex;flex-direction:column;gap:24px}
 .batch-delete-dialog .dialog-content>.feedback-art{margin:0 auto;flex:none}
 .batch-delete-dialog .dialog-content>.empty-copy{margin:0;text-align:center}
