@@ -52,12 +52,12 @@ export default function SystemAlert({theme,scope,messages=[]}: {theme:string;sco
  const resume=()=>{if(paused.current){paused.current=false;schedule();}};
  return createPortal(<div className="system-alert-host" data-theme={theme}>
   <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</span>
-  {message&&<div key={message.id} className={'system-alert-frame'+(leaving?' leaving':'')}><Smooth.section className={'system-alert '+message.tone} data-alert-tone={message.tone}
+  {message&&<Smooth.section key={message.id} className={'system-alert '+message.tone+(leaving?' leaving':'')} data-alert-tone={message.tone}
    aria-label={message.title} onMouseEnter={pause} onMouseLeave={event=>{if(!event.currentTarget.contains(document.activeElement))resume();}}
    onFocus={pause} onBlur={event=>{if(!event.currentTarget.contains(event.relatedTarget)&&!event.currentTarget.matches(':hover'))resume();}}>
    <Icon name={message.tone==='success'?'check':'info'} size={20}/>
    <div className="system-alert-copy"><strong>{message.title}</strong>{message.body&&<p>{message.body}</p>}</div>
    <Smooth.button type="button" className="system-alert-close" aria-label="Закрыть уведомление" onClick={dismiss}><Icon name="close" size={20}/></Smooth.button>
-  </Smooth.section></div>}
+  </Smooth.section>}
  </div>,document.body);
 }

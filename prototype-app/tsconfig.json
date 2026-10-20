@@ -13,6 +13,8 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "@typography",
+    "paths": {"@typography/*": ["./src/typography/*"]},
     "noEmit": true,
     "strict": false,
     "esModuleInterop": true,

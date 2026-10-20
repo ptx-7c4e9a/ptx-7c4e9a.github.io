@@ -20,17 +20,10 @@ export default forwardRef<any,any>(function PopoverSurface({as='div',className='
  const present=usePopoverPresent(),reduced=useReducedMotion(),[shown,setShown]=useState(false),Surface=as==='section'?Smooth.section:Smooth.div;
  useLayoutEffect(()=>{if(reduced){setShown(true);return;}const frame=requestAnimationFrame(()=>setShown(true));return()=>cancelAnimationFrame(frame);},[reduced]);
  const visible=present&&shown,duration=reduced?0:present?300:220;
- // Filter the already clipped surface, so the shadow follows its Figma contour.
- // The positioning shell paints nothing; the inner surface owns padding/scrolling.
- return <div className={'popover-surface '+className+' popover-shadow-frame'} data-theme={props['data-theme']}
-  data-popover-state={!present?'closing':shown?'open':'opening'} inert={!present}
-  style={{...style,pointerEvents:present?style?.pointerEvents:'none',opacity:visible?1:0,
-   transform:visible||reduced?'none':present?'translateY(4px) scale(.98)':'translateY(3px) scale(.985)',
-   transition:`opacity ${duration}ms cubic-bezier(.16,1,.3,1),transform ${duration}ms cubic-bezier(.16,1,.3,1)`}}>
-  <Surface {...props} ref={ref} className={'popover-surface '+className}
+ return <Surface {...props} ref={ref} className={'popover-surface '+className}
   data-popover-state={!present?'closing':shown?'open':'opening'} data-reduced-motion={!!reduced}
   inert={!present||props.inert} aria-hidden={!present||props['aria-hidden']}
-  style={{...style,position:'relative',left:'auto',top:'auto',right:'auto',bottom:'auto',width:'100%',margin:0,
-   pointerEvents:present?style?.pointerEvents:'none',opacity:1,transform:'none',transition:'none'}}/>
- </div>;
+  style={{...style,pointerEvents:present?style?.pointerEvents:'none',opacity:visible?1:0,
+   transform:visible||reduced?'none':present?'translateY(4px) scale(.98)':'translateY(3px) scale(.985)',
+   transition:`opacity ${duration}ms cubic-bezier(.16,1,.3,1),transform ${duration}ms cubic-bezier(.16,1,.3,1)`}}/>;
 });

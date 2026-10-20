@@ -1,15 +1,14 @@
 {
-  "reviewedAt": "2026-10-19T16:29:46.330054+00:00",
-  "review": "C295:5 affected EKTP images refreshed, unchanged KLK/fuel/table retained from C289; Light1440 and Dark768 actual trigger checked",
+  "reviewedAt": "2026-10-20T13:19:04.975Z",
+  "review": "C319: quick final interface review; 9 legacy figures refreshed, 8 BI/control figures rechecked; 18 placements / 17 unique images in 3 readers. Current behavior and period copy reconciled. QA c319-prepublication-2026-10-20; Figma scoped handoff tracked separately.",
   "images": {
     "/assets/rationale/current-2026-10-19/ektp-selected.png": {
-      "sha256": "482be2edc4925a08d0c16993ccfe8a91e87dafd6b1652219c0220f9df2369789",
+      "sha256": "e08a2bd021392489ac05efb4cc01f3973b5c45191087b6d210d9df3821c140bd",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c295-pinlist-2026-10-19/ektp-selected.jpg",
-      "unchangedAfterLastStyleFix": false,
-      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+      "evidence": "qa/c319-prepublication-2026-10-20/ektp-selected.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/ektp-sensors.png": {
       "sha256": "1948201ae82d12c1a833fa9fffbab29b87337ac2d4596221a16b943870043aa1",
@@ -39,82 +38,138 @@
       "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
     },
     "/assets/rationale/current-2026-10-19/ektp-profile.png": {
-      "sha256": "bca352ae6886224de223a506da2e952ec44b3a91cd0bdb41ef7a1fb3c552c72c",
+      "sha256": "eadd961ecba4755246fbe0b998f94e3afda4eef6085bd509d6acdab1540aa162",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c295-pinlist-2026-10-19/ektp-profile.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+      "evidence": "qa/c319-prepublication-2026-10-20/ektp-profile.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/ektp-pagination.png": {
-      "sha256": "c875b44ff83178b3e33e94cf4c803294593162a5f53a661a11777b8140bac652",
+      "sha256": "0ed099c82c3420d9dc0c9cfdedb05ef7dddc4992cb74ae12bd8b9df001c10b2e",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c289-rationale-refresh-2026-10-19/ektp-pagination.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+      "evidence": "qa/c319-prepublication-2026-10-20/ektp-pagination-final.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/ektp-actions.png": {
-      "sha256": "dff4c46e43b2bf49b09ef8773b0cf9ed9d4cc5f32e0101e6057f96aaa044392d",
+      "sha256": "aad83d4481c4cbb877151aaddad5f48288bbd59b127cee24e832dea2a674203d",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c295-pinlist-2026-10-19/ektp-actions.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
+      "evidence": "qa/c319-prepublication-2026-10-20/ektp-actions.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/klk-a-home.png": {
-      "sha256": "40374ade928382b6721cbcd85c4ac4fc48bdb77050b7c1d96f5a9572f900737e",
+      "sha256": "54dd8851d9daeebddfdcc9ef6dcb3fe1781437f6090464db379efeeeea6a7b93",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-a-home.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+      "evidence": "qa/c319-prepublication-2026-10-20/klk-a-home.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/klk-a-compact.png": {
-      "sha256": "02828e809012a7f1206c3be9a6bc1d29fbc49c945230da1fc4c41197dd1429ca",
+      "sha256": "0332635711276b48e9a0583de2cc2a802ef8e01c5c0c9f4137ad41297b4a9304",
       "width": 1024,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-a-compact.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+      "evidence": "qa/c319-prepublication-2026-10-20/klk-a-compact.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/klk-navigation.png": {
-      "sha256": "3c94fa376cfa7416af10a0db90359d7d9b168a3b21857b2f063f1258961b1f40",
+      "sha256": "cc925b133ab19cac8c19570fb9e9bca12b23f7839f125733fc54854cd989b237",
       "width": 1024,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-navigation.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+      "evidence": "qa/c319-prepublication-2026-10-20/klk-navigation.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/klk-b-home.png": {
-      "sha256": "0a5c7c1bec2403959feb7e6f9f53ad5fbaec75683c2c0f92a1fa9f25a34affb1",
+      "sha256": "657b5445fcfa453661749f5efc34845e529dc193973faaf721e7d637236bc41a",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-b-home.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+      "evidence": "qa/c319-prepublication-2026-10-20/klk-b-home-final.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
     },
     "/assets/rationale/current-2026-10-19/klk-b-compact-menu.png": {
-      "sha256": "d09d09e3fa769cf9f5e1322061dcffd7411abeb137c088c287533620e5fd1499",
+      "sha256": "9dfe85987ae02031e9e6b3cc7fb7798b23573f9cd0a4b62b3aaf1bf86793b51f",
       "width": 768,
       "height": 1024,
       "visuallyReviewed": true,
-      "evidence": "qa/c289-rationale-refresh-2026-10-19/klk-b-compact-menu.jpg",
-      "unchangedAfterLastStyleFix": true,
-      "note": "Latest applicable UI; unchanged frames rechecked against affected source. CUA screenshots, not Figma exports."
+      "evidence": "qa/c319-prepublication-2026-10-20/klk-b-compact-menu.jpg",
+      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+    },
+    "/assets/rationale/current-2026-10-20-bi/ektp-bi-overview.png": {
+      "sha256": "442916d039e790f3aa3ae4616116d8c8d0fc4fa0fdbbeeaf1b994537bda23f70",
+      "width": 1440,
+      "height": 1440,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-overview-final.jpg",
+      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+    },
+    "/assets/rationale/current-2026-10-20-bi/ektp-bi-manager.png": {
+      "sha256": "93532141202ea561fbccde9e7a69fb7fa27e53afbbe737c159c002e15dde8b8e",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-manager-final.jpg",
+      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+    },
+    "/assets/rationale/current-2026-10-20-bi/ektp-bi-fuel.png": {
+      "sha256": "f848ba8e15414ecf12f2fccfa0bd722652215d7f9888eeecc7af1d624ac1ab44",
+      "width": 1440,
+      "height": 1440,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-fuel-final.jpg",
+      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+    },
+    "/assets/rationale/current-2026-10-20-bi/ektp-bi-hired.png": {
+      "sha256": "d15dcad5a95b52323cbe3d91502f9d9e1432c8f759de6541c4e693588e952ea7",
+      "width": 1440,
+      "height": 1440,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-hired-final.jpg",
+      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+    },
+    "/assets/rationale/current-2026-10-20-bi/ektp-bi-owned.png": {
+      "sha256": "6fabb72e883414fd06e12f33338282bb85f772a284a956b04c1105db4ce00cdb",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-owned-final.jpg",
+      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+    },
+    "/assets/rationale/current-2026-10-20-controls/ektp-telemetry.png": {
+      "sha256": "25669b631b3358401644c24b3f861f8deca02b58a1ee0fac01c768ffc3b46b0e",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/c318-reader-telemetry-light-final.jpg",
+      "note": "C316-C318 scoped actual CUA, format conversion only; Rechecked during C319 pre-release reader review."
+    },
+    "/assets/rationale/current-2026-10-20-controls/ektp-datepicker.png": {
+      "sha256": "1494e85b4b355e4ac167abd6cb26d2f5d37301b71f166a2bf719c6493a0bf420",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/c318-reader-datepicker-light-final.jpg",
+      "note": "C316-C318 scoped actual CUA, format conversion only; Rechecked during C319 pre-release reader review."
+    },
+    "/assets/rationale/current-2026-10-20-controls/ektp-transactions.png": {
+      "sha256": "44b24118d963602a99f8db8589ecbd20a606420e4ad1a76978e9afdc0f43738c",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/c309-bi-reports-2026-10-20/c318-reader-transactions-light-final.jpg",
+      "note": "C316-C318 scoped actual CUA, format conversion only; Rechecked during C319 pre-release reader review."
     }
   },
   "readers": {
-    "ektp": "9ec37827756798d604aedacdbcab345c39c486d5d67c11fc97e76822248e8009",
-    "klk": "845f0b157495535253aa0b606e4025322d0e2f8ef75e6e61ff9969988cb8e7a0",
-    "klk-2": "24010e77f9f7000ccca616f394e63bc7cc6c7926c7cc7b632c7503fe710a3a3e"
+    "ektp": "9772cfd658335ba23ba3051b818f41d8df2022b7378db539a7b3931bc002c8c6",
+    "klk": "ad45e71d745e46e25490ba6f5c988394b658dad4deb35ee325f48539a3791ac9",
+    "klk-2": "1f75d8608c258e688dd623ce449d7e03866a46ba7e0822311f8628a999e1d3dc"
   },
-  "interfaceSha256": "c3ef69d08bb45049d19be4e1d310e2b0318f97cf7508df21fa194daac313aed4"
+  "interfaceSha256": "af1a8138dba3ad8e58788d9f406216d88732aa49d93c41feb2ae0ba3652827d1"
 }

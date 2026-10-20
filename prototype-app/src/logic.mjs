@@ -11,6 +11,29 @@ export function assignTasks(state,requestId,taskIds,resourceRows){
  return next;
 }
 export function rankCandidates(candidates,selectedIds){return candidates.filter(c=>selectedIds.includes(c.vehicleId)).slice().sort((a,b)=>compare(a.etaSeconds,b.etaSeconds)||a.vehicleId.localeCompare(b.vehicleId));}
+export function formatDateTimeInput(value,dateOnly=false){
+ if(!value)return '';
+ return `${value.slice(8,10)}.${value.slice(5,7)}.${value.slice(0,4)}`+(dateOnly?'':` ${value.slice(11,16)}`);
+}
+export function parseDateTimeInput(text,dateOnly=false){
+ const match=text.trim().match(dateOnly?/^(\d{2})\.(\d{2})\.(\d{4})$/:/^(\d{2})\.(\d{2})\.(\d{4})[ ,]+(\d{2}):(\d{2})$/);
+ if(!match)return '';
+ const [,day,month,year,hour='00',minute='00']=match;
+ const date=new Date(0);date.setUTCFullYear(Number(year),Number(month)-1,Number(day));
+ if(date.getUTCFullYear()!==Number(year)||date.getUTCMonth()!==Number(month)-1||date.getUTCDate()!==Number(day)||Number(hour)>23||Number(minute)>59)return '';
+ return `${year}-${month}-${day}`+(dateOnly?'':`T${hour}:${minute}`);
+}
+export function formatPeriod(range){
+ const day=value=>`${value.slice(8,10)}.${value.slice(5,7)}.${value.slice(0,4)}`;
+ const fromTime=range.from.slice(11,16),toTime=range.to.slice(11,16);
+ return range.from.slice(0,10)===range.to.slice(0,10)?`${day(range.from)} · ${fromTime}–${toTime}`:`${day(range.from)}, ${fromTime} — ${day(range.to)}, ${toTime}`;
+}
+export function formatPeriodButton(range){
+ const crossYear=range.from.slice(0,4)!==range.to.slice(0,4);
+ const sameDay=range.from.slice(0,10)===range.to.slice(0,10);
+ const day=value=>new Intl.DateTimeFormat('ru-RU',{day:'numeric',month:sameDay?'long':'short',...(crossYear?{year:'numeric'}:{})}).format(new Date(value));
+ return sameDay?`${day(range.from)} · ${range.from.slice(11,16)}–${range.to.slice(11,16)}`:`${day(range.from)}, ${range.from.slice(11,16)} — ${day(range.to)}, ${range.to.slice(11,16)}`;
+}
 export function validRange(from,to){return !!from&&!!to&&Number.isFinite(Date.parse(from))&&Number.isFinite(Date.parse(to))&&Date.parse(from)<=Date.parse(to);}
 export function parseLocalDate(value){const [date,time='00:00']=value.split('T'),[year,month,day]=date.split('-').map(Number),[hour,minute]=time.split(':').map(Number);return new Date(year,month-1,day,hour,minute);}
 export function localDateValue(date){const pad=v=>String(v).padStart(2,'0');return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`;}

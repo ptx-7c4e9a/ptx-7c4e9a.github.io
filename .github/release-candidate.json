@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "f14ce44d6f564bf2cdcb8325eddafe88547d511aa38f903522b1989261362741",
-  "files": 589,
-  "totalBytes": 48758054,
+  "contentSha256": "0221bbc17cf61139d2ac7c28ba937114589e96f6a81bc37f584d6e0229c0c95c",
+  "files": 597,
+  "totalBytes": 51383988,
   "routes": 27,
-  "review": "C297 scoped verified C278-C293 and C295: pinned-vehicle popover PinList, vehicle actions, control states, current rationale screenshots/functionality; unanswered proposals, C294 DS tokens and C296 animation proposal excluded"
+  "review": "C319 local prepublication candidate: C298-C318 scoped changes, current3readers/18illustrations,91tests,597HTTP+SHA/27routes; old187 checks, unanswered questionnaire, C294/C296 excluded. C320 direct human command authorizes one publication through the existing owner."
 }

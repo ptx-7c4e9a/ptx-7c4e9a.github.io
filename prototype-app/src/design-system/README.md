@@ -13,6 +13,7 @@
 | Switch | [410:14259](https://www.figma.com/design/zRLM56kfYe5yTjNEy5GtZW/Design-System?node-id=410-14259) | M36×20, thumb16, состояния/тема через native semantic tokens |
 | Checkbox | [441:11033](https://www.figma.com/design/zRLM56kfYe5yTjNEy5GtZW/Design-System?node-id=441-11033) | M20×20,R4; native Check SVG; checked/hover/pressed |
 | Button | [320:4956](https://www.figma.com/design/zRLM56kfYe5yTjNEy5GtZW/Design-System?node-id=320-4956) | размеры M40/L48; primary, gray, outline1.5px внутри, text tertiary |
+| Выбор периода C316–C318 | Прямое уточнение пользователя 20.10.2026 | `PeriodControl.tsx`: одна Outline-кнопка; при сбросе одна общая поверхность и два прозрачных действия, общий hover и одна рамка. Редактируемые DatePicker находятся внутри диалога. Без сброса внешнего контейнера нет. |
 | UploadField | [917:45360](https://www.figma.com/design/zRLM56kfYe5yTjNEy5GtZW/Design-System?node-id=917-45360) | `UploadField.tsx`; label/dropzone/file metadata; системный input скрыт |
 | Popover / User menu | [2538:45320](https://www.figma.com/design/zRLM56kfYe5yTjNEy5GtZW/Design-System?node-id=2538-45320),12303:47128 | `ActionPopover.tsx`, `UserMenu.tsx`; outside/Escape, клавиатура |
 | Modal / Overlay | 12343:2571; Import12493:20209 | `Modal`, фокус/Escape; scrim и blur12; импорт600/pad24/R32 |

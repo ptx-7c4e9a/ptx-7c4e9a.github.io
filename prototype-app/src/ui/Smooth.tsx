@@ -12,9 +12,7 @@ const voidTags=new Set(['input','textarea','img']);
 // Also used by our own imperative map labels; SDK-owned controls stay untouched.
 export function applyCornerSmoothing(el:HTMLElement,params:any){
  const path=getSvgPath({...params,cornerSmoothing:1,preserveSmoothing:true});
- // Every painted surface uses only its own contour. An outside-preserving
- // evenodd ring also preserves composited paint/shadows around the corners.
- // External elevation belongs on an unpainted parent, as with popovers.
+ // Controls retain their exact Figma contour; elevated surfaces use native corners.
  el.style.clipPath=`path("${path}")`;el.dataset.cornerSmoothing='100';
 }
 function intrinsic(tag:string){
@@ -23,6 +21,11 @@ function intrinsic(tag:string){
   const attach=(el:HTMLElement|null)=>{node.current=el;if(typeof forwarded==='function')forwarded(el);else if(forwarded)forwarded.current=el;};
   useLayoutEffect(()=>{
    const el=node.current;if(!el)return;
+   // Native corners preserve external shadows without a clipping path or wrapper.
+   // These surfaces need no SVG path or resize subscription.
+   if(el.matches('.popover-surface,.dialog,.map-inspector,.map-status,.history-controls,.system-alert')){
+    el.style.removeProperty('clip-path');el.dataset.cornerSmoothing='native';return;
+   }
    const draw=()=>{
     const css=getComputedStyle(el);
     // CSS dimensions retain fractions; offsetWidth/Height round to integers and
