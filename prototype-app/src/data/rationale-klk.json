@@ -124,10 +124,10 @@
           "width": 1440,
           "height": 900,
           "alt": "КЛК A: главная с личными действиями в шапке",
-          "sourceNode": "local:C319",
+          "sourceNode": "local:C321",
           "caption": "Работающий прототип · 20.10.2026 · 1440 × 900 · светлая тема.",
           "captureSource": "CUA localhost",
-          "review": "C319",
+          "review": "C321",
           "figmaReferenceNode": "13562:11134"
         }
       ]
@@ -336,10 +336,10 @@
           "width": 1024,
           "height": 900,
           "alt": "КЛК A: компактная шапка, 1024 px",
-          "sourceNode": "local:C319",
+          "sourceNode": "local:C321",
           "caption": "Работающий прототип · 20.10.2026 · 1024 × 900 · светлая тема.",
           "captureSource": "CUA localhost",
-          "review": "C319",
+          "review": "C321",
           "figmaReferenceNode": "13841:79304"
         },
         {
@@ -348,10 +348,10 @@
           "width": 1024,
           "height": 900,
           "alt": "Компактная навигация КЛК: выход над разделителем и бренд внизу",
-          "sourceNode": "local:C319",
+          "sourceNode": "local:C321",
           "caption": "Работающий прототип · 20.10.2026 · 1024 × 900 · светлая тема.",
           "captureSource": "CUA localhost",
-          "review": "C319"
+          "review": "C321"
         }
       ]
     },

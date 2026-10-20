@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "0221bbc17cf61139d2ac7c28ba937114589e96f6a81bc37f584d6e0229c0c95c",
+  "contentSha256": "966b6126d579afc33839dcf0de79004c57a575b9ff5399d23f1d799c0f1c82cd",
   "files": 597,
-  "totalBytes": 51383988,
+  "totalBytes": 51257602,
   "routes": 27,
-  "review": "C319 local prepublication candidate: C298-C318 scoped changes, current3readers/18illustrations,91tests,597HTTP+SHA/27routes; old187 checks, unanswered questionnaire, C294/C296 excluded. C320 direct human command authorizes one publication through the existing owner."
+  "review": "C321 brand subtitle removed EKTP/KLK, EKTP profile in sidebar above logout with Демо-роль;52 scoped captures/2themes/7sizes,91tests/types/build,17 refreshed figures/18placements/3readers,597 HTTP+SHA/27routes, static UI checks. One repeat publication directly authorized by user; old187 checks/unanswered/C294/C296 excluded."
 }

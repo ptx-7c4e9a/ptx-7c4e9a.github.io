@@ -124,10 +124,10 @@
           "width": 1440,
           "height": 900,
           "alt": "КЛК B: главная, личные действия в нижней части боковой панели",
-          "sourceNode": "local:C319",
+          "sourceNode": "local:C321",
           "caption": "Работающий прототип · 20.10.2026 · 1440 × 900 · светлая тема.",
           "captureSource": "CUA localhost",
-          "review": "C319",
+          "review": "C321",
           "figmaReferenceNode": "13562:11676"
         }
       ]
@@ -336,10 +336,10 @@
           "width": 768,
           "height": 1024,
           "alt": "КЛК B: профиль и тема через UserPic основной компактной панели",
-          "sourceNode": "local:C319",
+          "sourceNode": "local:C321",
           "caption": "Работающий прототип · 20.10.2026 · 768 × 1024 · светлая тема.",
           "captureSource": "CUA localhost",
-          "review": "C319"
+          "review": "C321"
         },
         {
           "before": 7,
@@ -347,10 +347,10 @@
           "width": 1024,
           "height": 900,
           "alt": "Навигация КЛК без дублирования личного меню",
-          "sourceNode": "local:C319",
+          "sourceNode": "local:C321",
           "caption": "Работающий прототип · 20.10.2026 · 1024 × 900 · светлая тема.",
           "captureSource": "CUA localhost",
-          "review": "C319"
+          "review": "C321"
         }
       ]
     },

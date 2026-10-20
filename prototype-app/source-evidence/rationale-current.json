@@ -1,14 +1,14 @@
 {
-  "reviewedAt": "2026-10-20T13:19:04.975Z",
-  "review": "C319: quick final interface review; 9 legacy figures refreshed, 8 BI/control figures rechecked; 18 placements / 17 unique images in 3 readers. Current behavior and period copy reconciled. QA c319-prepublication-2026-10-20; Figma scoped handoff tracked separately.",
+  "reviewedAt": "2026-10-20T14:30:14.004988+00:00",
+  "review": "C321: actual local CUA review, all17 unique images refreshed and reviewed;18 placements/3readers loaded with correct natural sizes, no scoped layout/type probe findings. Profile placement text updated, code/sidebar checked separately. Not full historical acceptance or publication.",
   "images": {
     "/assets/rationale/current-2026-10-19/ektp-selected.png": {
-      "sha256": "e08a2bd021392489ac05efb4cc01f3973b5c45191087b6d210d9df3821c140bd",
+      "sha256": "e749827a16e433f039d1edfa0eb19a221ac3a709b8d9c699feef26d40adc298d",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/ektp-selected.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-selected.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/ektp-sensors.png": {
       "sha256": "1948201ae82d12c1a833fa9fffbab29b87337ac2d4596221a16b943870043aa1",
@@ -38,138 +38,138 @@
       "note": "C295: native PinList20; actual CUA capture after icon change; PNG format conversion only."
     },
     "/assets/rationale/current-2026-10-19/ektp-profile.png": {
-      "sha256": "eadd961ecba4755246fbe0b998f94e3afda4eef6085bd509d6acdab1540aa162",
+      "sha256": "2dfd78e4c0cce581f695492713846a68033cde4b31cc298d086e9ac4262bcc99",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/ektp-profile.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-profile.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/ektp-pagination.png": {
-      "sha256": "0ed099c82c3420d9dc0c9cfdedb05ef7dddc4992cb74ae12bd8b9df001c10b2e",
+      "sha256": "2c0864d02dc0930236ff3cde16a56d97eb0e3da124917b186aa53c3e83e442c7",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/ektp-pagination-final.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-pagination.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/ektp-actions.png": {
-      "sha256": "aad83d4481c4cbb877151aaddad5f48288bbd59b127cee24e832dea2a674203d",
+      "sha256": "e816911fcf1c32398aa891d7ba7bfd62bb75044dd7b9912511568734419d20e3",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/ektp-actions.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-actions.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/klk-a-home.png": {
-      "sha256": "54dd8851d9daeebddfdcc9ef6dcb3fe1781437f6090464db379efeeeea6a7b93",
+      "sha256": "c8bbea9c992c84291dd79b730551007c7ba20ef14eba4982ca615b6116c55240",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/klk-a-home.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-klk-a-home.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/klk-a-compact.png": {
-      "sha256": "0332635711276b48e9a0583de2cc2a802ef8e01c5c0c9f4137ad41297b4a9304",
+      "sha256": "69aff9006a8b924c457defd276713ebbc2b743a0ad78df6afdab6987b988afb7",
       "width": 1024,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/klk-a-compact.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-klk-a-compact.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/klk-navigation.png": {
-      "sha256": "cc925b133ab19cac8c19570fb9e9bca12b23f7839f125733fc54854cd989b237",
+      "sha256": "8249eb0e0a8d3c2b870b28671b8281fd9ea542739fcd32a1a43f58ee11cdb40c",
       "width": 1024,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/klk-navigation.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-klk-navigation.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/klk-b-home.png": {
-      "sha256": "657b5445fcfa453661749f5efc34845e529dc193973faaf721e7d637236bc41a",
+      "sha256": "a235ed3dbbc38e53d5aa997b416b50f707d3e3bf45d462bc4173b291f306cc62",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/klk-b-home-final.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-klk-b-home.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-19/klk-b-compact-menu.png": {
-      "sha256": "9dfe85987ae02031e9e6b3cc7fb7798b23573f9cd0a4b62b3aaf1bf86793b51f",
+      "sha256": "eb2f473b6a210fb0764f046299922687611185c7c42640cd5f582baf3a5d88b9",
       "width": 768,
       "height": 1024,
       "visuallyReviewed": true,
-      "evidence": "qa/c319-prepublication-2026-10-20/klk-b-compact-menu.jpg",
-      "note": "C319: refreshed actual stable CUA screenshot on final local interface; path retained, original previous evidence remains in QA. PNG conversion only."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-klk-b-compact-menu.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-bi/ektp-bi-overview.png": {
-      "sha256": "442916d039e790f3aa3ae4616116d8c8d0fc4fa0fdbbeeaf1b994537bda23f70",
+      "sha256": "d467bf0f2260056d9bc69c09566159af6da7c1024ad66158b5937e8da6b76d41",
       "width": 1440,
       "height": 1440,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-overview-final.jpg",
-      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-bi-overview.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-bi/ektp-bi-manager.png": {
-      "sha256": "93532141202ea561fbccde9e7a69fb7fa27e53afbbe737c159c002e15dde8b8e",
+      "sha256": "4fcb4eed2c63c956288d29fb8f9ab676998f3ef2253247ec6c38680cfe98f75e",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-manager-final.jpg",
-      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-bi-manager.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-bi/ektp-bi-fuel.png": {
-      "sha256": "f848ba8e15414ecf12f2fccfa0bd722652215d7f9888eeecc7af1d624ac1ab44",
+      "sha256": "b6576ab3b0882246c63a26f338a9993bd31a6af5bfd507427faf4eddee676124",
       "width": 1440,
       "height": 1440,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-fuel-final.jpg",
-      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-bi-fuel.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-bi/ektp-bi-hired.png": {
-      "sha256": "d15dcad5a95b52323cbe3d91502f9d9e1432c8f759de6541c4e693588e952ea7",
+      "sha256": "6da52a85f5d12c082b4e2ca0a678aa16a0a541d02a5230af25391548345f3c64",
       "width": 1440,
       "height": 1440,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-hired-final.jpg",
-      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-bi-hired.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-bi/ektp-bi-owned.png": {
-      "sha256": "6fabb72e883414fd06e12f33338282bb85f772a284a956b04c1105db4ce00cdb",
+      "sha256": "dfc6b7784db9dee993403636a7d6eb392d377ba87aada6e2e5d26181d28c353c",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/reader-bi-owned-final.jpg",
-      "note": "C309-C315 scoped BI actual CUA screenshot, PNG conversion only. Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-bi-owned.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-controls/ektp-telemetry.png": {
-      "sha256": "25669b631b3358401644c24b3f861f8deca02b58a1ee0fac01c768ffc3b46b0e",
+      "sha256": "17206c77b71aad38c3fcd0c543f276dac36f6651ed441ff34d702ccaf681ac18",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/c318-reader-telemetry-light-final.jpg",
-      "note": "C316-C318 scoped actual CUA, format conversion only; Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-telemetry.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-controls/ektp-datepicker.png": {
-      "sha256": "1494e85b4b355e4ac167abd6cb26d2f5d37301b71f166a2bf719c6493a0bf420",
+      "sha256": "f1ad39ec4b33441558541b3ded4ec39bca7084aebfdaf2631d0e2a28e9467ee1",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/c318-reader-datepicker-light-final.jpg",
-      "note": "C316-C318 scoped actual CUA, format conversion only; Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-datepicker.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     },
     "/assets/rationale/current-2026-10-20-controls/ektp-transactions.png": {
-      "sha256": "44b24118d963602a99f8db8589ecbd20a606420e4ad1a76978e9afdc0f43738c",
+      "sha256": "67b787ec5a98de360493959c5a7b74f68e3cf67c12d959f9c85d9441940353e7",
       "width": 1440,
       "height": 900,
       "visuallyReviewed": true,
-      "evidence": "qa/c309-bi-reports-2026-10-20/c318-reader-transactions-light-final.jpg",
-      "note": "C316-C318 scoped actual CUA, format conversion only; Rechecked during C319 pre-release reader review."
+      "evidence": "qa/c321-sidebar-2026-10-20/rationale-ektp-transactions.jpg",
+      "note": "C321 actual CUA screenshot after sidebar/profile change, reviewed in figures-review-1/2 plus individual full-size examples. PNG format conversion only; original viewport retained."
     }
   },
   "readers": {
-    "ektp": "9772cfd658335ba23ba3051b818f41d8df2022b7378db539a7b3931bc002c8c6",
-    "klk": "ad45e71d745e46e25490ba6f5c988394b658dad4deb35ee325f48539a3791ac9",
-    "klk-2": "1f75d8608c258e688dd623ce449d7e03866a46ba7e0822311f8628a999e1d3dc"
+    "ektp": "0ab82a9f5040cedc7ae274b278573ec83412b7c2d396ad22a7b9a99e7d944db5",
+    "klk": "5c6b55ee39bb71fd10f708b16c8ee52fd671be65af4afce2513b644f33bd7d34",
+    "klk-2": "3114458851faf701d8febdda5dc2b9d7848d06d644ecbe2316d680db12cf2562"
   },
-  "interfaceSha256": "af1a8138dba3ad8e58788d9f406216d88732aa49d93c41feb2ae0ba3652827d1"
+  "interfaceSha256": "8d1b0a55d03c63f8a65b769f2b39378864b4ccc682de8099527717a83768bf36"
 }
