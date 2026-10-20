@@ -489,9 +489,12 @@ html.theme-atomic::view-transition-new(root){animation:theme-page-in 1000ms ease
 
 .dialog-content>.empty,.dialog-content>.feedback-state{padding:0}
 .dialog:has(>.dialog-content>.empty)>footer,.dialog:has(>.dialog-content>.feedback-state)>footer{margin-top:24px}
-.ektp-registry-filters>.search{margin-left:auto;flex:0 1 320px;width:320px;max-width:100%;min-width:0}
-@media(max-width:1100px){.ektp-registry-filters>.search{order:-1;flex:1 0 100%;width:100%;margin-left:0}}
-.batch-toolbar>.batch-buttons{width:360px;max-width:100%;margin:0}
+/* Keep search and bulk actions on the same trailing column without extra wrappers. */
+.ektp-registry{--registry-trailing-width:360px}
+.ektp-registry-filters>.search{margin-left:auto;flex:0 0 var(--registry-trailing-width);width:var(--registry-trailing-width);max-width:100%;min-width:0}
+.batch-toolbar>.batch-buttons{width:var(--registry-trailing-width,360px);max-width:100%;margin:0}
+.ektp-registry>.batch-toolbar>.batch-buttons{margin-left:auto}
+@media(max-width:1100px){.ektp-registry{--registry-trailing-width:100%}.ektp-registry-filters>.search{order:-1;flex:1 0 100%;margin-left:0}}
 .batch-delete-dialog .dialog-content{display:flex;flex-direction:column;gap:24px}
 .batch-delete-dialog .dialog-content>.feedback-art{margin:0 auto;flex:none}
 .batch-delete-dialog .dialog-content>.empty-copy{margin:0;text-align:center}

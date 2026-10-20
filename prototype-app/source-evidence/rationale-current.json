@@ -1,6 +1,6 @@
 {
-  "reviewedAt": "2026-10-20T18:11:36.335Z",
-  "review": "C322-C324 scoped review: 24 collapsed menu captures, both themes, six viewports; keyboard/drawer/defer/BI scroll checks. New C323 collapsed-navigation illustration and accurate two-node text replace the former 16px anchoring explanation. Three readers loaded all19 placements/18 unique images; scoped layout/type probes and 18-image contact review passed. Existing C321 images are retained with their original capture provenance for unchanged depicted content/states; none shows the changed defer action or collapsed EKTP groups. C324 changes scrollbar styling/chaining, not illustrated BI values or control workflows. Not full historical acceptance or publication. C325 final native sync: node12939:14421 includes the C324 table-scroll explanation; actual reader text reviewed at1440x900 and768x1024 without horizontal overflow. Application interface fingerprint and all existing image assets are unchanged.",
+  "reviewedAt": "2026-10-20T18:47:55.769Z",
+  "review": "C322-C324 scoped review: 24 collapsed menu captures, both themes, six viewports; keyboard/drawer/defer/BI scroll checks. New C323 collapsed-navigation illustration and accurate two-node text replace the former 16px anchoring explanation. Three readers loaded all19 placements/18 unique images; scoped layout/type probes and 18-image contact review passed. Existing C321 images are retained with their original capture provenance for unchanged depicted content/states; none shows the changed defer action or collapsed EKTP groups. C324 changes scrollbar styling/chaining, not illustrated BI values or control workflows. Not full historical acceptance or publication. C325 final native sync: node12939:14421 includes the C324 table-scroll explanation; actual reader text reviewed at1440x900 and768x1024 without horizontal overflow. Application interface fingerprint and all existing image assets are unchanged. C326: search and bulk actions in EKTP requests/waybills share a 360px trailing column, full-width at <=1100px, no new DOM. Twelve actual CUA geometry observations across six viewport sizes, Light/Dark and compact/expanded states passed; search query1042 returns one record. Existing19 illustration placements/18 images depict monitoring/vehicle/BI/KLK states rather than these registry toolbars; their assets and native reader text are unchanged. Prior image provenance retained; no claim that old captures were retaken. C326 scoped review recorded in qa/c326-search-alignment-2026-10-20/.",
   "images": {
     "/assets/rationale/current-2026-10-19/ektp-selected.png": {
       "sha256": "e749827a16e433f039d1edfa0eb19a221ac3a709b8d9c699feef26d40adc298d",
@@ -179,5 +179,5 @@
     "klk": "5c6b55ee39bb71fd10f708b16c8ee52fd671be65af4afce2513b644f33bd7d34",
     "klk-2": "3114458851faf701d8febdda5dc2b9d7848d06d644ecbe2316d680db12cf2562"
   },
-  "interfaceSha256": "fabea0755cd54e890f2c91bd6ffd965ab961967ec6a55d51f22d983eec9f15ed"
+  "interfaceSha256": "e17b22e00a359cb8d276e6c28fc36d403064ae40c5fb8d1c4b14ac212ef7b59a"
 }

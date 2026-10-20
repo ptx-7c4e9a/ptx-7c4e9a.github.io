@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "b310a8e9ef8aedda7cb9220f4ff904f2154c8e854cbf47267203efb9efe793a4",
+  "contentSha256": "be217e42b0857890e40fcab21b94a2cc0274065949c3fad7d360c4b2a0d9fef4",
   "files": 601,
-  "totalBytes": 52348275,
+  "totalBytes": 52348500,
   "routes": 27,
-  "review": "C325: C322 native ArchiveDown on shared defer actions; C323 EKTP collapsed72/trigger40/flyout256 with native rail/dots, six Reports items, viewport-safe nav; C324 fitContent wheel chaining and rounded thinner-hover thumb. Scoped dev/static UI and 7 required EKTP viewport sizes in both themes;91tests/types/build,3readers/19placements,601HTTP+SHA/27routes. C321 existing images retained for unchanged depicted states; new C323 actual illustration. Historical187/C294/C296 excluded. Final native node12939:14421 table-scroll text synchronized into reader; interface fingerprint and illustrated states unchanged, scoped text reviewed at1440/768."
+  "review": "C326 only: existing EKTP registry search and batch actions share360px/full-width<=1100 alignment, no new DOM.12 dev geometry observations and real search functional check;91tests/types/build/freshness. Existing19 reader placements depict unaffected states and retain capture provenance. Native EKTP handoff and final static/public acceptance recorded separately. Historical187/C294/C296 deferred."
 }
