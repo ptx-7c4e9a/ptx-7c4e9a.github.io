@@ -91,7 +91,7 @@ th>button>span{display:inline-flex;align-items:center;justify-content:center;wid
 .map-inspector{left:auto;right:16px;bottom:16px}.map-inspector>header{margin-bottom:4px}.map-inspector .vehicle-hero{height:168px;margin-bottom:4px}.map-inspector .tabs{margin-bottom:8px}.history-controls{left:16px;right:376px}
 @media(max-width:1100px){.history-controls{left:16px;right:352px}.map-inspector .vehicle-hero{height:144px}}
 @media(max-height:800px){.map-inspector .vehicle-hero{height:132px}}
-.map-inspector>.vehicle-inspector-header{margin-bottom:8px}.map-inspector>.vehicle-inspector-title{flex:none;margin:0 0 8px}.app-shell .map-inspector .button.vehicle-list-back{align-self:flex-start;justify-content:flex-start;width:auto;padding:4px 0;margin:0}
+.map-inspector>.vehicle-inspector-header{margin-bottom:8px}.app-shell .map-inspector .button.vehicle-list-back{align-self:flex-start;justify-content:flex-start;width:auto;padding:4px 0;margin:0}
 @media(max-height:800px){.map-inspector:has(.vehicle-list-back) .vehicle-hero{height:64px}}
 .map-inspector>.vehicle-action-group{margin-top:12px}.map-inspector>.vehicle-actions>.button{width:100%;margin:0;min-height:40px;flex:none}
 .app-shell .app-footer>.home-fab{position:absolute;right:16px;top:50%;bottom:auto;transform:translateY(-50%);width:48px;height:48px}
@@ -115,7 +115,7 @@ th>button>span{display:inline-flex;align-items:center;justify-content:center;wid
 .rationale-table-scroll th:first-child{width:16%}.rationale-table-scroll td{width:28%}
 
 /* C243: visual movement cue; geographic speed/slowdown and routes are unchanged. */
-.vehicle-marker .plate-label{display:flex;flex-direction:column;gap:2px;max-width:128px}
+.vehicle-marker .plate-label{display:flex;flex-direction:column;gap:2px;width:max-content;max-width:none}
 .map-motion-state{display:flex;align-items:center;gap:4px;font-size:10px;line-height:14px;color:var(--status-system-warning-content)}
 .map-motion-state.moving{color:var(--status-system-success-content)}
 .map-motion-state.moving.speeding{color:var(--status-system-alert-content)}
@@ -145,9 +145,10 @@ th>button>span{display:inline-flex;align-items:center;justify-content:center;wid
 .period-action>.period-reset:hover:not(:disabled),.period-action>.period-reset:active:not(:disabled){background:transparent;color:var(--interaction-brand-primary-hover)}
 .period-action>.period-reset:focus-visible{outline:none;box-shadow:none;color:var(--interaction-brand-primary-hover)}
 .period-action:has(>button:focus-visible)>.smooth-outline>path{stroke:var(--accent)}
-.app-shell .map-inspector .scroll-content>.period-action{width:fit-content}
-.map-inspector:has(>.vehicle-inspector-title){width:456px;max-width:calc(100% - 32px)}
-.map-workspace:has(>.map-inspector>.vehicle-inspector-title)>.history-controls{right:488px}
+.app-shell :is(.map-inspector,.vehicle-modal) .scroll-content>.vehicle-period-control.period-action{width:100%;justify-content:center;text-align:center}
+.vehicle-period-control>.period-trigger{justify-content:center;text-align:center}
+.map-inspector[data-inspector=vehicle]{width:456px;max-width:calc(100% - 32px)}
+.map-workspace:has(>.map-inspector[data-inspector=vehicle])>.history-controls{right:488px}
 .dialog.period-dialog{width:600px}
 .app-shell .sensor-snapshot-title{font-size:14px;line-height:20px;margin:0 0 4px}
 .sensor-snapshot-time{font-size:12px;line-height:18px;color:var(--muted);margin:0}

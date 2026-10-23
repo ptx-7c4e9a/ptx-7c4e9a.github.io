@@ -12,11 +12,19 @@ test('both standalone readers retain every verified Figma text and source link',
   const reader=JSON.parse(fs.readFileSync(new URL(`../src/data/rationale-klk${variant==='2'?'-2':''}.json`,import.meta.url),'utf8'));
   const native=JSON.parse(fs.readFileSync(new URL(`../qa/c250-klk-variant-rationales-2026-10-18/figma-live-${source.variant}.json`,import.meta.url),'utf8'));
   assert.equal(reader.id,source.id);assert.equal(reader.variant,variant);assert.equal(reader.c250Source.sha256,hash);
-  const actual=new Map(reader.sections.flatMap(s=>s.text).map(t=>[t.id,t]));
+  const actual=new Map([...reader.sections,...reader.archivedSections??[]].flatMap(s=>s.text).map(t=>[t.id,t]));
   const expected=[...source.sections.flatMap(s=>texts(s.tree)),...native.native.flatMap(n=>n.texts)];
   assert.equal(actual.size,expected.length);
   const overrides=new Map((reader.c289Source?.textOverrides??[]).map(row=>[row.id,row]));
-  for(const row of expected){const override=overrides.get(row.id);if(override){assert.equal(override.previousText,row.text,`Override must retain Figma source ${row.id}`);assert.ok(override.authority);}assert.equal(actual.get(row.id)?.text,override?.text??row.text,`Lost Figma text or authorised revision ${row.id}`);if(row.hyperlink?.type==='URL')assert.equal(actual.get(row.id)?.href,row.hyperlink.value);}
+  for(const row of expected){const override=overrides.get(row.id);if(override){assert.equal(override.previousText,row.text,`Override must retain Figma source ${row.id}`);assert.ok(override.authority);}assert.equal(actual.get(row.id)?.text,override?.text??row.text,`Lost Figma text or authorised revision ${row.id}`);if(row.hyperlink?.type==='URL'){
+   const link=actual.get(row.id);assert.equal(link.sourceHref??link.href,row.hyperlink.value);
+   if(link.sourceHref){
+    const migration=JSON.parse(fs.readFileSync(new URL('../../orchestration/figma-migration-2026-10-21/node-map-klk.json',import.meta.url)));
+    const before=new URL(row.hyperlink.value),after=new URL(link.href);
+    assert.equal(after.pathname.split('/')[2],reader.activeFigma.fileKey);
+    assert.equal(after.searchParams.get('node-id').replaceAll('-',':'),migration.map[before.searchParams.get('node-id').replaceAll('-',':')]);
+   }
+  }}
   for(const id of overrides.keys())assert.ok(expected.some(row=>row.id===id),`Unknown source text override ${id}`);
  }
  assert.notEqual(docs[0].id,docs[1].id);

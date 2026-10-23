@@ -12,8 +12,8 @@ import {exportBiRows} from './bi-export';
 import {FleetReport,FleetPreviews} from './BiFleetReports';
 
 
-function MetricTile({label,value,unit,note,trend}:any){
- return <Smooth.article className="bi-metric surface"><p>{label}</p><strong>{number(value)}{unit&&<small>{unit}</small>}</strong><div className="bi-metric-note">{trend&&<Badge tone="success">{trend}</Badge>}<span>{note}</span></div></Smooth.article>;
+function MetricTile({label,value,unit,note,trend,accent=false}:any){
+ return <Smooth.article className={"bi-metric surface"+(accent?" brand":"")}><p>{label}</p><strong>{number(value)}{unit&&<small>{unit}</small>}</strong><div className="bi-metric-note">{trend&&<Badge tone="success">{trend}</Badge>}<span>{note}</span></div></Smooth.article>;
 }
 
 function PreviewLine({active,onMonth}:any){
@@ -28,7 +28,7 @@ function PreviewLine({active,onMonth}:any){
 }
 
 function PreviewFuel(){
- return <div className="bi-preview-bars" aria-hidden="true">{fuelRegions.slice(0,3).map((row:any)=><div key={row.id}><span>{row.name}</span><i style={{width:(row.diesel/4819*100)+'%'}}/><b>{number(row.diesel)}</b></div>)}</div>;
+ return <div className="bi-preview-bars" aria-hidden="true">{fuelRegions.slice(0,3).map((row:any)=><div key={row.id}><span>{row.name}</span><i style={{width:(row.petrol/Math.max(...fuelRegions.map((r:any)=>r.petrol),1)*100)+'%'}}/><b>{number(row.petrol)}</b></div>)}</div>;
 }
 
 function ReportsOverview({onNavigate,onTransactions}:any){
@@ -48,7 +48,7 @@ function ReportsOverview({onNavigate,onTransactions}:any){
     <p>Нормативная потребность в дизельном топливе и бензине по регионам и организациям.</p>
     <div className="bi-preview-values"><div><span>Топливо по нормативам</span><strong>14 935<small>т</small></strong></div><span className="bi-preview-count">23 084 шт. · ТС</span></div>
     <PreviewFuel/>
-    <footer><span>ДТ по регионам, т · срез BI</span><span>Открыть отчёт</span></footer>
+    <footer><span>Бензин по регионам, т · срез BI</span><span>Открыть отчёт</span></footer>
    </Smooth.button>
    <FleetPreviews onNavigate={onNavigate}/>
   </div>
@@ -125,7 +125,7 @@ function FuelBars({rows,selected,onSelect,measure}:any){
  const max=Math.max(...rows.map((r:any)=>r[measure==='all'?'diesel':measure]+(measure==='all'?r.petrol:0)),1);
  return <div className="bi-ranked-bars" aria-label="Сравнение нормативной потребности">{rows.map((r:any)=>{
   const diesel=measure==='petrol'?0:r.diesel,petrol=measure==='diesel'?0:r.petrol;
-  return <button type="button" className="bi-bar-row" key={r.id} aria-pressed={selected===r.id} aria-label={r.name+': ДТ '+number(r.diesel)+' т, бензин '+number(r.petrol)+' т. Открыть данные.'} onClick={()=>onSelect(selected===r.id?'':r.id)}><span className="bi-bar-label">{r.name}</span><span className="bi-bar-track"><i className="bi-diesel" style={{width:diesel/max*100+'%'}}/><i className="bi-petrol" style={{width:petrol/max*100+'%'}}/></span><strong>{number(diesel+petrol)}<small>т</small></strong><Icon name="forward" size={20}/></button>;
+  return <button type="button" className="bi-bar-row" key={r.id} aria-pressed={selected===r.id} aria-label={r.name+': ДТ '+number(r.diesel)+' т, бензин '+number(r.petrol)+' т. Открыть данные.'} onClick={()=>onSelect(selected===r.id?'':r.id)}><span className="bi-bar-label">{r.name}</span><span className="bi-bar-track"><i className="bi-petrol" style={{width:petrol/max*100+'%'}}/><i className="bi-diesel" style={{width:diesel/max*100+'%'}}/></span><strong>{number(diesel+petrol)}<small>т</small></strong><Icon name="forward" size={20}/></button>;
  })}</div>;
 }
 
@@ -141,12 +141,12 @@ function FuelReport(){
  const columns=[{...fuelBaseColumns[0],label:dimension==='regions'?'Регион':'Организация'},...fuelBaseColumns.slice(1),...(dimension==='organizations'?[{key:'dieselMileage',label:'ДТ на пробег, т',render:(r:any)=>number(r.dieselMileage)},{key:'dieselEquipment',label:'ДТ на ВО, т',render:(r:any)=>number(r.dieselEquipment)}]:[])];
  function changeDimension(value:string){setDimension(value);setSelected('');setQuery('');}
  return <>
-  <div className="bi-metric-grid fuel"><MetricTile label="Нормативная потребность" value={fuelSummary.tonnes} unit="т" note="ДТ и бензин · полный срез BI"/><MetricTile label="Уникальные ТС" value={fuelSummary.vehicles} unit="шт." note="По заданиям · полный срез BI"/><MetricTile label="Дизельное топливо" value={fuelSummary.diesel} unit="т" note="Пробег и верхнее оборудование"/><MetricTile label="Бензин" value={fuelSummary.petrol} unit="т" note="Потребность по нормативам"/></div>
-  <Smooth.section className="bi-panel surface bi-fuel-composition"><header className="bi-panel-heading"><div><h2>Структура потребности</h2><p>Доли рассчитаны от полного итога {number(fuelSummary.tonnes)} т</p></div></header><div className="bi-composition-track" role="img" aria-label={'Дизельное топливо '+number(fuelSummary.diesel/fuelSummary.tonnes*100)+'%, бензин '+number(fuelSummary.petrol/fuelSummary.tonnes*100)+'%'}><i className="bi-diesel" style={{width:fuelSummary.diesel/fuelSummary.tonnes*100+'%'}}/><i className="bi-petrol" style={{width:fuelSummary.petrol/fuelSummary.tonnes*100+'%'}}/></div><dl className="bi-composition-values"><div><dt><i className="bi-diesel"/>Дизельное топливо</dt><dd>{number(fuelSummary.diesel/fuelSummary.tonnes*100)}%<small>{number(fuelSummary.diesel)} т</small></dd></div><div><dt><i className="bi-petrol"/>Бензин</dt><dd>{number(fuelSummary.petrol/fuelSummary.tonnes*100)}%<small>{number(fuelSummary.petrol)} т</small></dd></div></dl></Smooth.section>
+  <div className="bi-metric-grid fuel"><MetricTile label="Нормативная потребность" value={fuelSummary.tonnes} unit="т" note="ДТ и бензин · полный срез BI"/><MetricTile label="Уникальные ТС" value={fuelSummary.vehicles} unit="шт." note="По заданиям · полный срез BI"/><MetricTile accent label="Бензин" value={fuelSummary.petrol} unit="т" note="Потребность по нормативам"/><MetricTile label="Дизельное топливо" value={fuelSummary.diesel} unit="т" note="Пробег и верхнее оборудование"/></div>
+  <Smooth.section className="bi-panel surface bi-fuel-composition"><header className="bi-panel-heading"><div><h2>Структура потребности</h2><p>Доли рассчитаны от полного итога {number(fuelSummary.tonnes)} т</p></div></header><div className="bi-composition-track" role="img" aria-label={'Дизельное топливо '+number(fuelSummary.diesel/fuelSummary.tonnes*100)+'%, бензин '+number(fuelSummary.petrol/fuelSummary.tonnes*100)+'%'}><i className="bi-petrol" style={{width:fuelSummary.petrol/fuelSummary.tonnes*100+'%'}}/><i className="bi-diesel" style={{width:fuelSummary.diesel/fuelSummary.tonnes*100+'%'}}/></div><dl className="bi-composition-values"><div><dt><i className="bi-petrol"/>Бензин</dt><dd>{number(fuelSummary.petrol/fuelSummary.tonnes*100)}%<small>{number(fuelSummary.petrol)} т</small></dd></div><div><dt><i className="bi-diesel"/>Дизельное топливо</dt><dd>{number(fuelSummary.diesel/fuelSummary.tonnes*100)}%<small>{number(fuelSummary.diesel)} т</small></dd></div></dl></Smooth.section>
   <Smooth.section ref={comparison} className="bi-panel surface bi-fuel-analysis">
    <header className="bi-panel-heading"><div><h2 tabIndex={-1}>Потребность в топливе</h2><p>Сравните показанные категории и выберите строку для подробностей.</p></div><Segmented value={dimension} onChange={changeDimension} items={[{id:'regions',label:'Регионы'},{id:'organizations',label:'Организации'}]}/></header>
    <div className="bi-table-tools"><Search value={query} label={dimension==='regions'?'Поиск региона BI':'Поиск организации в топливе'} placeholder={dimension==='regions'?'Найти регион':'Найти организацию'} onChange={(v:string)=>{setQuery(v);setSelected('');}}/><Select aria-label="Вид топлива на диаграмме" value={measure} onChange={(e:any)=>setMeasure(e.target.value)}><option value="all">ДТ и бензин</option><option value="diesel">Дизельное топливо</option><option value="petrol">Бензин</option></Select>{(query||selected)&&<Button tone="text" onClick={()=>{setQuery('');setSelected('');}}>Сбросить</Button>}</div>
-   {chartRows.length?<><div className="bi-fuel-legend" aria-label="Обозначения топлива">{measure!=='petrol'&&<span><i className="bi-diesel"/>Дизельное топливо</span>}{measure!=='diesel'&&<span><i className="bi-petrol"/>Бензин</span>}<span>Нормативная потребность, т</span></div><FuelBars rows={chartRows} selected={selected} onSelect={chooseCategory} measure={measure}/></>:<Empty text={dimension==='regions'?'Регион не найден':'Организация не найдена'} description="В примере доступны только строки, видимые на присланном экране BI." onReset={()=>setQuery('')}/>}
+   {chartRows.length?<><div className="bi-fuel-legend" aria-label="Обозначения топлива">{measure!=='diesel'&&<span><i className="bi-petrol"/>Бензин</span>}{measure!=='petrol'&&<span><i className="bi-diesel"/>Дизельное топливо</span>}<span>Нормативная потребность, т</span></div><FuelBars rows={chartRows} selected={selected} onSelect={chooseCategory} measure={measure}/></>:<Empty text={dimension==='regions'?'Регион не найден':'Организация не найдена'} description="В примере доступны только строки, видимые на присланном экране BI." onReset={()=>setQuery('')}/>}
    <p className="bi-panel-note">Диаграмма показывает {chartRows.length} из {source.length} доступных строк. Это часть сводки; её сумма не заменяет полный итог BI.</p>
   </Smooth.section>
   <Smooth.section ref={details} className="bi-panel surface bi-fuel-table">

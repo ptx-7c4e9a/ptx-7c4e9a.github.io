@@ -1,3 +1,4 @@
+import {denseConvoyRoad} from './dense-map-demo.mjs';
 import geography from '../data/geography.json' with {type:'json'};
 import fleet from '../data/ektp.json' with {type:'json'};
 export const MOTION_SLOWDOWN=5;
@@ -9,4 +10,30 @@ export const vehicleAssignments=new Map();for(const city of Object.keys(geograph
 export function hasFreshPosition(v){if(v.connectionState)return v.connectionState==='online';return !!v.signal&&!/\d{2}\.\d{2}/.test(String(v.signal));}
 export function isVehicleMoving(v){return v.speed>0&&hasFreshPosition(v);}
 export function vehicleMotionLabel(v){return v.connectionState==='offline'?'Нет связи':!hasFreshPosition(v)?'Позиция устарела':isVehicleMoving(v)?'В движении':v.sensors?.ignition===false?'Зажигание выключено':'Стоит';}
-export function vehiclePose(v,time=0,history=null){const assignment=vehicleAssignments.get(v.id);if(!assignment)return{coordinates:geography.routes[v.city]?.center||[37.6,55.75],heading:0};const moving=isVehicleMoving(v);const durationMs=assignment.road.total/(Math.max(1,v.speed)/3.6)*1000*MOTION_SLOWDOWN;const progress=history!==null?history:moving?(assignment.phase+time/durationMs)%1:assignment.phase;return poseAlong(assignment.road,progress);}
+const demoRoad=compileRoad(denseConvoyRoad);
+const demoHistory=new Map();
+export function historyAssignmentFor(v){
+ const assigned=vehicleAssignments.get(v?.id);if(assigned)return assigned;
+ if(!v?.demoScenario)return null;
+ if(!demoHistory.has(v.id)){
+  if(v.demoScenario==='base')demoHistory.set(v.id,{road:compileRoad([v.demoCoordinates,v.demoCoordinates])});
+  else{
+   const path=[],distance=v.speed/3.6*14400;let cursor=((v.demoOffsetMetres%demoRoad.total)+demoRoad.total)%demoRoad.total,done=0;
+   path.push(poseAlong(demoRoad,cursor/demoRoad.total).coordinates);
+   while(done<distance-.001){
+    const next=demoRoad.cumulative.find(d=>d>cursor+.001)??demoRoad.total,step=Math.min(next-cursor,distance-done);
+    if(step<=.001){cursor=0;continue;}
+    done+=step;cursor+=step;path.push(poseAlong(demoRoad,cursor/demoRoad.total).coordinates);
+    if(cursor>=demoRoad.total-.001)cursor=0;
+   }
+   demoHistory.set(v.id,{road:compileRoad(path)});
+  }
+ }
+ return demoHistory.get(v.id);
+}
+export function workRouteProgress(v,seconds=0){
+ if(!hasFreshPosition(v)||v.demoScenario==='base')return null;
+ if(v.demoScenario==='convoy')return ((v.demoOffsetMetres+seconds*(v.speed/3.6)/MOTION_SLOWDOWN)%demoRoad.total)/demoRoad.total;
+ const a=vehicleAssignments.get(v.id);return a?isVehicleMoving(v)?(a.phase+seconds*1000/a.durationMs)%1:a.phase:null;
+}
+export function vehiclePose(v,time=0,history=null){if(v.demoScenario==='base')return{coordinates:v.demoCoordinates,heading:v.demoHeading??0};if(v.demoScenario==='convoy'&&history!==null)return poseAlong(historyAssignmentFor(v).road,history);if(v.demoScenario==='convoy')return poseAlong(demoRoad,((v.demoOffsetMetres+time/1000*(v.speed/3.6)/MOTION_SLOWDOWN)%demoRoad.total)/demoRoad.total);const assignment=vehicleAssignments.get(v.id);if(!assignment)return{coordinates:geography.routes[v.city]?.center||[37.6,55.75],heading:0};const moving=isVehicleMoving(v);const durationMs=assignment.road.total/(Math.max(1,v.speed)/3.6)*1000*MOTION_SLOWDOWN;const progress=history!==null?history:moving?(assignment.phase+time/durationMs)%1:assignment.phase;return poseAlong(assignment.road,progress);}

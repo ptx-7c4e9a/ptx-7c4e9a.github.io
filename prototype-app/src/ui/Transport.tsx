@@ -1,6 +1,6 @@
 import ThemeImage from './ThemeImage';
 import optical from '../data/optical-scale.json';
-export function transportType(v:any){const t=v.vehicleType||v.type||v.model||'';if(/полуприцеп|тягач|Урал/i.test(t))return 'fuel-tanker-semi-trailer';if(/вахтов|автобус|4208/i.test(t))return 'crew-bus';if(/фургон|Sprinter|Соболь|ГАЗ/i.test(t))return 'service-van';if(/Борт|43253/i.test(t))return 'flatbed-truck';return 'fuel-tanker-truck';}
+export function transportType(v:any){const t=v.vehicleType||v.type||v.model||'';if(/полуприцеп|тягач/i.test(t))return 'fuel-tanker-semi-trailer';if(/вахтов|автобус|4208/i.test(t))return 'crew-bus';if(/фургон|Sprinter|Соболь|ГАЗ/i.test(t))return 'service-van';if(/Борт|43253/i.test(t))return 'flatbed-truck';return 'fuel-tanker-truck';}
 export function transportImage(v:any,view='card',theme='light'){return `/assets/transport/transport-${transportType(v)}-${view}-${theme}.png`;}
 export function transportScale(v:any,view='card'){return optical.assets.find(a=>a.type===transportType(v)&&a.view===view)?.scale||1;}
 export function Transport({vehicle,theme='light',className='',alt=''}:any){return <ThemeImage className={className} light={transportImage(vehicle,'card','light')} dark={transportImage(vehicle,'card','dark')} alt={alt} imageStyle={{transform:`scale(${transportScale(vehicle)})`}}/>;}

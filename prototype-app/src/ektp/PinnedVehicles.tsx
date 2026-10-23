@@ -35,7 +35,7 @@ function SelectedVehiclesPopover({anchor,vehicles,selectedId,onChoose,onRemove,o
    {vehicles.length?vehicles.map((v:any,index:number)=><Smooth.div key={v.id} className="pinned-popover-row" data-active={v.id===selectedId}>
     <Smooth.button data-pin-choice="" className="pin-option" disabled={!v.available} aria-current={v.id===selectedId?'true':undefined} data-tooltip={v.available?undefined:'ТС скрыто текущим поиском или фильтрами'} aria-label={'Показать выбранное ТС '+v.plate} onClick={()=>{onClose();onChoose(v.id);}}>{v.plate}</Smooth.button>
     <IconButton className="icon-button pin-remove" name="close" iconSize={16} label={'Удалить '+v.plate+' из выбранных'} onClick={()=>{pendingFocus.current=index;onRemove(v.id);}}/>
-   </Smooth.div>):<Smooth.div className="pinned-popover-empty"><p>Нет выбранных ТС</p><small>Нажмите на машину на карте или закрепите её в карточке.</small></Smooth.div>}
+   </Smooth.div>):<Smooth.div className="pinned-popover-empty"><p>Нет выбранных ТС</p><small>Откройте машину на карте и нажмите «Закрепить ТС».</small></Smooth.div>}
   </Smooth.div>
   <Smooth.footer className="pinned-popover-footer">
    <Button tone="outline" className="pin-reset" disabled={!vehicles.length} aria-label="Сбросить выбранные ТС" onClick={()=>{onClose();onClear();}}>Сбросить</Button>

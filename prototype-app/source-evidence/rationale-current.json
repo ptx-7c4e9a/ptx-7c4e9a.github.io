@@ -1,6 +1,6 @@
 {
-  "reviewedAt": "2026-10-20T21:43:50.680Z",
-  "review": "C327-C332 final scoped footer and handle review. Common CDS contacts and native20px IconsPrimitive across working shells, launcher, authentication and three readers. Loading and general error/404 explicitly exclude contacts.30 retained footer observations plus16 final authentication observations: contacts below title, semantic h2 at16/24semibold, compact spacing. Eight error/404 states without contacts and actual loading absence verified; keyboard/floating-button checks retained. C329 handles Higher at100%opacity in bothKLK themes. All19 reader placements/18unique illustrations were recaptured from actual C327-C329 UI; subsequent C330-C332 affect entry/error only, so depicted content is unchanged. Original dimensions retained; image and footer/contact sheets visually reviewed. Two nativeKLK rationale deltas retained with original-source overrides and provenance;91tests source-integrity pass. No BI values, transactions or navigation behavior changed. Historical187/C294/C296 and full touch/native Present acceptance remain deferred. Publication readiness separately recorded.",
+  "reviewedAt": "2026-10-23T18:41:34.927Z",
+  "review": "Transport workflow 2026-10-23. EKTP: map-only 100 parked and 20 convoy vehicles remain outside operational44 and BI totals. Parking type/ownership lots;56px translucent footprints with selection-only white ring and clear on close; passive hover vs click, explicit pinning and zero-count hiding; no zoom out on marker/location. Full demo tabs and movement history; zero stationary statistics, prepared64km/h convoy with256km per4h, channels reflect supplied demo sensors. Current-work tiles with illustrative route progress and phase steps; full-width statistics period. Card content, including work/tabs, scrolls so data remains reachable at1024x768 and768x1024; Dark pass. Original44 telemetry and fuel transactions retained.17 EKTP reader figures updated/reviewed, including unchanged BI numeric originals with yellow/graphite and outline removal. KLK source and figures unchanged; both live variants entry, home-to-transport and return checked; prior figure evidence retained.12 existing prose deltas plus current-work/demo-history additions preserve original source texts and IDs. Figma sync deferred until confirmed publication by direct user rule. Historical187/C294/C296, physical touch and complete native Present acceptance remain excluded. Release checks recorded separately.",
   "images": {
     "/assets/rationale/current-2026-10-19/ektp-selected.png": {
       "sha256": "c635b3e5126689568df5ce905f554d15f2e97f66ca82ee0d2b2cee948f0163de",
@@ -172,12 +172,155 @@
       "visuallyReviewed": true,
       "evidence": "qa/c327-dispatch-footer-2026-10-20/rationale-ektp-collapsed-navigation.jpg",
       "note": "C327-C329 actual CUA localhost screenshot with updated dispatch footer; PNG format conversion only. All18 figures inspected in three contact sheets plus full-size examples. Captured 2026-10-20T21:16:00.986Z"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-actions.png": {
+      "sha256": "72adda408584d2004802b5e261391676f2fbaea93129a16c9a85601ab034b6d3",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-actions.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:33:47.893323+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-base.png": {
+      "sha256": "fd549c751118027a041984414a0b0730f98f3850cfc728f458849d8d1c1a9f64",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-base.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:22:52.882055+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-bi-fuel.png": {
+      "sha256": "13096f9a43183207885cadeffd609a95837d14e07e1cca60bd46a15e9b85b2ba",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-bi-fuel.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:45:49.331902+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-bi-hired.png": {
+      "sha256": "56770353383559c66cce43cddc6dd04409cb63aa6ab9633950280088b5a7dafe",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-bi-hired.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:45:59.077127+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-bi-manager.png": {
+      "sha256": "ebe2a5efc15484fc80f2f13c3c39ad66d8af819dd71206494822c101db1c1a1d",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-bi-manager.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:46:30.119117+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-bi-overview.png": {
+      "sha256": "eb945f5b109dfd37b22270fb914bdffb6be78d0e437a84937eeb12f79e06af54",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-bi-overview.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:45:36.398325+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-bi-owned.png": {
+      "sha256": "4d778753aca3779da1621d3c858f214b74a50e9d42143a9248bbec874f7ea7f3",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-bi-owned.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:46:10.023617+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-collapsed-navigation.png": {
+      "sha256": "0e53cc397998d40d899675b0e8a0d7fb4b073bbd730c28f406d91ed77d62f18a",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-collapsed-navigation.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:33:59.714119+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-datepicker.png": {
+      "sha256": "21d6173003a3340f13bd9a247b91d6ede45cd567e77034b7db42fa9c76827bd4",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-datepicker.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:34:09.231515+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-demo-telemetry.png": {
+      "sha256": "e6af2039f5695b31794761cb33fa6e1ae34fce3902516c54886d84265123ec3a",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-demo-telemetry.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:26:13.572277+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-history-demo.png": {
+      "sha256": "4d519e212881afafd4aff5143b4deea76b894a7f87be3a2dc0ab0ea7990871ee",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-history-demo.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:37:34.697109+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-pagination.png": {
+      "sha256": "ef49533e3de168a4a45b6d98aabebba58e63a10fa0191ac9a1d8b39e58ad87fd",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-pagination.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:47:17.912637+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-profile.png": {
+      "sha256": "84a2844c7a7b44d879c766401560bcdb20e3c8d765cefc7fbc31a822ef12e82e",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-profile.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:46:58.421671+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-selected.png": {
+      "sha256": "f5dc4772772a38429ccec0447bd5e7af73035d7ec280579936b5c6add0d18108",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-selected.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:33:38.039387+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-stats.png": {
+      "sha256": "e72ae26030108b7ebcc64f8ebd9e2236e03f05a18657c157fc4bad19ece9d1e8",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-stats.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T18:29:50.912799+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-telemetry.png": {
+      "sha256": "5ef99543255bbc6c9acd3b42d9fcc88520f4f0152592729e95058d4a16ac43d6",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-telemetry.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:43:31.373692+00:00"
+    },
+    "/assets/rationale/current-2026-10-23/ektp-transactions.png": {
+      "sha256": "609725ef614e2697f11902f3cc7ffbb4d3636ea6ca0247edeed8330add045fdc",
+      "width": 1440,
+      "height": 900,
+      "visuallyReviewed": true,
+      "evidence": "qa/transport-workflow-2026-10-23/ektp-transactions.jpg",
+      "note": "Actual CUA screenshot; deterministic JPEG to PNG format conversion only. Reviewed individually and in three contact sheets. Captured 2026-10-23T17:43:57.808928+00:00"
     }
   },
   "readers": {
-    "ektp": "70183ffe1c46970b53577cedb553ff74c719d06ef0b693f6f85f34499cbf8d3b",
-    "klk": "89a6a35f2403482e0135a943ab994d74563f59351c5e2e54a1b8b30e97e8136f",
-    "klk-2": "cf351e6ed02b5d5ef8da6ae78d7e5deeefa72af7bd1ac0b815355deddad5259e"
+    "ektp": "7ee96e1168fcd2d6509da8eb8fd3e5f9c7d1def9e7e44426ba11a6c0fd59faab",
+    "klk": "4081bdffd5471b6ba52d6dbd44960ea196bc4ae231585986fa0298064bd7e6d6",
+    "klk-2": "e7808531b80d3d1b98491d3fdedcbe86d5c9b9d54eae9f63d8fe2719b90daa1c"
   },
-  "interfaceSha256": "fd7368f76503d2875bf093780b24e58db8a1e6d1206b20866757ba7c05416202"
+  "interfaceSha256": "a02b78b871e2acec11c1e674f11e95bdfbe8e38c1677937bebc9e8bf791f6236",
+  "figmaMigration": {
+    "date": "2026-10-21",
+    "fileKey": "qNnDHmyswsSWmUs8lWAm2w",
+    "scope": "Active Figma pointers and two external links updated. Two requested service sections moved out of visible readers into internal source archive; other copy and illustrations unchanged. Historical source keys retained.",
+    "evidence": "../orchestration/figma-migration-2026-10-21/pre-cleanup-acceptance.json",
+    "readerSectionEvidence": "../orchestration/figma-migration-2026-10-21/reader-sections-removed.json"
+  }
 }

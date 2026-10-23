@@ -15,6 +15,7 @@ export function fuelSummary(rows,fleet){
 }
 export function demoStatistics(vehicle,range,original){
  if(!archiveAvailable(vehicle.id,range))return null;
+ if(vehicle.demoScenario){const hours=Math.max(0,(Date.parse(range.to)-Date.parse(range.from))/3600000),speed=vehicle.demoScenario==='base'?0:vehicle.speed;return {distanceKm:Math.round(hours*speed*10)/10,movingHours:speed?hours:0,averageSpeedKmh:speed,maximumSpeedKmh:speed};}
  if(vehicle.id==='v-44'&&range.from==='2026-10-13T08:00'&&range.to==='2026-10-13T12:00')return original;
  const hours=Math.max(0,(Date.parse(range.to)-Date.parse(range.from))/3600000),n=seed(vehicle.id),moving=Math.min(hours,Math.round(hours*(.45+n%30/100)*10)/10),average=22+n%24;
  const preparedSpeed=preparedFleet.fleet.find(v=>v.id===vehicle.id)?.speed||0;

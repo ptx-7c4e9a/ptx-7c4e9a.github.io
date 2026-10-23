@@ -1,3 +1,4 @@
+import {denseMapVehicles} from './dense-map-demo.mjs';
 import {minute,telemetryDate,telemetryRange,timelineMinute} from './telemetry.mjs';
 
 // Prototype-only availability, not a statement about terminal or server coverage.
@@ -23,6 +24,16 @@ export function telemetryFixture(channels,vehicleId,range,periodChosen=false){
  // every original 08:00–12:00 anchor; hold endpoint values outside that trace.
  const start=Math.max(0,Math.min(1439,Math.round(timelineMinute(range.from,sourceDate))));
  const end=Math.max(0,Math.min(1439,Math.round(timelineMinute(range.to,sourceDate))));
+ const demo=denseMapVehicles.find(v=>v.id===vehicleId);
+ if(demo){
+  const samples=(value,unit='')=>['08:00','09:00','10:00','11:00','12:00'].map(time=>({time,value:typeof value==='boolean'?(value?'Включено':'Выключено'):(typeof value==='number'?value.toLocaleString('ru-RU',{useGrouping:false}):String(value))+(unit?' '+unit:'')}));
+  channels=[
+   ...(typeof demo.fuel==='number'?[{id:'dut-1',label:'Топливо · ДУТ, бак 1',samples:demo.demoScenario==='base'?samples(demo.fuel,'л'):channels.find(c=>c.id==='dut-1').samples}]:[]),
+   {id:'voltage',label:'Напряжение питания',samples:samples(demo.sensors.battery,'В')},
+   {id:'ignition',label:'Зажигание',discrete:true,samples:samples(demo.sensors.ignition)},
+   {id:'rpm',label:'Обороты двигателя',samples:samples(demo.sensors.rpm,'об/мин')},
+  ];
+ }
  const daily=channels.map(c=>{
   const samples=[boundarySample(c,0),...c.samples,boundarySample(c,1439)];
   const augmented={...c,samples};
