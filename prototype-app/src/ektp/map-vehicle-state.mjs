@@ -23,11 +23,11 @@ export function mapPreviewPlacement(anchor,bounds,size) {
  return {left:Math.max(bounds.left+pad,Math.min(left,bounds.right-width-pad)),top:Math.max(bounds.top+pad,Math.min(top,bounds.bottom-height-pad))};
 }
 
-// At maximum zoom every vehicle is independent. Mid-scale parking groups keep
+// At close zoom (17+) every vehicle is independent. Mid-scale parking groups keep
 // their authored type/ownership structure; the overview still uses spatial clustering.
 export function mapVehicleGroups(points,zoom,previewId=''){
  const single=p=>({members:[p],x:p.x,y:p.y,key:p.id});
- if(zoom>=17.95)return points.map(single);
+ if(zoom>=16.95)return points.map(single);
  const focused=points.find(p=>p.id===previewId),others=points.filter(p=>p!==focused);
  let groups;
  if(zoom>=16){

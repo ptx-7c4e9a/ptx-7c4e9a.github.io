@@ -6,4 +6,4 @@ export function transportScale(v:any,view='card'){return optical.assets.find(a=>
 export function Transport({vehicle,theme='light',className='',alt=''}:any){return <ThemeImage className={className} light={transportImage(vehicle,'card','light')} dark={transportImage(vehicle,'card','dark')} alt={alt} imageStyle={{transform:`scale(${transportScale(vehicle)})`}}/>;}
 
 // Reserve the full rotation envelope of the native alpha silhouette, plus8px.
-export function transportLabelOffset(v:any){const item=optical.assets.find(a=>a.type===transportType(v)&&a.view==='map');if(!item)return 60;const [w,h]=item.size,[x0,y0,x1,y1]=item.bbox;const radius=Math.max(...[[x0,y0],[x0,y1],[x1,y0],[x1,y1]].map(([x,y])=>Math.hypot((x/w-.5)*40,(y/h-.5)*40)))*item.scale;return Math.ceil(20+radius+8);}
+export function transportLabelOffset(v:any){const item=optical.assets.find(a=>a.type===transportType(v)&&a.view==='map');if(!item)return 60;const [w,h]=item.size,[x0,y0,x1,y1]=item.bbox;const radius=Math.max(...[[x0,y0],[x0,y1],[x1,y0],[x1,y1]].map(([x,y])=>Math.hypot((x/w-.5)*56,(y/h-.5)*56)))*item.scale;return Math.ceil(26+radius+8);}

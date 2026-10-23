@@ -49,7 +49,7 @@ test('ten parking blocks separate type and ownership; maximum zoom never cluster
  for(const g of groups.values()){assert.equal(g.length,10);assert.equal(new Set(g.map(v=>v.kind)).size,1);assert.equal(new Set(g.map(v=>v.vehicleType)).size,1);assert.ok(new Set(g.map(v=>Math.round(v.demoHeading))).size>2);}
  const points=parked.map((v,i)=>({id:v.id,v,x:i%10,y:Math.floor(i/10)}));
  const mid=mapVehicleGroups(points,16);assert.equal(mid.length,10);assert.ok(mid.every(g=>g.members.length===10));
- const close=mapVehicleGroups(points,18);assert.equal(close.length,100);assert.ok(close.every(g=>g.members.length===1));
+ for(const zoom of [17,18]){const close=mapVehicleGroups(points,zoom);assert.equal(close.length,100);assert.ok(close.every(g=>g.members.length===1));}
  assert.equal(mapVehicleGroups(points,16,points[0].id).find(g=>g.key===points[0].id).members.length,1);
 });
 

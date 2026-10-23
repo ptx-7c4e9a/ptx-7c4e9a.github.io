@@ -1,6 +1,6 @@
 /* Published DS tokens; prototype-only map composition. */
 .vehicle-marker{isolation:isolate}
-.vehicle-marker .vehicle-footprint{position:absolute;inset:-6px;border-radius:50%;background:color-mix(in srgb,var(--surface-neutral-highest) 34%,transparent);opacity:1;z-index:-1;box-shadow:0 2px 6px rgb(0 0 0 / .05)}
+.vehicle-marker .vehicle-footprint{position:absolute;inset:-7px;border-radius:50%;background:color-mix(in srgb,var(--surface-neutral-highest) 34%,transparent);opacity:1;z-index:-1;box-shadow:0 2px 6px rgb(0 0 0 / .05)}
 .vehicle-marker[data-fleet=owned] .vehicle-footprint{background:color-mix(in srgb,var(--interaction-brand-primary-default) 28%,transparent);opacity:1}
 .yandex-map .vehicle-marker.selected{background:transparent;box-shadow:none}
 .vehicle-marker.selected .vehicle-footprint{outline:2px solid var(--content-neutral-onaccent);outline-offset:0}
@@ -71,8 +71,8 @@
 
 
 /* Larger native silhouettes, unchanged optical scale between vehicle families. */
-.yandex-map .vehicle-marker{width:44px;height:44px}
-.yandex-map .vehicle-marker img{width:48px;height:48px;max-width:none;flex:none}
+.yandex-map .vehicle-marker{width:52px;height:52px}
+.yandex-map .vehicle-marker img{width:56px;height:56px;max-width:none;flex:none}
 
 .vehicle-work{display:grid;gap:8px;flex:none;margin:0 0 16px;text-align:left}
 .vehicle-work-main,.vehicle-work-route{min-width:0;padding:10px 12px;background:var(--surface-neutral-subtle);border-radius:8px}
@@ -83,3 +83,5 @@
 .vehicle-work-progress{height:4px;overflow:hidden;background:var(--surface-neutral-default);border-radius:4px;margin-top:8px}.vehicle-work-progress>i{display:block;height:100%;background:var(--interaction-brand-primary-default);border-radius:inherit}
 .vehicle-work-steps{display:flex;align-items:flex-start;gap:8px;list-style:none;margin:0;padding:8px 12px;background:var(--surface-neutral-subtle);border-radius:8px}
 .vehicle-work-steps li{display:flex;align-items:center;gap:6px;flex:1;min-width:0;font:400 12px/18px var(--font-body);color:var(--content-neutral-low)}.vehicle-work-steps li>i{width:6px;height:6px;flex:none;border-radius:50%;background:var(--content-neutral-subtle)}.vehicle-work-steps li[aria-current=step]{color:var(--content-neutral-higher);font-weight:600}.vehicle-work-steps li[aria-current=step]>i{background:var(--interaction-brand-primary-default)}.vehicle-work-steps li[data-complete=true]>i{background:var(--status-system-success-content)}
+
+.demo-depot-tooltip{position:fixed;z-index:260;pointer-events:none}.demo-depot-tooltip:after{display:none}

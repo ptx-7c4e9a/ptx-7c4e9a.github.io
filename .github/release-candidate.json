@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "d158f5fff9ce4b0d24c43f89a24478783b9eed3fa316954344e4068b20aa2a95",
+  "contentSha256": "b017961ddefbb23704533445900307e72db87edd575ffda09ab2ce155382072a",
   "files": 620,
-  "totalBytes": 59661202,
+  "totalBytes": 59662883,
   "routes": 27,
-  "review": "Transport workflow 2026-10-23: EKTP map-only100 parked and20 convoy vehicles, realistic lots, current-work cards, demo history/sensors, selection-only ring and BI palette polish.17 EKTP figures refreshed;3 readers/23 placements current.98tests/types/freshness/build;620 local files and27 routes verified. Numeric source originals retained. Historical187/C294/C296, native Present, physical touch and PDF deferred; Figma sync only after confirmed publication."
+  "review": "Final map release 2026-10-23: depot contour and tooltip, individual cars from zoom17, 56px images in 66px footprints, convoy route from zoom10 when convoy vehicles are in scope, and dense-demo layer removed. Product reader JSON and illustrations remain unchanged.99tests/types/freshness/build;620 local files and27 routes verified. Historical187/C294/C296, native Present, physical touch and PDF deferred; Figma sync only after confirmed publication."
 }
