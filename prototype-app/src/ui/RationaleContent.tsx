@@ -6,7 +6,7 @@ export default function RationaleContent({section}:any){
  return <>{section.text.map((t:any,index:number)=>{
   if(t.text.trimStart().startsWith('Проверяемые источники:'))return null;
   const illustration=section.illustrations?.find((item:any)=>item.before===index);
-  const visual=illustration&&<figure className="rationale-illustration" style={{maxWidth:illustration.width}}><a href={illustration.src} target="_blank" rel="noreferrer" aria-label={'Открыть иллюстрацию: '+illustration.alt}><img src={illustration.src} width={illustration.width} height={illustration.height} alt={illustration.alt} loading="lazy"/></a><figcaption>{illustration.caption||'Иллюстрация из макета Figma.'} <a href={illustration.src} target="_blank" rel="noreferrer">Открыть в полном размере</a></figcaption></figure>;
+  const visual=illustration&&<figure className="rationale-illustration" style={{maxWidth:illustration.width}}><a href={illustration.src} target="_blank" rel="noreferrer" aria-label={'Открыть иллюстрацию: '+illustration.alt}><img src={illustration.src} width={illustration.width} height={illustration.height} alt={illustration.alt} loading="lazy"/></a><figcaption>{illustration.caption||'Пример интерфейса.'} <a href={illustration.src} target="_blank" rel="noreferrer">Открыть в полном размере</a></figcaption></figure>;
   const diagram=section.diagrams?.find((item:any)=>item.start===index);
   if(diagram)return <Fragment key={index}>{visual}<RationaleDiagram diagram={diagram} text={section.text}/></Fragment>;
   if(section.diagrams?.some((item:any)=>index>item.start&&index<=item.end))return null;

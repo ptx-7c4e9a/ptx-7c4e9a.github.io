@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "0fff5514128ef0012cb2dd85bf6490faa56fad3d078ef86be5f725d232e793e0",
+  "contentSha256": "6d7e171fe72e0416fc148e95c8f1c48ce65d4d0c095c0bad77f34d7c04f80185",
   "files": 627,
-  "totalBytes": 59837276,
+  "totalBytes": 59897223,
   "routes": 32,
-  "review": "EKTP variants release 2026-10-24: four launcher choices, separate EKTP1 and EKTP2 flows, EKTP2 single right panel without vehicle popup, 768px minimum workspace, centered compact login, complete prepared telemetry for153 of161 online demo vehicles, and a new standalone EKTP2 rationale with two illustrations.102tests/types/freshness/build;627 local files and32 routes verified. Existing3 reader JSON and their illustrations remain unchanged. Native Figma, DS, historical backlog and automation remain paused."
+  "review": "Rationale copy cleanup 2026-10-24: internal work, QA, implementation and readiness notes removed from all four visible product rationales; product explanations, comparisons, diagrams, tables and 25 illustration placements preserved.102 tests/types/freshness/build;627 local files and32 routes verified. Native Figma, DS, historical backlog and automation remain paused."
 }

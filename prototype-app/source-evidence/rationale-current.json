@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-24T06:20:27.270Z",
+  "reviewedAt": "2026-10-24T08:52:36.130Z",
   "review": "Transport workflow 2026-10-23. EKTP: map-only 100 parked and 20 convoy vehicles remain outside operational44 and BI totals. Parking type/ownership lots;56px translucent footprints with selection-only white ring and clear on close; passive hover vs click, explicit pinning and zero-count hiding; no zoom out on marker/location. Full demo tabs and movement history; zero stationary statistics, prepared64km/h convoy with256km per4h, channels reflect supplied demo sensors. Current-work tiles with illustrative route progress and phase steps; full-width statistics period. Card content, including work/tabs, scrolls so data remains reachable at1024x768 and768x1024; Dark pass. Original44 telemetry and fuel transactions retained.17 EKTP reader figures updated/reviewed, including unchanged BI numeric originals with yellow/graphite and outline removal. KLK source and figures unchanged; both live variants entry, home-to-transport and return checked; prior figure evidence retained.12 existing prose deltas plus current-work/demo-history additions preserve original source texts and IDs. Figma sync deferred until confirmed publication by direct user rule. Historical187/C294/C296, physical touch and complete native Present acceptance remain excluded. Release checks recorded separately. Final map-only delta: user explicitly retained all product description and the base illustration after review. Reader JSON and illustration files remain byte-for-byte unchanged. Removed dense-demo layer menu item; depot contour with8% light/5% dark fill and1.5px neutral stroke, geometry encloses all100 parked vehicles; hover tooltip Demonstration depot appears/leaves correctly. Contour is stable across marker redraws and cleared outside the applicable map context. Native mouse hover/leave and menu absence checked in CUA; no console errors.99tests and final type/build/static checks recorded separately. Previous d158f5ff release completed before this steering; this delta is a newly authorized follow-up release. Final map-only delta: user explicitly retained all product description and the base illustration after review. Reader JSON and illustration files remain byte-for-byte unchanged. Removed dense-demo layer menu item; depot contour with8% light/5% dark fill and1.5px neutral stroke, geometry encloses all100 parked vehicles; hover tooltip Demonstration depot appears/leaves correctly. Contour is stable across marker redraws and cleared outside the applicable map context. Native mouse hover/leave and menu absence checked in CUA; no console errors.99tests and final type/build/static checks recorded separately. Previous d158f5ff release completed before this steering; this delta is a newly authorized follow-up release. Final requested display: disaggregate at zoom17+, native image56px and footprint66px with matching label clearance. Prepared convoy road is drawn when convoy vehicles are in the map scope at zoom10+; operational full-trip and history scopes remain separate. Product reader JSON is still unchanged by direct request.",
   "images": {
     "/assets/rationale/current-2026-10-19/ektp-selected.png": {
@@ -327,12 +327,12 @@
     }
   },
   "readers": {
-    "ektp": "7ee96e1168fcd2d6509da8eb8fd3e5f9c7d1def9e7e44426ba11a6c0fd59faab",
-    "klk": "4081bdffd5471b6ba52d6dbd44960ea196bc4ae231585986fa0298064bd7e6d6",
-    "klk-2": "e7808531b80d3d1b98491d3fdedcbe86d5c9b9d54eae9f63d8fe2719b90daa1c",
-    "ektp-2": "d001290ecc3880beeeeda6106b51b2aeb2aefd693c90064f11ff5fde1f9793e0"
+    "ektp": "f2a9f00c6f1cf7214911a8c0f1239f402930d7b04c1b5a3df673cc86bd2964d0",
+    "klk": "6a3772d27241e6989c10080fafe5ea64e7cfac448075ff785594e72abe86751f",
+    "klk-2": "5a27f2e84a60cc814294d48c0ed30327d62d874e86205173e8f444f068a164ec",
+    "ektp-2": "983e93c730bb38c6c697ad6f44f1264ca01073ddb7e8cb92c8d37e2555431cf5"
   },
-  "interfaceSha256": "e7ab27d266381894ce1f1837ef5fa32704f75266e0aa965a6a70f6116b442401",
+  "interfaceSha256": "2e227582f3354e847f7c9aa18075432b0182368318d9d3a80ffd2847a55db44f",
   "figmaMigration": {
     "date": "2026-10-21",
     "fileKey": "qNnDHmyswsSWmUs8lWAm2w",
@@ -358,5 +358,13 @@
     "refinements": "Shared outline fuel CTA and short map label; entry centred in visible window; symmetric scrollbar thumb; prepared complete telemetry153/161 online vehicles. EKTP2 footer menu contains location and pin; header duplicate removed.",
     "nativeFigma": "Paused; no native mutations or new acceptance",
     "publication": "Not authorized by this preview request; no deploy"
+  },
+  "editorialReview20261024": {
+    "authority": "Direct user request: update and republish all product rationales without internal technical work details.",
+    "scope": "Four visible product readers: internal QA/readiness sections and implementation/process commentary removed; product behavior, comparisons, diagrams and all25 illustration placements retained. Original source texts retained only in non-rendered provenance archives.",
+    "browserEvidence": "../orchestration/rationale-copy-cleanup-2026-10-24/browser-review.json",
+    "deltaEvidence": "../orchestration/rationale-copy-cleanup-2026-10-24/copy-delta.json",
+    "illustrationEvidence": "All25 placements loaded with positive natural width in actual CUA. Existing image bytes and dimensions preserved; only captions edited. Product UI unchanged; renderer change is generic caption fallback only.",
+    "nativeFigma": "Paused by direct human command in EKTP chat; queue this editorial delta for the next explicit native resume."
   }
 }
