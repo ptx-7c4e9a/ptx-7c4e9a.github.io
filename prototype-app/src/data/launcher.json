@@ -1,7 +1,7 @@
 {
-  "version": 5,
-  "date": "2026-10-15",
-  "implementationStatus": "Figma composition and native keyframes; application not started",
+  "version": 6,
+  "date": "2026-10-24",
+  "implementationStatus": "Four local prototype variants; EKTP2 awaits user review before publication",
   "rootNodeId": "13112:12225",
   "figmaPage": "12290:2",
   "reference": {
@@ -11,12 +11,12 @@
   "products": [
     {
       "id": "ektp",
-      "label": "Прототип ЕКТП",
+      "label": "ЕКТП · Вариант 1",
       "figmaStart": "12422:11060",
       "proposedCodeRoute": "/ektp",
       "rationale": "ektp",
       "rationaleNode": "12766:21775",
-      "launcherDescription": "Карта транспорта: положение и история движения, данные датчиков и топливные отчёты.",
+      "launcherDescription": "Карточка у машины на карте и подробная информация в правой панели.",
       "prototypeButtonNodeId": "13112:12241",
       "rationaleButtonNodeId": "13112:12251",
       "homeAfterLogin": "12290:3",
@@ -24,8 +24,17 @@
       "descriptionScope": "verified live prototype content and layout"
     },
     {
+      "id": "ektp-2",
+      "label": "ЕКТП · Вариант 2",
+      "proposedCodeRoute": "/ektp/2",
+      "rationale": "ektp-2",
+      "rationaleCodeRoute": "/rationale/ektp/2",
+      "launcherDescription": "Единая правая панель: 3D-изображение, данные и действия с ТС. Без всплывающей карточки на карте.",
+      "descriptionScope": "User-authorized interaction variant; local preview, not native Figma acceptance"
+    },
+    {
       "id": "klk-1",
-      "label": "Прототип КЛК Вариант 1",
+      "label": "КЛК · Вариант 1",
       "figmaStart": "12411:7422",
       "proposedCodeRoute": "/klk/1",
       "rationale": "klk",
@@ -40,7 +49,7 @@
     },
     {
       "id": "klk-2",
-      "label": "Прототип КЛК Вариант 2",
+      "label": "КЛК · Вариант 2",
       "figmaStart": "12409:5977",
       "proposedCodeRoute": "/klk/2",
       "rationale": "klk",
@@ -453,7 +462,9 @@
   "rationaleReader": {
     "proposedRoutes": [
       "/rationale/ektp",
-      "/rationale/klk"
+      "/rationale/ektp/2",
+      "/rationale/klk/1",
+      "/rationale/klk/2"
     ],
     "sharedKlkRationale": true,
     "backButton": {
@@ -540,5 +551,15 @@
   },
   "routingContract": "button-routes.json",
   "copyRecheckedOn": "2026-10-16",
-  "copyEvidence": "../../../orchestration/canvas-2026-10-16/launcher-recheck.json"
+  "copyEvidence": "../../../orchestration/canvas-2026-10-16/launcher-recheck.json",
+  "viewport": {
+    "minimumWidth": 768,
+    "supportedWidths": [
+      1920,
+      1440,
+      1024,
+      768
+    ],
+    "phoneVersion": false
+  }
 }

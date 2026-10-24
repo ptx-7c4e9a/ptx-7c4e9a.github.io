@@ -1,4 +1,5 @@
 import {parkingPose} from './dense-map-parking.mjs';
+import {prepareCurrentTelemetry} from './current-telemetry-fixture.mjs';
 import road from './dense-map-road.json' with {type:'json'};
 // Explicit illustrative scenario; never merged into the operational 44-vehicle fleet,
 // BI totals, assignment records, archive telemetry or availability calculations.
@@ -31,4 +32,4 @@ const parked=Array.from({length:100},(_,i)=>{
 const convoy=Array.from({length:20},(_,i)=>({
  id:'demo-convoy-'+(i+1),plate:'К'+String(i+1).padStart(3,'0')+'АТ 777',...demoTypes[i%demoTypes.length],kind:i%3===0?'Наёмное':'Собственное',city:'М2 · демо',ownerName:i%3===0?'Наёмный парк · демо':'Собственный парк · демо',speed:64,signal:'Демонстрационные данные',connectionState:'online',fuel:i%5===3?undefined:68-i,sensors:{ignition:true,rpm:1450,coolant:82,battery:i%5===3?13.8:27.5,gps:true},demoScenario:'convoy',demoOffsetMetres:900+i*110,
 }));
-export const denseMapVehicles=[...parked,...convoy];
+export const denseMapVehicles=[...parked,...convoy].map(prepareCurrentTelemetry);

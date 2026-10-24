@@ -1,0 +1,59 @@
+/* Four entry points retain the approved launcher identity. */
+.launcher{overflow:auto;overscroll-behavior:contain;gap:24px}
+.launcher-cards{grid-template-columns:repeat(4,minmax(0,1fr));height:auto;min-height:340px;margin-top:auto;flex:none}
+.launcher-card p{font-size:16px;line-height:24px}
+.launcher-card h2{font-size:48px;line-height:56px}
+.launcher>footer{margin-top:8px;flex:none}
+@media(max-width:1250px){
+ .launcher-cards{grid-template-columns:repeat(2,minmax(0,1fr));min-height:0}
+ .launcher-card{gap:12px}
+ .launcher-card h2{font-size:32px;line-height:40px}
+ .launcher-heading{margin-top:16px}
+ .launcher-heading h1{font-size:40px;line-height:48px}
+}
+
+
+/* EKTP2 changes only vehicle disclosure; data and shared application flows remain common. */
+.map-inspector.unified-vehicle-panel{z-index:20}
+.unified-vehicle-panel>.vehicle-inspector-header{gap:4px}
+.unified-vehicle-panel>.vehicle-inspector-header>.vehicle-list-back{flex:1;min-width:0}
+.unified-vehicle-panel>.vehicle-inspector-type{flex:none;font-size:18px;line-height:24px;margin:4px 0 12px}
+.unified-vehicle-panel>.scroll-content{overscroll-behavior:contain;padding-right:4px;scrollbar-gutter:stable}
+.vehicle-snapshot{padding-bottom:16px;border-bottom:1px solid var(--border-neutral-weak);margin-bottom:16px}
+.vehicle-card-identity{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.vehicle-card-identity>strong{font:600 24px/32px var(--font-heading);font-variant-numeric:tabular-nums}
+.vehicle-card-identity>.map-fleet-badge{font-size:10px;line-height:16px;padding:2px 6px}
+.vehicle-detail-art{width:100%;height:152px;object-fit:contain;margin:12px 0 16px}
+.vehicle-snapshot-caption{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.vehicle-snapshot-caption>span:first-child{min-width:0;font-size:12px;line-height:18px;color:var(--muted)}
+.vehicle-snapshot-caption>.badge{flex:none}
+.vehicle-current-readings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;margin-top:16px}
+.vehicle-current-readings dt{font-size:12px;line-height:18px;color:var(--muted)}
+.vehicle-current-readings dd{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px;font:600 20px/28px var(--font-heading);margin-top:4px;font-variant-numeric:tabular-nums}
+.vehicle-current-readings dd>small{font:400 12px/18px var(--font-body)}
+.vehicle-reading-note{font-size:12px;line-height:18px;color:var(--muted);margin-top:12px}
+.map-workspace[data-ektp-variant="2"]>.history-controls{left:16px;right:16px}
+.map-workspace[data-ektp-variant="2"]:has(>.unified-vehicle-panel)>.history-controls{right:488px}
+
+
+.unified-vehicle-panel>.vehicle-card-identity{flex:none;margin-bottom:8px}
+.unified-vehicle-panel>.tabs{margin:0 0 12px;flex:none}
+.unified-vehicle-panel .vehicle-detail-art{margin-top:0}
+
+
+/* All four prototypes target desktop and tablet, starting at768px. */
+
+
+html{min-width:768px;overflow-x:auto}
+body,#root,.route-root{min-width:768px}
+
+@media(max-height:800px){.unified-vehicle-panel .vehicle-detail-art{height:96px;margin-bottom:12px}}
+
+/* Entry follows the visible window, even when the working canvas stops at768px. */
+@media(max-width:1000px){
+ .auth-screen{width:100vw;position:sticky;left:0}
+ .auth-screen:has(>.auth-introduction){display:grid;grid-template-rows:minmax(min-content,1fr) auto minmax(min-content,1fr)}
+ .auth-screen .login-card-frame{width:440px;max-width:none;place-self:center;margin-inline:0}
+ .auth-screen:has(>.auth-introduction)>footer{align-self:end}
+}
+.map-layers-popover [role=menuitemcheckbox]>span:last-of-type{white-space:nowrap}

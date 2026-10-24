@@ -22,7 +22,7 @@ export async function checkRationaleFreshness(){
  const errors=[];
  if(manifest.interfaceSha256!==await interfaceFingerprint())errors.push('Интерфейс изменился после проверки обоснований. Сверьте затронутые иллюстрации и сценарии в CUA; обновите evidence.');
  let illustrations=0;
- for(const kind of ['ektp','klk','klk-2']){
+ for(const kind of ['ektp','ektp-2','klk','klk-2']){
   const bytes=await readFile(join(appRoot,`src/data/rationale-${kind}.json`));
   if(sourceHash(bytes)!==manifest.readers[kind])errors.push(`Текст обоснования ${kind} изменён после проверки.`);
   for(const section of JSON.parse(bytes).sections)for(const image of section.illustrations??[]){
@@ -33,6 +33,6 @@ export async function checkRationaleFreshness(){
   }
  }
  if(errors.length)throw new Error(errors.join('\n'));
- return {readers:3,illustrations,reviewedAt:manifest.reviewedAt,scope:'Local reader freshness; not publication or complete product acceptance'};
+ return {readers:4,illustrations,reviewedAt:manifest.reviewedAt,scope:'Local reader freshness; not publication or complete product acceptance'};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))console.log(JSON.stringify(await checkRationaleFreshness(),null,2));

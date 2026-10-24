@@ -12,14 +12,10 @@
 [data-theme=dark].select-popover .select-option.selected{background:transparent;color:#4e6488}
 [data-theme=dark].select-popover .select-option[data-active=true]{background:var(--surface-neutral-higher)}
 *{scrollbar-width:auto;scrollbar-color:auto}
-/* A stable 12px gutter contains a rounded 4px thumb; hover reduces it to 3px. */
+/* Centre the6px thumb in its12px gutter, with equal clearance on both sides. */
 *::-webkit-scrollbar{width:12px;height:12px}
 *::-webkit-scrollbar-track,*::-webkit-scrollbar-corner{background:transparent}
-*::-webkit-scrollbar-thumb{background-color:var(--interaction-subdued-secondary-default);background-clip:padding-box;border:0 solid transparent;border-radius:999px}
-*::-webkit-scrollbar-thumb:vertical{border-left-width:8px}
-*::-webkit-scrollbar-thumb:horizontal{border-top-width:8px}
-*::-webkit-scrollbar-thumb:vertical:hover{border-left-width:9px}
-*::-webkit-scrollbar-thumb:horizontal:hover{border-top-width:9px}
+*::-webkit-scrollbar-thumb{background-color:var(--interaction-subdued-secondary-default);background-clip:padding-box;border:3px solid transparent;border-radius:999px}
 *::-webkit-scrollbar-thumb:hover{background-color:var(--interaction-subdued-secondary-hover)}
 *::-webkit-scrollbar-thumb:active{background-color:var(--interaction-subdued-secondary-pressed)}
 *::-webkit-scrollbar-button{display:none;width:0;height:0}

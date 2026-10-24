@@ -1,8 +1,8 @@
 {
   "target": "https://ptx-7c4e9a.github.io/",
-  "contentSha256": "b017961ddefbb23704533445900307e72db87edd575ffda09ab2ce155382072a",
-  "files": 620,
-  "totalBytes": 59662883,
-  "routes": 27,
-  "review": "Final map release 2026-10-23: depot contour and tooltip, individual cars from zoom17, 56px images in 66px footprints, convoy route from zoom10 when convoy vehicles are in scope, and dense-demo layer removed. Product reader JSON and illustrations remain unchanged.99tests/types/freshness/build;620 local files and27 routes verified. Historical187/C294/C296, native Present, physical touch and PDF deferred; Figma sync only after confirmed publication."
+  "contentSha256": "0fff5514128ef0012cb2dd85bf6490faa56fad3d078ef86be5f725d232e793e0",
+  "files": 627,
+  "totalBytes": 59837276,
+  "routes": 32,
+  "review": "EKTP variants release 2026-10-24: four launcher choices, separate EKTP1 and EKTP2 flows, EKTP2 single right panel without vehicle popup, 768px minimum workspace, centered compact login, complete prepared telemetry for153 of161 online demo vehicles, and a new standalone EKTP2 rationale with two illustrations.102tests/types/freshness/build;627 local files and32 routes verified. Existing3 reader JSON and their illustrations remain unchanged. Native Figma, DS, historical backlog and automation remain paused."
 }

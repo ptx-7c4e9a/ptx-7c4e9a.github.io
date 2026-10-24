@@ -29,5 +29,5 @@ test('both standalone readers retain every verified Figma text and source link',
  }
  assert.notEqual(docs[0].id,docs[1].id);
  const launcher=JSON.parse(fs.readFileSync(new URL('../src/data/launcher.json',import.meta.url),'utf8'));
- assert.deepEqual(launcher.products.slice(1).map(p=>p.rationaleCodeRoute),['/rationale/klk/1','/rationale/klk/2']);
+ assert.deepEqual(launcher.products.filter(p=>p.id.startsWith('klk-')).map(p=>p.rationaleCodeRoute),['/rationale/klk/1','/rationale/klk/2']);
 });

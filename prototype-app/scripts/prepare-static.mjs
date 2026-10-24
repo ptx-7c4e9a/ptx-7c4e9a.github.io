@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 
 // Routes implemented by App and Klk. EKTP sections are states within /ektp.
 export const staticRoutes=Object.freeze([
- '/', '/ektp', '/ektp/error', '/rationale/ektp', '/rationale/klk', '/rationale/klk/1', '/rationale/klk/2',
+ '/', '/ektp', '/ektp/1', '/ektp/2', '/ektp/error', '/ektp/2/error', '/rationale/ektp', '/rationale/ektp/1', '/rationale/ektp/2', '/rationale/klk', '/rationale/klk/1', '/rationale/klk/2',
  ...['1','2'].flatMap(variant=>[
   `/klk/${variant}`,
   ...['home','requests','vehicles','drivers','terminals','models','classification','error','requests/load-error'].map(section=>`/klk/${variant}/${section}`),
